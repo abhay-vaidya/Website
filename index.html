@@ -71,10 +71,16 @@ a {
     ),
     url(http://i.imgur.com/WxbsBhB.jpg);
   background-size: cover;
+
   width: 100vw;
   height: 100vh;
   position: relative;
   float: left;
+}
+    
+.img-circle {
+    border-radius: 50%;
+    border:6px solid white;
 }
     
 </style>
@@ -121,7 +127,37 @@ a {
 
     <div class="intro">
         <a name="introduction"></a>
-        <h2 style="top:20%">Who I am</h2>
+        <h2 style="top:12%">Who am I?</h2>
+         <img class="img-circle" src="images/profile.png" style="
+        width: 300px;
+        position: absolute;
+        top: 38%;
+        left: 50%;
+        margin-right: -50%;
+        transform: translate(-50%, -50%);">
+        
+        <h3 style="  font-family: 'Roboto', sans-serif;
+              font-weight: 300;
+                   background-color: rgba(0,0,0,0.25) ;
+                   
+                padding: 36px;
+              color: white;
+                position: absolute;
+                top: 65%;
+                   width: 100vw;
+            left: 50%;
+            text-align: center;
+            font-size: 3vw;
+            transform: translate(-50%, -50%);">I am a student entering first-year studies of Computer Science at the University of Toronto in September.</h3>
+        
+                <h3 style="  font-family: 'Roboto', sans-serif;
+              font-weight: 300;
+              color: grey;
+                position: absolute;
+                top: 80%;
+            left: 50%;
+            text-align: center;
+                           transform: translate(-50%, -50%);">I have a passion for <b>programming</b>, <b>solving problems</b>, and <b>great design</b>.</h3>
     </div>
     
 </body>
