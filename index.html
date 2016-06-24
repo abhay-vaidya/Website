@@ -1,7 +1,128 @@
 <!DOCTYPE html>
 <html>
-<body>
-<h1>Hello World</h1>
-<p>I'm hosted with GitHub Pages.</p>
+<head>
+    <title>Abhay Vaidya</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js" integrity="sha384-0mSbJDEHialfmuBBQP6A4Qrprq5OVfW37PRR3j5ELqxss1yVqOtnepnHVP9aJ7xS" crossorigin="anonymous"></script>
+</head>
+    
+<style>
+    
+    
+.splash {
+  background: 
+    linear-gradient(
+      rgba(0, 0, 0, 0.6),
+      rgba(0, 0, 0, 0.6)
+    ),
+    url(http://thevarsity.ca/wp-content/uploads/2013/08/student-centre-1.jpg);
+  background-size: cover;
+  width: 100vw;
+  height: 100vh;
+  position: relative;
+  float: left;
+}
+        
+        
+h2 {
+  font-family: 'Roboto', sans-serif;
+  font-weight: 900;
+  color: white;
+  text-transform: uppercase;
+  margin: 0;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  font-size: 5vw;
+  transform: translate(-50%, -50%);
+}
+    
+h3::before {
+    content: "";
+    display: block;
+    background: url("images/uoft.png") no-repeat;
+    width: 20px;
+    height: 20px;
+    float: left;
+}
+    
+    
+a {
+  position: absolute;
+  top: 68%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+    
+.image,.text {
+    float: left;
+}
+.clearfix{
+    clear:both
+}
+    
+.intro {
+  background: 
+    linear-gradient(
+      rgba(0, 0, 0, 0.6),
+      rgba(0, 0, 0, 0.6)
+    ),
+    url(images/intro.jpg);
+  background-size: cover;
+  width: 100vw;
+  height: 100vh;
+  position: relative;
+  float: left;
+}
+    
+</style>
+    
+<body style="overflow-x:hidden;">   
+
+    <div class="splash">
+        
+        <img src="images/logo.png" class="img-responsive" style="
+        width: 150px;                                                           
+        position: absolute;
+        top: 38%;
+        left: 50%;
+        margin-right: -50%;
+        transform: translate(-50%, -50%);">
+
+        <h2>Abhay Vaidya</h2>
+
+         <div style="  position: absolute;
+          top: 58%;
+          left: 50%;
+          transform: translate(-50%, -50%);">
+             
+            <div class="image">
+                      <img src="images/uoft.png" style="height: 4vh; margin-top:1.4vh">
+            </div>
+             
+            <div class="text">
+                  <h3 style="  font-family: 'Roboto', sans-serif;
+              font-weight: 300;
+              color: white;
+              position: relative;
+              font-size: 1.5vw;">Computer Science, University of Toronto</h3>            
+            </div>
+             
+            <div class="clearfix"></div>
+             
+        </div>
+
+        <a href="#introduction" role="button" class="btn btn-warning btn-lg">Explore</a> 
+
+    </div>
+    
+
+    <div class="intro">
+        <a name="introduction"></a>
+        <h2 style="top:20%">Who I am</h2>
+    </div>
+    
 </body>
 </html>
