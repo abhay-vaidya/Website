@@ -1,165 +1,226 @@
 <!DOCTYPE html>
 <html>
+
 <head>
     <title>Abhay Vaidya</title>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
+    <script src="https://use.fontawesome.com/1b28b27a24.js"></script>
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon" />
+    <link href="https://fonts.googleapis.com/css?family=Karla|Roboto+Mono" rel="stylesheet">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js" integrity="sha384-0mSbJDEHialfmuBBQP6A4Qrprq5OVfW37PRR3j5ELqxss1yVqOtnepnHVP9aJ7xS" crossorigin="anonymous"></script>
 </head>
-    
+
 <style>
+    #splash {
+        background: linear-gradient( rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url(http://thevarsity.ca/wp-content/uploads/2013/08/student-centre-1.jpg);
+        background-size: cover;
+        width: 100vw;
+        height: 100vh;
+        position: relative;
+    }
     
+    #main {
+        position: relative;
+        top: 36%;
+        width: 97vw;
+        height: 75vh;
+        left: 3vw;
+    }
     
-.splash {
-  background: 
-    linear-gradient(
-      rgba(0, 0, 0, 0.6),
-      rgba(0, 0, 0, 0.6)
-    ),
-    url(http://thevarsity.ca/wp-content/uploads/2013/08/student-centre-1.jpg);
-  background-size: cover;
-  width: 100vw;
-  height: 100vh;
-  position: relative;
-  float: left;
-}
-        
-        
-h2 {
-  font-family: 'Roboto', sans-serif;
-  font-weight: 900;
-  color: white;
-  text-transform: uppercase;
-  margin: 0;
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  font-size: 5vw;
-  transform: translate(-50%, -50%);
-}
+    #logo {
+        position: relative;
+        top: 0;
+        left: 0;
+    }
     
-h3::before {
-    content: "";
-    display: block;
-    background: url("images/uoft.png") no-repeat;
-    width: 20px;
-    height: 20px;
-    float: left;
-}
+    #name {
+        position: relative;
+        top: 3%;
+        left: 0;
+    }
     
+    #subtitle {
+        position: relative;
+        top: 3%;
+        left: 0;
+    }
     
-a {
-  position: absolute;
-  top: 68%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-}
+    h3::before {
+        content: "";
+        display: block;
+        background: url("images/uoft.png") no-repeat;
+        width: 20px;
+        height: 20px;
+        float: left;
+    }
     
-.image,.text {
-    float: left;
-}
-.clearfix{
-    clear:both
-}
+    .image,
+    .text {
+        float: left;
+    }
     
-.intro {
-  background: 
-    linear-gradient(
-      rgba(0, 0, 0, 0.6),
-      rgba(0, 0, 0, 0.6)
-    ),
-    url(http://i.imgur.com/WxbsBhB.jpg);
-  background-size: cover;
+    .clearfix {
+        clear: both
+    }
+    
+    .social {}
+    
+    #intro {
+        background: linear-gradient( rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url(http://i.imgur.com/WxbsBhB.jpg);
+        background-size: cover;
+        width: 100vw;
+        height: 100vh;
+        position: relative;
+        float: left;
+    }
+    
+    #introMain {
+        position: relative;
+        top: 5%;
+        align-content: center;
+        height: 90vh;
+        left: 0;
+    }
+    
+    #whoTitle {
+        position: relative;
+        top: 0;
+        left: 0;
+    }
+    
+    #profilePicture {
+        position: relative;
+        top: 4%;
+        left: 39vw;
+    }
+    
+    #bigDescription {
+        position: relative;
+        top: 5%;
+        left: 0;
+    }
+    
+    #smallDescription {
+        position: relative;
+        top: 5%;
+        left: 0;
+    }
+    
+    .img-circle {
+        border-radius: 50%;
+        border: 0.3vw solid white;
+    }
 
-  width: 100vw;
-  height: 100vh;
-  position: relative;
-  float: left;
-}
-    
-.img-circle {
-    border-radius: 50%;
-    border:0.5vw solid white;
-}
-    
 </style>
-    
-<body style="overflow-x:hidden;">   
 
-    <div class="splash">
-        
-        <img src="images/logo.png" class="img-responsive" style="
-        width: 150px;                                                           
-        position: absolute;
-        top: 38%;
-        left: 50%;
-        margin-right: -50%;
-        transform: translate(-50%, -50%);">
+<body style="overflow-x:hidden;">
 
-        <h2>Abhay Vaidya</h2>
-
-         <div style="  position: absolute;
-          top: 58%;
-          left: 50%;
-          transform: translate(-50%, -50%);">
-             
-            <div class="image">
-                      <img src="images/uoft.png" style="height: 4vh; margin-top:1.4vh">
+    <div id="splash">
+        <div id="main">
+            <div id="logo">
+                <img src="images/logo.png" class="img-responsive" style="width: 12vw;">
             </div>
-             
-            <div class="text">
-                  <h3 style="  font-family: 'Roboto', sans-serif;
-              font-weight: 300;
-              color: white;
-              position: relative;
-              font-size: 1.5vw;">Computer Science, University of Toronto</h3>            
+
+            <div id="name">
+                <h2 style="                                                      
+                width: 60vw;
+                text-align: left;
+                background: rgba(0,0,0,0.7);
+                font-size: 8vw;
+                font-family: 'Roboto', sans-serif;
+                font-weight: 900;
+                padding-left:1%;
+                color: white;
+                text-transform: uppercase;
+                margin: 0;">Abhay Vaidya</h2>
             </div>
-             
-            <div class="clearfix"></div>
-             
+
+            <div id="subtitle">
+                <div class="image">
+                    <img src="images/uoft.png" style="height: 4vh; margin-top:1.6vh">
+                </div>
+
+                <div class="text">
+                    <h3 style="  font-family: 'Roboto Mono', monospace;
+                          font-weight: 300;
+                          color: white;
+                        font-size: 1.5vw;">Computer Science, University of Toronto
+                    </h3>
+                </div>
+            </div>
         </div>
 
-        <a href="#introduction" role="button" class="btn btn-warning btn-lg">Explore</a> 
-
     </div>
-    
 
-    <div class="intro">
+    <div id="intro">
         <a name="introduction"></a>
-        <h2 style="top:12%">Who am I?</h2>
-         <img class="img-circle" src="images/profile.png" style="
-        width: 18vW;
-        position: absolute;
-        top: 40%;
-        left: 50%;
-        margin-bottom: -50%;
-        transform: translate(-50%, -50%);">
-        
-        <h3 style="  font-family: 'Roboto', sans-serif;
-              font-weight: 300;
-                   background-color: rgba(0,0,0,0.25) ;
-                   
-                padding: 36px;
-              color: white;
-                position: absolute;
-                top: 70%;
-                   width: 100vw;
-            left: 50%;
-            text-align: center;
-            font-size: 3vw;
-            transform: translate(-50%, -50%);">I am a student entering first-year studies of Computer Science at the University of Toronto in September.</h3>
-        
-                <h3 style="  font-family: 'Roboto', sans-serif;
-              font-weight: 300;
-              color: grey;
-                position: absolute;
-                top: 85%;
-            left: 50%;
-            text-align: center;
-            font-size: 1.5vw;
-            transform: translate(-50%, -50%);">I have a passion for <b>programming</b>, <b>solving problems</b>, and <b>great design</b>.</h3>
+        <div id="introMain">
+            <div id="whoTitle">
+                <h2 style="font-size: 6vw;
+                    font-family: 'Roboto', sans-serif;
+                    font-weight: 900;
+                    color: white;
+                    left: 50%;
+                    text-align: center;
+                    text-transform: uppercase;
+                    margin: 0;">Who am I?</h2>
+            </div>
+
+            <div id="profilePicture">
+                <img class="img-circle" src="images/profile.png" style="width: 22vw;">
+            </div>
+
+            <div id="bigDescription">
+                <h3 style="font-family: 'Roboto', sans-serif;
+                    background-color: rgba(0,0,0,0.6);               
+                    padding: 36px;
+                    padding-left: 15%;
+                    padding-right: 15%;
+                    color: #FBC02D;
+                    width: 100vw;
+                    line-height: 125%;
+                    text-align: center;
+                    font-size: 2vw;">I am a student entering first-year studies of Computer Science at the University of Toronto this September.</h3>
+            </div>
+
+            <div id="smallDescription">
+                <h3 style="font-family: 'Roboto Mono', sans-serif;
+                    color: white; line-height: 125%; text-align: center; font-size: 1.2vw;">I have a passion for software development, solving problems, and great design.</h3>
+            </div>
+
+        </div>
+
+
     </div>
-    
+
+
+    <div style="position:fixed; bottom:3%; left:3%;">
+        <h6 style="font-family: 'Karla', sans-serif;             
+            color: #FBC02D;
+            font-size: 1.4rem;">EMAIL</h6>
+
+        <a href="mailto:abhay6547@gmail.com" style="font-family: 'Roboto Mono', monospace;             
+            color: white;
+            font-size: 1.4rem;">abhay6547@gmail.com</a>
+
+        <h6 style="font-family: 'Karla', sans-serif;             
+            color: #FBC02D;
+            margin-top: 25px;
+            font-size: 1.4rem;">FIND ME ON</h6>
+
+        <div class="social">
+            <a href="https://www.linkedin.com/in/abhay-vaidya" _v-e8dd1700=""> <i class="fa fa-linkedin" _v-e8dd1700="" style="         
+            color: white;
+            padding-right: 10px"></i> </a>
+            <a href="https://www.github.com/abhay-vaidya" _v-e8dd1700=""> <i class="fa fa-github" _v-e8dd1700="" style="         
+            color: white;"></i> </a>
+        </div>
+
+
+    </div>
+
 </body>
+
 </html>
