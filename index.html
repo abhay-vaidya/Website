@@ -27,12 +27,25 @@
     </script>
     <!-- End of SMOOTH SCROLL -->
 
+    <!-- Navigation bar hover -->
     <script>
         $(document).ready(function() {
             $('.navElement').hover(function() {
                 $(this).css("color", "#FBC02D");
             }, function() {
                 $(this).css("color", "white");
+            });
+        });
+
+    </script>
+
+    <!-- Text button hover -->
+    <script>
+        $(document).ready(function() {
+            $('.textButton').hover(function() {
+                $(this).css("color", "white");
+            }, function() {
+                $(this).css("color", "#FBC02D");
             });
         });
 
@@ -98,8 +111,6 @@
         clear: both
     }
     
-    .social {}
-    
     #intro {
         background: linear-gradient( rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.2)), url(http://i.imgur.com/WxbsBhB.jpg);
         background-size: cover;
@@ -147,7 +158,7 @@
     }
     
     #experience {
-        background: linear-gradient( rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.6)), url(images/photoshop.jpg);
+        background: linear-gradient( rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.9)), url(images/photoshop.jpg);
         background-size: cover;
         width: 100vw;
         height: 100vh;
@@ -164,21 +175,22 @@
     #experienceColumns {
         position: relative;
         top: 10%;
-        width: 100w;
+        width: 98vw;
+        left: 1vw;
         padding-right: 20px;
         height: 75vh;
     }
     
     .classWithPad {
         padding: 10px;
-        background: rgba(0, 0, 0, 0.6);
+        background: rgba(0, 0, 0, 0.);
         height: 60vh;
         border-radius: 01%;
         border: 0.13vw solid white;
     }
     
     #projects {
-        background: linear-gradient( rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url(http://www.confabulation.ca/wp-content/uploads/2016/02/Toronto.jpg);
+        background: linear-gradient( rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.5)), url(images/picasso.png);
         background-size: cover;
         width: 100vw;
         height: 100vh;
@@ -207,7 +219,7 @@
                 <h2 style="                                                      
                 width: 60vw;
                 text-align: left;
-                background: rgba(0,0,0,0.7);
+                background: rgba(0,0,0,0.8);
                 font-size: 8vw;
                 font-family: 'Roboto', sans-serif;
                 font-weight: 900;
@@ -387,7 +399,7 @@
                                 color: white;
                                 list-style-type: circle;
                                 margin: 7%;
-                                font-size: 1.75vw;">
+                                font-size: 1.7vw;">
                                 <li>Android Studio + Eclipse</li>
                                 <li>Android SDK and APIs</li>
                                 <li>Layout design in XML</li>
@@ -401,6 +413,7 @@
                             <h1 style="font-family: 'Roboto Mono', monospace;               
                             font-weight: 600;
                             padding-left: 15%;
+                            margin-bottom: 1%;
                             padding-right: 15%;
                             color: #FBC02D;
                             line-height: 125%;
@@ -428,23 +441,23 @@
                             </ul>
 
                         </div>
-
                     </div>
-
                 </div>
             </div>
         </div>
 
-        <div style="position: absolute; left: 50%; transform: translate(-50%, -50%)">
-            <a style="font-family: 'Karla', sans-serif;             
+        <div style="position: absolute; left: 50%; transform: translate(-52%, -50%)">
+            <a class="textButton" style="font-family: 'Karla', sans-serif;             
             color: #FBC02D;
-            margin-right: 25px;
+            margin-right: 50px;
             font-size: 3rem;
+            text-decoration: none;
             position: relative;" href="#projects">> VIEW <b>MY PROJECTS</b></a>
 
-            <a style="font-family: 'Karla', sans-serif;             
+            <a class="textButton" style="font-family: 'Karla', sans-serif;             
             color: #FBC02D;
             font-size: 3rem;
+            text-decoration: none;
             position: relative;" href="Abhay-Vaidya_Resume.pdf" target="_blank">> VIEW <b>MY RESUME</b></a>
         </div>
 
@@ -469,54 +482,51 @@
 
         <a class="navElement" href="#splash" style="font-family: 'Karla', sans-serif;             
             color: white;
+            text-decoration: none;
             margin-right: 20px;
             font-size: 1.4rem;">HOME</a>
 
         <a class="navElement" href="#introduction" style="font-family: 'Karla', sans-serif;             
             color: white;
             margin-right: 20px;
+            text-decoration: none;
             font-size: 1.4rem;">INTRODUCTION</a>
 
         <a class="navElement" href="#experience" style="font-family: 'Karla', sans-serif;             
             color: white;
             margin-right: 20px;
+            text-decoration: none;
             font-size: 1.4rem;">EXPERIENCE</a>
 
         <a class="navElement" href="#projects" style="font-family: 'Karla', sans-serif;             
             color: white;
             margin-right: 20px;
+            text-decoration: none;
             font-size: 1.4rem;">PROJECTS</a>
 
         <a class="navElement" href="Abhay-Vaidya_Resume.pdf" target="_blank" style="font-family: 'Karla', sans-serif;             
             color: white;
             margin-right: 20px;
+            text-decoration: none;
             font-size: 1.4rem;">MY RESUME</a>
 
 
     </div>
 
-    <div style="position:fixed; bottom:2%; left:3%;">
-        <h6 style="font-family: 'Karla', sans-serif;             
-            color: #FBC02D;
-            font-size: 1.4rem;">EMAIL</h6>
-
-        <a href="mailto:abhay6547@gmail.com" style="font-family: 'Roboto Mono', monospace;             
-            color: white;
-            font-size: 1.4rem;">abhay6547@gmail.com</a>
+    <div style="position:fixed; bottom:3%; left:3%; ">
 
         <h6 style="font-family: 'Karla', sans-serif;             
             color: #FBC02D;
-            margin-top: 25px;
             font-size: 1.4rem;">REACH ME</h6>
 
-        <div class="social">
-            <a href="mailto:abhay6547@gmail.com" _v-e8dd1700=""> <i class="fa fa-envelope" _v-e8dd1700="" style="         
+        <div>
+            <a href="mailto:abhay6547@gmail.com" target="_blank"> <i class="fa fa-envelope" _v-e8dd1700="" style="         
             color: white;
             margin-right: 10px"></i> </a>
-            <a href="https://www.linkedin.com/in/abhay-vaidya" _v-e8dd1700=""> <i class="fa fa-linkedin" _v-e8dd1700="" style="         
+            <a href="https://www.linkedin.com/in/abhay-vaidya" target="_blank"> <i class="fa fa-linkedin" _v-e8dd1700="" style="         
             color: white;
             margin-right: 10px"></i> </a>
-            <a href="https://www.github.com/abhay-vaidya" _v-e8dd1700=""> <i class="fa fa-github" _v-e8dd1700="" style="         
+            <a href="https://www.github.com/abhay-vaidya" target="_blank"> <i class="fa fa-github" _v-e8dd1700="" style="         
             color: white;"></i> </a>
         </div>
 
