@@ -5,6 +5,28 @@
     <title>Abhay Vaidya</title>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- SMOOTH SCROLL -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+    <script>
+        $(function() {
+            $('a[href*=#]:not([href=#])').click(function() {
+                if (location.pathname.replace(/^\//, '') == this.pathname.replace(/^\//, '') && location.hostname == this.hostname) {
+                    var target = $(this.hash);
+                    target = target.length ? target : $('[name=' + this.hash.slice(1) + ']');
+                    if (target.length) {
+                        $('html,body').animate({
+                            scrollTop: target.offset().top
+                        }, 1000);
+                        return false;
+                    }
+                }
+            });
+        });
+
+    </script>
+    <!-- End of SMOOTH SCROLL -->
+
     <script src="https://use.fontawesome.com/1b28b27a24.js"></script>
     <link rel="shortcut icon" href="favicon.ico" type="image/x-icon" />
     <link href="https://fonts.googleapis.com/css?family=Karla|Roboto+Mono" rel="stylesheet">
@@ -416,7 +438,7 @@
             margin-right: 20px;
             font-size: 1.4rem;">EXPERIENCE</a>
 
-        <a href="#introduction" style="font-family: 'Karla', sans-serif;             
+        <a href="#" style="font-family: 'Karla', sans-serif;             
             color: #FBC02D;
             margin-right: 20px;
             font-size: 1.4rem;">PROJECTS</a>
