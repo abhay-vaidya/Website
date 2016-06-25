@@ -68,7 +68,7 @@
     .social {}
     
     #intro {
-        background: linear-gradient( rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)), url(http://i.imgur.com/WxbsBhB.jpg);
+        background: linear-gradient( rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.2)), url(http://i.imgur.com/WxbsBhB.jpg);
         background-size: cover;
         width: 100vw;
         height: 100vh;
@@ -112,11 +112,43 @@
         border-radius: 50%;
         border: 1vw solid rgba(0, 0, 0, 0.1);
     }
+    
+    #experience {
+        background: linear-gradient( rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.6)), url(images/photoshop.jpg);
+        background-size: cover;
+        width: 100vw;
+        height: 100vh;
+        position: relative;
+        float: left;
+    }
+    
+    #expTitle {
+        position: relative;
+        top: 5%;
+        left: 0;
+    }
+    
+    #experienceColumns {
+        position: relative;
+        top: 10%;
+        width: 100w;
+        padding-right: 20px;
+        height: 75vh;
+    }
+    
+    .classWithPad {
+        padding: 10px;
+        background: linear-gradient( rgba(251, 192, 45, 0.0), rgba(251, 192, 45, 1));
+        height: 60vh;
+        border-radius: 01%;
+        border: 0.13vw solid white;
+    }
 
 </style>
 
 <body style="overflow-x:hidden;">
 
+    <a name="splash"></a>
     <div id="splash">
         <div id="main">
             <div id="logo">
@@ -154,8 +186,8 @@
 
     </div>
 
+    <a name="introduction"></a>
     <div id="intro">
-        <a name="introduction"></a>
         <div id="introMain">
             <div id="whoTitle">
                 <h2 style="font-size: 6vw;
@@ -193,11 +225,206 @@
 
         </div>
 
+    </div>
+
+    <a name="experience"></a>
+    <div id="experience">
+
+        <div id="expTitle">
+            <h2 style="font-size: 6vw;
+                    font-family: 'Roboto', sans-serif;
+                    font-weight: 900;
+                    color: white;
+                    left: 50%;
+                    text-align: center;
+                    text-transform: uppercase;
+                    margin: 0;">Experience</h2>
+        </div>
+
+        <div id="experienceColumns">
+            <div class="container-fluid">
+                <div class="row">
+                    <div class="col-md-3">
+                        <div class="classWithPad">
+                            <h1 style="font-family: 'Roboto Mono', monospace;               
+                            font-weight: 600;
+                            padding-left: 15%;
+                            padding-right: 15%;
+                            color: white;
+                            line-height: 125%;
+                            text-align: center;
+                            font-size: 1.5vw;">Software Development</h1>
+
+                            <h3 style="font-family: 'Roboto';               
+                                color: white;
+                                font-weight: 400;
+                                margin: 5%;
+                                text-align: center;
+                                font-size: 1vw;">I am experienced in working with various programming and markup languages, including:</h3>
+
+                            <ul style="font-family: 'Roboto Mono', monospace;               
+                                color: white;
+                                list-style-type: circle;
+                                margin: 10%;
+                                font-size: 2vw;">
+                                <li>Java</li>
+                                <li>C++</li>
+                                <li>Python</li>
+                                <li>HTML + CSS</li>
+                                <li>XMl</li>
+                            </ul>
+
+                        </div>
+                    </div>
+
+                    <div class="col-md-3">
+                        <div class="classWithPad">
+                            <h1 style="font-family: 'Roboto Mono', monospace;               
+                            font-weight: 600;
+                            padding-left: 15%;
+                            padding-right: 15%;
+                            color: white;
+                            line-height: 125%;
+                            text-align: center;
+                            font-size: 1.5vw;">Graphic + Motion Design</h1>
+
+                            <h3 style="font-family: 'Roboto';               
+                                color: white;
+                                font-weight: 400;
+                                margin: 5%;
+                                text-align: center;
+                                font-size: 1vw;">I have a great deal of experience in a variety of 2D and 3D graphics applications that often go hand-in-hand with software development to design mockups for UI and UX. My experience extends through:</h3>
+
+                            <ul style="font-family: 'Roboto';               
+                                color: white;
+                                list-style-type: circle;
+                                margin: 5%;
+                                font-size: 1.7vw;">
+                                <li>Adobe Creative Suite</li>
+                                <ul style="font-family: 'Roboto';               
+                                color: white;
+                                list-style-type: disc;
+                                font-size: 1.1vw;">
+                                    <li>Photoshop</li>
+                                    <li>Illustrator</li>
+                                    <li>Premiere Pro</li>
+                                    <li>After Effects</li>
+                                    <li>InDesign</li>
+                                    <li>Audition</li>
+                                </ul>
+                                <li>Maxon Cinema 4D</li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <div class="col-md-3">
+                        <div class="classWithPad">
+                            <h1 style="font-family: 'Roboto Mono', monospace;               
+                            font-weight: 600;
+                            padding-left: 15%;
+                            padding-right: 15%;
+                            color: white;
+                            line-height: 125%;
+                            text-align: center;
+                            font-size: 1.5vw;">Android Development</h1>
+
+                            <h3 style="font-family: 'Roboto';               
+                                color: white;
+                                font-weight: 400;
+                                margin: 5%;
+                                text-align: center;
+                                font-size: 1vw;">I have designed and developed several Android apps and am familiar with:</h3>
+
+                            <ul style="font-family: 'Roboto';               
+                                color: white;
+                                list-style-type: circle;
+                                margin: 7%;
+                                font-size: 1.75vw;">
+                                <li>Android Studio + Eclipse</li>
+                                <li>Android SDK and APIs</li>
+                                <li>Layout design in XML</li>
+                                <li>Built-in + External libraries</li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <div class="col-md-3">
+                        <div class="classWithPad">
+                            <h1 style="font-family: 'Roboto Mono', monospace;               
+                            font-weight: 600;
+                            padding-left: 15%;
+                            padding-right: 15%;
+                            color: white;
+                            line-height: 125%;
+                            text-align: center;
+                            font-size: 1.5vw;">Other Experience</h1>
+
+                            <h3 style="font-family: 'Roboto';               
+                                color: white;
+                                font-weight: 400;
+                                margin: 5%;
+                                text-align: center;
+                                font-size: 1vw;">I have participated in hackathons to not only sharpen my skills as a designer and developer, but to connect with people who share the mutual passion. Some hackathons I've been to include:</h3>
+
+                            <ul style="font-family: 'Roboto';               
+                                color: white;
+                                list-style-type: circle;
+                                margin: 7%;
+                                font-size: 1vw;">
+                                <li style="margin-bottom: 2%;"><b>Editor-In-Chief</b>, Woburn Yearbook Committee</li>
+                                <li style="margin-bottom: 2%;"><b>Head of Web & Design</b>, Woburn Robotics</li>
+                                <li style="margin-bottom: 2%;"><b>Head of Media & Web (Team Zephyros)</b>, F1 in Schools Challenge</li>
+                                <li style="margin-bottom: 2%;"><b>Graphic Designer</b>, Woburn Formal Committee</li>
+                                <li style="margin-bottom: 2%;"><b>Scotiabank HackIt Hackathon</b></li>
+                                <li style="margin-bottom: 2%;"><b>Bully &lt;/stop&gt; Hackathon</b></li>
+                            </ul>
+
+                        </div>
+
+                    </div>
+
+                </div>
+            </div>
+        </div>
+
+        <a style="font-family: 'Karla', sans-serif;             
+            color: #FBC02D;
+            margin-right: 20px;
+            font-size: 3rem;
+            position: absolute;
+            top: 90%;
+            left: 50%;
+                  transform: translate(-50%, -50%);" href="#introduction">> VIEW <b>MY PROJECTS</b></a>
 
     </div>
 
 
-    <div style="position:fixed; bottom:3%; left:3%;">
+    <div style="position:fixed; top:2%; right:3%;">
+
+        <a href="#splash" style="font-family: 'Karla', sans-serif;             
+            color: #FBC02D;
+            margin-right: 20px;
+            font-size: 1.4rem;">HOME</a>
+
+        <a href="#introduction" style="font-family: 'Karla', sans-serif;             
+            color: #FBC02D;
+            margin-right: 20px;
+            font-size: 1.4rem;">INTRODUCTION</a>
+
+        <a href="#experience" style="font-family: 'Karla', sans-serif;             
+            color: #FBC02D;
+            margin-right: 20px;
+            font-size: 1.4rem;">EXPERIENCE</a>
+
+        <a href="#introduction" style="font-family: 'Karla', sans-serif;             
+            color: #FBC02D;
+            margin-right: 20px;
+            font-size: 1.4rem;">PROJECTS</a>
+
+
+    </div>
+
+    <div style="position:fixed; bottom:1.5%; left:3%;">
         <h6 style="font-family: 'Karla', sans-serif;             
             color: #FBC02D;
             font-size: 1.4rem;">EMAIL</h6>
@@ -212,13 +439,15 @@
             font-size: 1.4rem;">FIND ME ON</h6>
 
         <div class="social">
+            <a href="mailto:abhay6547@gmail.com" _v-e8dd1700=""> <i class="fa fa-envelope" _v-e8dd1700="" style="         
+            color: white;
+            margin-right: 10px"></i> </a>
             <a href="https://www.linkedin.com/in/abhay-vaidya" _v-e8dd1700=""> <i class="fa fa-linkedin" _v-e8dd1700="" style="         
             color: white;
-            padding-right: 10px"></i> </a>
+            margin-right: 10px"></i> </a>
             <a href="https://www.github.com/abhay-vaidya" _v-e8dd1700=""> <i class="fa fa-github" _v-e8dd1700="" style="         
             color: white;"></i> </a>
         </div>
-
 
     </div>
 
