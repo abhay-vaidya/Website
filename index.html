@@ -17,7 +17,7 @@
                     if (target.length) {
                         $('html,body').animate({
                             scrollTop: target.offset().top
-                        }, 1000);
+                        }, 750);
                         return false;
                     }
                 }
@@ -26,6 +26,17 @@
 
     </script>
     <!-- End of SMOOTH SCROLL -->
+
+    <script>
+        $(document).ready(function() {
+            $('.navElement').hover(function() {
+                $(this).css("color", "#FBC02D");
+            }, function() {
+                $(this).css("color", "white");
+            });
+        });
+
+    </script>
 
     <script src="https://use.fontawesome.com/1b28b27a24.js"></script>
     <link rel="shortcut icon" href="favicon.ico" type="image/x-icon" />
@@ -36,7 +47,7 @@
 
 <style>
     #splash {
-        background: linear-gradient( rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url(http://thevarsity.ca/wp-content/uploads/2013/08/student-centre-1.jpg);
+        background: linear-gradient( rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.6)), url(http://thevarsity.ca/wp-content/uploads/2013/08/student-centre-1.jpg);
         background-size: cover;
         width: 100vw;
         height: 100vh;
@@ -160,10 +171,25 @@
     
     .classWithPad {
         padding: 10px;
-        background: linear-gradient( rgba(251, 192, 45, 0.0), rgba(251, 192, 45, 1));
+        background: rgba(0, 0, 0, 0.6);
         height: 60vh;
         border-radius: 01%;
         border: 0.13vw solid white;
+    }
+    
+    #projects {
+        background: linear-gradient( rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url(http://www.confabulation.ca/wp-content/uploads/2016/02/Toronto.jpg);
+        background-size: cover;
+        width: 100vw;
+        height: 100vh;
+        float: left;
+        position: relative;
+    }
+    
+    #projectsTitle {
+        position: relative;
+        top: 5%;
+        left: 0;
     }
 
 </style>
@@ -228,8 +254,8 @@
 
             <div id="bigDescription">
                 <h3 style="font-family: 'Roboto', sans-serif;
-                    background-color: rgba(0,0,0,0.6);               
-                    padding: 36px;
+                    background: linear-gradient( rgba(0, 0, 0, 0.0), rgba(0, 0, 0, 0.3));               
+                    padding: 30px;
                     font-weight: 300;
                     padding-left: 15%;
                     padding-right: 15%;
@@ -272,13 +298,13 @@
                             font-weight: 600;
                             padding-left: 15%;
                             padding-right: 15%;
-                            color: white;
+                            color: #FBC02D;
                             line-height: 125%;
                             text-align: center;
                             font-size: 1.5vw;">Software Development</h1>
 
                             <h3 style="font-family: 'Roboto';               
-                                color: white;
+                                color: grey;
                                 font-weight: 400;
                                 margin: 5%;
                                 text-align: center;
@@ -305,13 +331,13 @@
                             font-weight: 600;
                             padding-left: 15%;
                             padding-right: 15%;
-                            color: white;
+                            color: #FBC02D;
                             line-height: 125%;
                             text-align: center;
                             font-size: 1.5vw;">Graphic + Motion Design</h1>
 
                             <h3 style="font-family: 'Roboto';               
-                                color: white;
+                                color: grey;
                                 font-weight: 400;
                                 margin: 5%;
                                 text-align: center;
@@ -345,13 +371,13 @@
                             font-weight: 600;
                             padding-left: 15%;
                             padding-right: 15%;
-                            color: white;
+                            color: #FBC02D;
                             line-height: 125%;
                             text-align: center;
                             font-size: 1.5vw;">Android Development</h1>
 
                             <h3 style="font-family: 'Roboto';               
-                                color: white;
+                                color: grey;
                                 font-weight: 400;
                                 margin: 5%;
                                 text-align: center;
@@ -376,13 +402,13 @@
                             font-weight: 600;
                             padding-left: 15%;
                             padding-right: 15%;
-                            color: white;
+                            color: #FBC02D;
                             line-height: 125%;
                             text-align: center;
                             font-size: 1.5vw;">Other Experience</h1>
 
                             <h3 style="font-family: 'Roboto';               
-                                color: white;
+                                color: grey;
                                 font-weight: 400;
                                 margin: 5%;
                                 text-align: center;
@@ -409,44 +435,67 @@
             </div>
         </div>
 
-        <a style="font-family: 'Karla', sans-serif;             
+        <div style="position: absolute; left: 50%; transform: translate(-50%, -50%)">
+            <a style="font-family: 'Karla', sans-serif;             
             color: #FBC02D;
-            margin-right: 20px;
+            margin-right: 25px;
             font-size: 3rem;
-            position: absolute;
-            top: 90%;
-            left: 50%;
-                  transform: translate(-50%, -50%);" href="#introduction">> VIEW <b>MY PROJECTS</b></a>
+            position: relative;" href="#projects">> VIEW <b>MY PROJECTS</b></a>
+
+            <a style="font-family: 'Karla', sans-serif;             
+            color: #FBC02D;
+            font-size: 3rem;
+            position: relative;" href="Abhay-Vaidya_Resume.pdf" target="_blank">> VIEW <b>MY RESUME</b></a>
+        </div>
 
     </div>
 
+    <a name="projects"></a>
+    <div id="projects">
+        <div id="expTitle">
+            <h2 style="font-size: 6vw;
+                    font-family: 'Roboto', sans-serif;
+                    font-weight: 900;
+                    color: white;
+                    left: 50%;
+                    text-align: center;
+                    text-transform: uppercase;
+                    margin: 0;">Projects</h2>
+        </div>
+
+    </div>
 
     <div style="position:fixed; top:2%; right:3%;">
 
-        <a href="#splash" style="font-family: 'Karla', sans-serif;             
-            color: #FBC02D;
+        <a class="navElement" href="#splash" style="font-family: 'Karla', sans-serif;             
+            color: white;
             margin-right: 20px;
             font-size: 1.4rem;">HOME</a>
 
-        <a href="#introduction" style="font-family: 'Karla', sans-serif;             
-            color: #FBC02D;
+        <a class="navElement" href="#introduction" style="font-family: 'Karla', sans-serif;             
+            color: white;
             margin-right: 20px;
             font-size: 1.4rem;">INTRODUCTION</a>
 
-        <a href="#experience" style="font-family: 'Karla', sans-serif;             
-            color: #FBC02D;
+        <a class="navElement" href="#experience" style="font-family: 'Karla', sans-serif;             
+            color: white;
             margin-right: 20px;
             font-size: 1.4rem;">EXPERIENCE</a>
 
-        <a href="#" style="font-family: 'Karla', sans-serif;             
-            color: #FBC02D;
+        <a class="navElement" href="#projects" style="font-family: 'Karla', sans-serif;             
+            color: white;
             margin-right: 20px;
             font-size: 1.4rem;">PROJECTS</a>
+
+        <a class="navElement" href="Abhay-Vaidya_Resume.pdf" target="_blank" style="font-family: 'Karla', sans-serif;             
+            color: white;
+            margin-right: 20px;
+            font-size: 1.4rem;">MY RESUME</a>
 
 
     </div>
 
-    <div style="position:fixed; bottom:1.5%; left:3%;">
+    <div style="position:fixed; bottom:2%; left:3%;">
         <h6 style="font-family: 'Karla', sans-serif;             
             color: #FBC02D;
             font-size: 1.4rem;">EMAIL</h6>
@@ -458,7 +507,7 @@
         <h6 style="font-family: 'Karla', sans-serif;             
             color: #FBC02D;
             margin-top: 25px;
-            font-size: 1.4rem;">FIND ME ON</h6>
+            font-size: 1.4rem;">REACH ME</h6>
 
         <div class="social">
             <a href="mailto:abhay6547@gmail.com" _v-e8dd1700=""> <i class="fa fa-envelope" _v-e8dd1700="" style="         
