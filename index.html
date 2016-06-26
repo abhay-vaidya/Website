@@ -87,27 +87,10 @@
     }
     
     #subtitle {
+        align-items: center;
         position: relative;
         top: 3%;
         left: 0;
-    }
-    
-    h3::before {
-        content: "";
-        display: block;
-        background: url("images/uoft.png") no-repeat;
-        width: 20px;
-        height: 20px;
-        float: left;
-    }
-    
-    .image,
-    .text {
-        float: left;
-    }
-    
-    .clearfix {
-        clear: both
     }
     
     #intro {
@@ -229,16 +212,12 @@
             </div>
 
             <div id="subtitle">
-                <div class="image">
-                    <img src="images/uoft.png" style="height: 4vh; margin-top:1.4vh;">
-                </div>
-
-                <div class="text">
-                    <h3 style="  font-family: 'Roboto Mono', monospace;
-                        font-weight: 300;
-                        color: white;
-                        font-size: 1.5vw;">Computer Science, <a href="http://utoronto.ca" target="_blank" style="color: white">University of Toronto</a> </h3>
-                </div>
+                <img src="images/uoft.png" class="img-responsive" style="width: 2.5vw; float: left;">
+                <h3 style="  font-family: 'Roboto Mono', monospace;
+                    font-weight: 300;
+                    color: white;
+                    float: left;
+                    font-size: 1.5vw;">Computer Science, <a href="http://utoronto.ca" target="_blank" style="color: white">University of Toronto</a> </h3>
             </div>
         </div>
 
