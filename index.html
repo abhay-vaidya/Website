@@ -152,6 +152,7 @@
         background: linear-gradient( rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.5)), url(images/picasso.png);
         background-size: cover;
         width: 100%;
+        min-width: 1200px;
         height: 100vh;
         float: left;
         position: relative;
@@ -237,13 +238,13 @@
     
 @media all and (min-width: 1200px) {
     #expListT2{
-        font-size: 1.7vw;
+        font-size: 1.6vw;
     }
 }
 
 @media (max-width: 1199px) and (min-width: 0px) {
     #expListT2{
-        font-size: 2rem;
+        font-size: 1.9rem;
     }
 }
 
@@ -532,13 +533,15 @@
         </div>
                             
             <h2 style="font-family: 'Roboto', sans-serif;
-                    color: rgba(255,255,255,0.5);
-                    top: 40%;
-                    font-size: 2vw;
-                    position: relative;
-                    text-align: center;
+                    color: rgba(255,255,255,0.25);
+                    overflow:hidden;
+                    white-space: nowrap;
+                    font-size: 16rem;
                     text-transform: uppercase;
-                    margin: 0;">Coming soon!</h2>
+                    position: absolute;
+                    top: 25%;
+                    left: 50%;
+                    transform: translateX(-50%);">Coming soon!</h2>
 
     </div>
 
