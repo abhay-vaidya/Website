@@ -61,6 +61,7 @@
     #splash {
         background: linear-gradient( rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.6)), url(http://thevarsity.ca/wp-content/uploads/2013/08/student-centre-1.jpg);
         background-size: cover;
+        min-width: 1200px;
         width: 100%;
         height: 100vh;
         position: relative;
@@ -69,20 +70,19 @@
     #main {
         position: relative;
         top: 36%;
-        height: 64%;
-        left: 3%;
+        margin-left: 3%;
     }
     
     #subtitle {
         position: relative;
-        top: 5%;
-        left: 0;
+        top: 25px;
     }
     
     #intro {
         background: linear-gradient( rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.2)), url(http://i.imgur.com/WxbsBhB.jpg);
         background-size: cover;
         width: 100%;
+        min-width: 1200px;
         height: 100vh;
         position: relative;
         float: left;
@@ -92,6 +92,7 @@
         position: relative;
         position: absolute;
         top: 50%;
+        
         transform: translateY(-55%);
         align-content: center;
         left: 0;
@@ -111,13 +112,14 @@
     
     #img-circle {
         border-radius: 50%;
-        border: 1vw solid rgba(0, 0, 0, 0.1);
+        border: 8px solid rgba(0, 0, 0, 0.1);
     }
     
     #experience {
         background: linear-gradient( rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.9)), url(images/photoshop.jpg);
         background-size: cover;
-        width: 100vw;
+        min-width: 1200px;
+        width: 100%;
         height: 100vh;
         position: relative;
         float: left;
@@ -132,9 +134,8 @@
     #experienceColumns {
         position: relative;
         top: 10%;
-        width: 98vw;
-        left: 1vw;
-        padding-right: 20px;
+        width: 98%;
+        left: 1%;
         height: 75vh;
     }
     
@@ -150,7 +151,7 @@
     #projects {
         background: linear-gradient( rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.5)), url(images/picasso.png);
         background-size: cover;
-        width: 100vw;
+        width: 100%;
         height: 100vh;
         float: left;
         position: relative;
@@ -161,24 +162,131 @@
         top: 5%;
         left: 0;
     }
+    
+@media all and (min-width: 1200px) {
+    h2{
+        font-size: 8vw;
+    }
+}
+
+@media (max-width: 1199px) and (min-width: 0px) {
+    h2{
+        font-size: 9.65rem;
+    }
+}
+    
+@media all and (min-width: 1200px) {
+    #subtitleT{
+        font-size: 1.5vw;
+    }
+}
+
+@media (max-width: 1199px) and (min-width: 0px) {
+    #subtitleT{
+        font-size: 1.8rem;
+    }
+}    
+
+@media all and (min-width: 1200px) {
+    #sectionT{
+        font-size: 6vw;
+    }
+}
+
+@media (max-width: 1199px) and (min-width: 0px) {
+    #sectionT{
+        font-size: 7.1rem;
+    }
+}
+    
+@media all and (min-width: 1200px) {
+    #bigDescriptionT{
+        font-size: 2vw;
+    }
+}
+
+@media (max-width: 1199px) and (min-width: 0px) {
+    #bigDescriptionT{
+        font-size: 2.4rem;
+    }
+}
+
+@media all and (min-width: 1200px) {
+    #smallDescriptionT{
+        font-size: 1.2vw;
+    }
+}
+
+@media (max-width: 1199px) and (min-width: 0px) {
+    #smallDescriptionT{
+        font-size: 1.45rem;
+    }
+}
+    
+@media all and (min-width: 1200px) {
+    #expListT{
+        font-size: 2vw;
+    }
+}
+
+@media (max-width: 1199px) and (min-width: 0px) {
+    #expListT{
+        font-size: 2.4rem;
+    }
+}
+    
+@media all and (min-width: 1200px) {
+    #expListT2{
+        font-size: 1.7vw;
+    }
+}
+
+@media (max-width: 1199px) and (min-width: 0px) {
+    #expListT2{
+        font-size: 2rem;
+    }
+}
+
+@media all and (min-width: 1200px) {
+    #expListT3{
+        font-size: 1vw;
+    }
+}
+
+@media (max-width: 1199px) and (min-width: 0px) {
+    #expListT3{
+        font-size: 1.2rem;
+    }
+}
+    
+@media all and (min-width: 1200px) {
+    #expListT4{
+        font-size: 1.4vw;
+    }
+}
+
+@media (max-width: 1199px) and (min-width: 0px) {
+    #expListT4{
+        font-size: 1.6rem;
+    }
+}
 
 </style>
 
-<body style="overflow-x:hidden;">
+<body>
 
     <a name="splash"></a>
     <div id="splash">
         <div id="main">
 
-            <img src="images/logo.png" class="img-responsive" style="width: 12vw; position: relative;">
+            <img src="images/logo.png" class="img-responsive" style="width: 12%; position: relative;">
 
             <h2 style="                                                      
-                width: 60vw;
+                width: 60%;
                 position: relative;
-                top: 3%;
+                top: 15px;
                 text-align: left;
                 background: rgba(0,0,0,0.8);
-                font-size: 8vw;
                 font-family: 'Roboto', sans-serif;
                 font-weight: 900;
                 padding-left:1%;
@@ -187,13 +295,12 @@
                 margin: 0;">Abhay Vaidya</h2>
 
             <div id="subtitle">
-                <img src="images/uoft.png" class="img-responsive" style="width: 2.5vw; display: inline; vertical-align: middle;">
-                <h3 style="  font-family: 'Roboto Mono', monospace;
+                <img src="images/uoft.png" class="img-responsive" style="width: 2%; display: inline; vertical-align: middle;">
+                <h3 id="subtitleT" style="  font-family: 'Roboto Mono', monospace;
                     font-weight: 300;
                     color: white;
                     display: inline;
-                    vertical-align: middle;
-                    font-size: 1.5vw;">Computer Science, <a href="http://utoronto.ca" target="_blank" style="color: white">University of Toronto</a> </h3>
+                    vertical-align: middle;">Computer Science, <a href="http://utoronto.ca" target="_blank" style="color: white">University of Toronto</a> </h3>
             </div>
 
         </div>
@@ -203,7 +310,7 @@
     <div id="intro">
         <div id="introMain">
 
-            <h2 style="font-size: 6vw;
+            <h2 id="sectionT" style="
                 font-family: 'Roboto', sans-serif;
                 font-weight: 900;
                 color: white;
@@ -213,26 +320,25 @@
                 margin: 0;">Who am I?</h2>
 
             <div id="profilePicture">
-                <img id="img-circle" src="images/profile.png" style="width: 22vw; display: block; margin: 25px auto 0">
+                <img id="img-circle" src="images/profile.png" style="width: 22%; display: block; margin: 25px auto 0">
             </div>
 
             <div id="bigDescription">
-                <h3 style="font-family: 'Roboto', sans-serif;
+                <h3 id="bigDescriptionT" style="font-family: 'Roboto', sans-serif;
                     background: linear-gradient( rgba(0, 0, 0, 0.0), rgba(0, 0, 0, 0.3));               
                     padding: 30px;
                     font-weight: 300;
                     padding-left: 15%;
                     padding-right: 15%;
                     color: white;
-                    width: 100vw;
+                    width: 100%;
                     line-height: 125%;
-                    text-align: center;
-                    font-size: 2vw;">I am a high school graduate entering post-secondary studies of Computer Science at the University of Toronto this September.</h3>
+                    text-align: center;">I am a high school graduate entering post-secondary studies of Computer Science at the University of Toronto this September.</h3>
             </div>
 
             <div id="smallDescription">
-                <h3 style="font-family: 'Roboto Mono', sans-serif;
-                    color: white; line-height: 125%; text-align: center; font-size: 1.2vw;">I have a passion for software development, problem-solving, and designing cool things.</h3>
+                <h3 id="smallDescriptionT" style="font-family: 'Roboto Mono', sans-serif;
+                    color: white; line-height: 125%; text-align: center;">I have a passion for software development, problem-solving, and designing cool things.</h3>
             </div>
 
         </div>
@@ -243,7 +349,7 @@
     <div id="experience">
 
         <div id="expTitle">
-            <h2 style="font-size: 6vw;
+            <h2 id="sectionT" style="
                     font-family: 'Roboto', sans-serif;
                     font-weight: 900;
                     color: white;
@@ -254,9 +360,9 @@
         </div>
 
         <div id="experienceColumns">
-            <div class="container-fluid">
+            <div class="container-fixed">
                 <div class="row">
-                    <div class="col-md-3">
+                    <div class="col-xs-3">
                         <div class="classWithPad">
                             <h1 style="font-family: 'Roboto Mono', monospace;               
                             font-weight: 600;
@@ -265,20 +371,19 @@
                             color: #FBC02D;
                             line-height: 125%;
                             text-align: center;
-                            font-size: 1.5vw;">Software Development</h1>
+                            font-size: 200%;">Software Development</h1>
 
                             <h3 style="font-family: 'Roboto';               
                                 color: grey;
                                 font-weight: 400;
                                 margin: 5%;
                                 text-align: center;
-                                font-size: 1vw;">I am experienced in working with various programming and markup languages, including:</h3>
+                                font-size: 125%;">I am experienced in working with various programming and markup languages, including:</h3>
 
-                            <ul style="font-family: 'Roboto Mono', monospace;               
+                            <ul id="expListT" style="font-family: 'Roboto Mono', monospace;               
                                 color: white;
                                 list-style-type: circle;
-                                margin: 10%;
-                                font-size: 2vw;">
+                                margin: 10%;">
                                 <li>Java</li>
                                 <li>C++</li>
                                 <li>Python</li>
@@ -289,7 +394,7 @@
                         </div>
                     </div>
 
-                    <div class="col-md-3">
+                    <div class="col-xs-3">
                         <div class="classWithPad">
                             <h1 style="font-family: 'Roboto Mono', monospace;               
                             font-weight: 600;
@@ -298,25 +403,23 @@
                             color: #FBC02D;
                             line-height: 125%;
                             text-align: center;
-                            font-size: 1.5vw;">Graphic + Motion Design</h1>
+                            font-size: 200%;">Graphic + Motion Design</h1>
 
                             <h3 style="font-family: 'Roboto';               
                                 color: grey;
                                 font-weight: 400;
                                 margin: 5%;
                                 text-align: center;
-                                font-size: 1vw;">I have a great deal of experience in a variety of 2D and 3D graphics applications that often go hand-in-hand with software development to design mockups for UI and UX. My experience extends through:</h3>
+                                font-size: 125%;">I have a great deal of experience in a variety of 2D and 3D graphics applications that often go hand-in-hand with software development to design mockups for UI and UX. My experience extends through:</h3>
 
-                            <ul style="font-family: 'Roboto';               
+                            <ul id="expListT2" style="font-family: 'Roboto';               
                                 color: white;
                                 list-style-type: circle;
-                                margin: 5%;
-                                font-size: 1.7vw;">
+                                margin: 5%;">
                                 <li>Adobe Creative Suite</li>
-                                <ul style="font-family: 'Roboto';               
+                                <ul id="smallDescriptionT" style="font-family: 'Roboto';               
                                 color: white;
-                                list-style-type: disc;
-                                font-size: 1.1vw;">
+                                list-style-type: disc;">
                                     <li>Photoshop</li>
                                     <li>Illustrator</li>
                                     <li>Premiere Pro</li>
@@ -324,12 +427,12 @@
                                     <li>InDesign</li>
                                     <li>Audition</li>
                                 </ul>
-                                <li>Maxon Cinema 4D + V-Ray</li>
+                                <li>Maxon Cinema 4D with V-Ray</li>
                             </ul>
                         </div>
                     </div>
 
-                    <div class="col-md-3">
+                    <div class="col-xs-3">
                         <div class="classWithPad">
                             <h1 style="font-family: 'Roboto Mono', monospace;               
                             font-weight: 600;
@@ -338,20 +441,19 @@
                             color: #FBC02D;
                             line-height: 125%;
                             text-align: center;
-                            font-size: 1.5vw;">Android Development</h1>
+                            font-size: 200%;">Android Development</h1>
 
                             <h3 style="font-family: 'Roboto';               
                                 color: grey;
                                 font-weight: 400;
                                 margin: 5%;
                                 text-align: center;
-                                font-size: 1vw;">I have designed and developed several Android apps and am familiar with:</h3>
+                                font-size: 125%;">I have designed and developed several Android apps and am familiar with:</h3>
 
-                            <ul style="font-family: 'Roboto';               
+                            <ul id="expListT2" style="font-family: 'Roboto';               
                                 color: white;
                                 list-style-type: circle;
-                                margin: 7%;
-                                font-size: 1.7vw;">
+                                margin: 7%;">
                                 <li>Android Studio + Eclipse</li>
                                 <li>Android SDK and APIs</li>
                                 <li>Layout design in XML</li>
@@ -360,7 +462,7 @@
                         </div>
                     </div>
 
-                    <div class="col-md-3">
+                    <div class="col-xs-3">
                         <div class="classWithPad">
                             <h1 style="font-family: 'Roboto Mono', monospace;               
                             font-weight: 600;
@@ -370,20 +472,19 @@
                             color: #FBC02D;
                             line-height: 125%;
                             text-align: center;
-                            font-size: 1.5vw;">Other Experience</h1>
+                            font-size: 200%;">Other Experience</h1>
 
                             <h3 style="font-family: 'Roboto';               
                                 color: grey;
                                 font-weight: 400;
                                 margin: 5%;
                                 text-align: center;
-                                font-size: 1vw;">I have participated in various extracurricular activities to sharpen both my technical and transferable skills. Here are some of my recent activies:</h3>
+                                font-size: 125%;">I have participated in various extracurricular activities to sharpen both my technical and transferable skills. Here are some of my recent activies:</h3>
 
-                            <ul style="font-family: 'Roboto';               
+                            <ul id="expListT3" style="font-family: 'Roboto';               
                                 color: white;
                                 list-style-type: circle;
-                                margin: 7%;
-                                font-size: 1vw;">
+                                margin: 7%;">
                                 <li style="margin-bottom: 2%;"><b>Editor-In-Chief</b>, Woburn Yearbook Committee</li>
                                 <li style="margin-bottom: 2%;"><b>Head of Web & Design</b>, Woburn Robotics</li>
                                 <li style="margin-bottom: 2%;"><b>Head of Media & Web (Team Zephyros)</b>, F1 in Schools Challenge</li>
@@ -402,18 +503,18 @@
             <a class="textButton" style="font-family: 'Karla', sans-serif;             
             color: #FBC02D;
             margin-right: 50px;
-            font-size: 3rem;
+            font-size: 2.8rem;
             text-decoration: none;
             position: relative;" href="#projects">> VIEW <b>MY PROJECTS</b></a>
 
             <a class="textButton" style="font-family: 'Karla', sans-serif;             
             color: #FBC02D;
-            font-size: 3rem;
+            font-size: 2.8rem;
             text-decoration: none;
             position: relative;" href="Abhay-Vaidya_Resume.pdf" target="_blank">> VIEW <b>MY RESUME</b>
                 <i class="fa fa-external-link" style="         
                 margin-left: 6px;
-                font-size: 2.5rem;"></i></a>
+                font-size: 2.4rem;"></i></a>
         </div>
 
     </div>
@@ -421,8 +522,7 @@
     <a name="projects"></a>
     <div id="projects">
         <div id="expTitle">
-            <h2 style="font-size: 6vw;
-                    font-family: 'Roboto', sans-serif;
+            <h2 id="sectionT" style="font-family: 'Roboto', sans-serif;
                     font-weight: 900;
                     color: white;
                     left: 50%;
@@ -433,7 +533,7 @@
 
     </div>
 
-    <div style="position:fixed; top:2%; right:3%;">
+    <div style="position:fixed; top:2%; right:3%; margin-left: 3%;">
 
         <a class="navElement" href="#splash" style="font-family: 'Karla', sans-serif;             
             color: white;
