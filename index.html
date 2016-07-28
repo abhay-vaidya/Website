@@ -26,30 +26,6 @@
 
     </script>
 
-    <!-- Navigation bar hover -->
-    <script>
-        $(document).ready(function() {
-            $('.navElement').hover(function() {
-                $(this).css("color", "#FBC02D");
-            }, function() {
-                $(this).css("color", "white");
-            });
-        });
-
-    </script>
-
-    <!-- Text button hover -->
-    <script>
-        $(document).ready(function() {
-            $('.textButton').hover(function() {
-                $(this).css("color", "white");
-            }, function() {
-                $(this).css("color", "#FBC02D");
-            });
-        });
-
-    </script>
-
     <script src="https://use.fontawesome.com/1b28b27a24.js"></script>
     <link rel="shortcut icon" href="favicon.ico" type="image/x-icon" />
     <link href="https://fonts.googleapis.com/css?family=Karla|Roboto+Mono" rel="stylesheet">
@@ -58,6 +34,42 @@
 </head>
 
 <style>
+    .navElement,
+    .navElement:link,
+    .navElement:visited,
+    .navElement:hover,
+    .navElement:focus,
+    .navElement:active {
+        font-family: 'Karla', sans-serif;
+        color: white;
+        text-decoration: none;
+        margin-right: 20px;
+        font-size: 1.4rem;
+        transition: all 0.1s ease-in-out;
+    }
+    
+    .navElement:hover {
+        color: #FBC02D;
+    }
+    
+    .textButton,
+    .textButton:link,
+    .textButton:visited,
+    .textButton:hover,
+    .textButton:focus,
+    .textButton:active {
+        font-family: 'Karla', sans-serif;
+        color: #FBC02D;
+        font-size: 2.8rem;
+        text-decoration: none;
+        position: relative;
+        transition: all 0.25s ease-in-out;
+    }
+    
+    .textButton:hover {
+        color: white;
+    }
+    
     #splash {
         background: linear-gradient( rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.6)), url(http://thevarsity.ca/wp-content/uploads/2013/08/student-centre-1.jpg);
         background-size: cover;
@@ -114,7 +126,7 @@
     #img-circle {
         border-radius: 50%;
         border: 10px solid rgba(0, 0, 0, 0.1);
-        transition: all 0.1s ease-in-out;
+        transition: all 0.25s ease-in-out;
     }
     
     #img-circle:hover {
@@ -155,7 +167,7 @@
         height: 61%;
         border-radius: 2%;
         border: 2px solid white;
-        transition: all 0.1s ease-in-out;
+        transition: all 0.2s ease-in-out;
     }
     
     .classWithPad:hover {
@@ -550,18 +562,9 @@
                 -moz-user-select: none;
                 -ms-user-select: none;
                 user-select: none; ">
-                <a class="textButton" style="font-family: 'Karla', sans-serif;             
-            color: #FBC02D;
-            margin-right: 50px;
-            font-size: 2.8rem;
-            text-decoration: none;
-            position: relative;" href="#projects">> VIEW <b>MY PROJECTS</b></a>
+                <a class="textButton" style="margin-right: 50px; text-decoration: none;" href="#projects">> VIEW <b>MY PROJECTS</b></a>
 
-                <a class="textButton" style="font-family: 'Karla', sans-serif;             
-            color: #FBC02D;
-            font-size: 2.8rem;
-            text-decoration: none;
-            position: relative;" href="Abhay-Vaidya_Resume.pdf" target="_blank">> VIEW <b>MY RESUME</b>
+                <a class="textButton" style="text-decoration: none;" href="Abhay-Vaidya_Resume.pdf" target="_blank">> VIEW <b>MY RESUME</b>
                 <i class="fa fa-external-link" style="         
                 margin-left: 6px;
                 font-size: 2.4rem;"></i></a>
@@ -605,37 +608,17 @@
     <div style="position:fixed; top:2%; right:3%; margin-left: 3%; -webkit-user-select: none;
                 -moz-user-select: none;
                 -ms-user-select: none;
-                user-select: none; ">
+                user-select: none;">
 
-        <a class="navElement" href="#splash" style="font-family: 'Karla', sans-serif;             
-            color: white;
-            text-decoration: none;
-            margin-right: 20px;
-            font-size: 1.4rem;">HOME</a>
+        <a class="navElement" href="#splash" style="text-decoration: none;">HOME</a>
 
-        <a class="navElement" href="#introduction" style="font-family: 'Karla', sans-serif;             
-            color: white;
-            margin-right: 20px;
-            text-decoration: none;
-            font-size: 1.4rem;">INTRODUCTION</a>
+        <a class="navElement" href="#introduction" style="text-decoration: none;">INTRODUCTION</a>
 
-        <a class="navElement" href="#experience" style="font-family: 'Karla', sans-serif;             
-            color: white;
-            margin-right: 20px;
-            text-decoration: none;
-            font-size: 1.4rem;">EXPERIENCE</a>
+        <a class="navElement" href="#experience" style="text-decoration: none;">EXPERIENCE</a>
 
-        <a class="navElement" href="#projects" style="font-family: 'Karla', sans-serif;             
-            color: white;
-            margin-right: 20px;
-            text-decoration: none;
-            font-size: 1.4rem;">PROJECTS</a>
+        <a class="navElement" href="#projects" style="text-decoration: none;">PROJECTS</a>
 
-        <a class="navElement" href="Abhay-Vaidya_Resume.pdf" target="_blank" style="font-family: 'Karla', sans-serif;             
-            color: white;
-            margin-right: 20px;
-            text-decoration: none;
-            font-size: 1.4rem;">
+        <a class="navElement" href="Abhay-Vaidya_Resume.pdf" style="text-decoration: none;" target="_blank">
             MY RESUME<i class="fa fa-external-link" style="         
                 margin-left: 6px;
                 font-size: 1.2rem;"></i></a>
