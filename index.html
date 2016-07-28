@@ -62,6 +62,7 @@
         background: linear-gradient( rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.6)), url(http://thevarsity.ca/wp-content/uploads/2013/08/student-centre-1.jpg);
         background-size: cover;
         min-width: 1200px;
+        min-height: 900px;
         width: 100%;
         height: 100vh;
         position: relative;
@@ -83,6 +84,7 @@
         background-size: cover;
         width: 100%;
         min-width: 1200px;
+        min-height: 900px;
         height: 100vh;
         position: relative;
         float: left;
@@ -118,6 +120,7 @@
         background: linear-gradient( rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.9)), url(images/photoshop.jpg);
         background-size: cover;
         min-width: 1200px;
+        min-height: 900px;
         width: 100%;
         height: 100vh;
         position: relative;
@@ -144,7 +147,7 @@
     
     .classWithPad {
         padding: 10px;
-        height: 61vh;
+        height: 61%;
         border-radius: 2%;
         border: 2px solid white;
         transition: all 0.1s ease-in-out;
@@ -159,6 +162,7 @@
         background-size: cover;
         width: 100%;
         min-width: 1200px;
+        min-height: 900px;
         height: 100vh;
         float: left;
         position: relative;
@@ -528,20 +532,26 @@
                     </div>
                 </div>
             </div>
-        </div>
 
-        <div style="position: absolute; left: 50%; transform: translateX(-50%);-webkit-user-select: none;
+            <div style="
+                position: relative;
+                width: 50%;
+                white-space: nowrap;
+                overflow: hidden;
+                text-align: center;
+                margin: 30px auto 0 auto;
+                -webkit-user-select: none;
                 -moz-user-select: none;
                 -ms-user-select: none;
                 user-select: none; ">
-            <a class="textButton" style="font-family: 'Karla', sans-serif;             
+                <a class="textButton" style="font-family: 'Karla', sans-serif;             
             color: #FBC02D;
             margin-right: 50px;
             font-size: 2.8rem;
             text-decoration: none;
             position: relative;" href="#projects">> VIEW <b>MY PROJECTS</b></a>
 
-            <a class="textButton" style="font-family: 'Karla', sans-serif;             
+                <a class="textButton" style="font-family: 'Karla', sans-serif;             
             color: #FBC02D;
             font-size: 2.8rem;
             text-decoration: none;
@@ -549,7 +559,10 @@
                 <i class="fa fa-external-link" style="         
                 margin-left: 6px;
                 font-size: 2.4rem;"></i></a>
+            </div>
+
         </div>
+
 
     </div>
 
