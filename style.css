@@ -1,0 +1,278 @@
+.navElement,
+.navElement:link,
+.navElement:visited,
+.navElement:hover,
+.navElement:focus,
+.navElement:active {
+    font-family: 'Karla', sans-serif;
+    color: white;
+    text-decoration: none;
+    margin-right: 20px;
+    font-size: 1.4rem;
+    transition: all 0.1s ease-in-out;
+}
+.navElement:hover {
+    color: #FBC02D;
+}
+.textButton,
+.textButton:link,
+.textButton:visited,
+.textButton:hover,
+.textButton:focus,
+.textButton:active {
+    font-family: 'Karla', sans-serif;
+    color: #FBC02D;
+    font-size: 2.8rem;
+    text-decoration: none;
+    position: relative;
+    transition: all 0.25s ease-in-out;
+}
+.textButton:hover {
+    color: white;
+}
+#splash {
+    background: linear-gradient( rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.6)), url(http://thevarsity.ca/wp-content/uploads/2013/08/student-centre-1.jpg);
+    background-size: cover;
+    min-width: 1200px;
+    min-height: 900px;
+    width: 100%;
+    height: 100vh;
+    position: relative;
+}
+#main {
+    position: relative;
+    top: 36%;
+    margin-left: 3%;
+}
+#abhayName {
+    width: 60%;
+    position: relative;
+    top: 15px;
+    text-align: left;
+    background: rgba(0, 0, 0, 0.8);
+    font-family: 'Roboto', sans-serif;
+    font-weight: 900;
+    padding-left: 1%;
+    color: white;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    text-transform: uppercase;
+    margin: 0;
+}
+#subtitle {
+    position: relative;
+    top: 25px;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+#intro {
+    background: linear-gradient( rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.2)), url(http://i.imgur.com/WxbsBhB.jpg);
+    background-size: cover;
+    width: 100%;
+    min-width: 1200px;
+    min-height: 900px;
+    height: 100vh;
+    position: relative;
+    float: left;
+}
+#introMain {
+    position: relative;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-55%);
+    align-content: center;
+    left: 0;
+}
+#profilePicture {
+    position: relative;
+}
+#bigDescription {
+    position: relative;
+}
+#smallDescription {
+    position: relative;
+}
+#img-circle {
+    border-radius: 50%;
+    border: 10px solid rgba(0, 0, 0, 0.1);
+    box-sizing: border-box;
+    transition: all 0.2s ease-in-out;
+}
+#img-circle:hover {
+    border: 14px solid rgba(0, 0, 0, 0.2);
+}
+#experience {
+    background: linear-gradient( rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.9)), url(images/photoshop.jpg);
+    background-size: cover;
+    min-width: 1200px;
+    min-height: 900px;
+    width: 100%;
+    height: 100vh;
+    position: relative;
+    float: left;
+}
+#expTitle {
+    position: relative;
+    top: 5%;
+    left: 0;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+#experienceColumns {
+    position: relative;
+    top: 10%;
+    width: 98%;
+    left: 1%;
+    height: 75vh;
+}
+.classWithPad {
+    padding: 10px;
+    height: 61%;
+    border-radius: 2%;
+    border: 2px solid white;
+    transition: all 0.2s ease-in-out;
+}
+.classWithPad:hover {
+    background: rgba(0, 0, 0, 0.5);
+    border: 2px solid #FBC02D;
+}
+#projects {
+    background: linear-gradient( rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.8)), url(images/picasso.png);
+    background-size: cover;
+    width: 100%;
+    min-width: 1200px;
+    min-height: 900px;
+    height: 100vh;
+    float: left;
+    position: relative;
+}
+#projectsTitle {
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    position: absolute;
+    top: 5%;
+    left: 0;
+}
+.projLinks {
+    position: relative;
+    text-align: center;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    left: 50%;
+    font-size: 6rem;
+    transform: translate(-50%, 200px);
+}
+#linkedin {
+    transition: all 0.1s ease-in-out;
+    color: white;
+}
+#linkedin:hover {
+    color: #FBC02D;
+}
+#github {
+    transition: all 0.1s ease-in-out;
+    color: white;
+}
+#github:hover {
+    color: #FBC02D;
+}
+@media all and (min-width: 1200px) {
+    #abhayName {
+        font-size: 8vw;
+    }
+}
+@media (max-width: 1199px) and (min-width: 0px) {
+    #abhayName {
+        font-size: 9.65rem;
+    }
+}
+@media all and (min-width: 1200px) {
+    #subtitleT {
+        font-size: 1.5vw;
+    }
+}
+@media (max-width: 1199px) and (min-width: 0px) {
+    #subtitleT {
+        font-size: 1.8rem;
+    }
+}
+@media all and (min-width: 1200px) {
+    #sectionT {
+        font-size: 6vw;
+    }
+}
+@media (max-width: 1199px) and (min-width: 0px) {
+    #sectionT {
+        font-size: 7.1rem;
+    }
+}
+@media all and (min-width: 1200px) {
+    #bigDescriptionT {
+        font-size: 2vw;
+    }
+}
+@media (max-width: 1199px) and (min-width: 0px) {
+    #bigDescriptionT {
+        font-size: 2.4rem;
+    }
+}
+@media all and (min-width: 1200px) {
+    #smallDescriptionT {
+        font-size: 1.2vw;
+    }
+}
+@media (max-width: 1199px) and (min-width: 0px) {
+    #smallDescriptionT {
+        font-size: 1.45rem;
+    }
+}
+@media all and (min-width: 1200px) {
+    #expListT {
+        font-size: 2vw;
+    }
+}
+@media (max-width: 1199px) and (min-width: 0px) {
+    #expListT {
+        font-size: 2.4rem;
+    }
+}
+@media all and (min-width: 1200px) {
+    #expListT2 {
+        font-size: 1.6vw;
+    }
+}
+@media (max-width: 1199px) and (min-width: 0px) {
+    #expListT2 {
+        font-size: 1.9rem;
+    }
+}
+@media all and (min-width: 1200px) {
+    #expListT3 {
+        font-size: 1vw;
+    }
+}
+@media (max-width: 1199px) and (min-width: 0px) {
+    #expListT3 {
+        font-size: 1.2rem;
+    }
+}
+@media all and (min-width: 1200px) {
+    #expListT4 {
+        font-size: 1.4vw;
+    }
+}
+@media (max-width: 1199px) and (min-width: 0px) {
+    #expListT4 {
+        font-size: 1.6rem;
+    }
+}
