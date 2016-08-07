@@ -70,7 +70,7 @@
     user-select: none;
 }
 #intro {
-    background: linear-gradient( rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.2)), url(http://i.imgur.com/WxbsBhB.jpg);
+    background: linear-gradient( rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.25)), url(http://i.imgur.com/WxbsBhB.jpg);
     background-size: cover;
     width: 100%;
     min-width: 1200px;
@@ -80,18 +80,25 @@
     float: left;
 }
 #introMain {
-    position: relative;
     position: absolute;
-    top: 50%;
+    width: 50%;
+    right: 0;
+    top: 55%;
     transform: translateY(-55%);
     align-content: center;
-    left: 0;
 }
-#profilePicture {
-    position: relative;
+#profilePic {
+    position: absolute;
+    width: 50%;
+    height: 100%;
+    background: url(images/vector.png);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
 }
 #bigDescription {
     position: relative;
+    transition: all 0.5s ease-in-out;
 }
 #smallDescription {
     position: relative;
