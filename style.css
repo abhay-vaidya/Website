@@ -59,6 +59,8 @@
     -ms-user-select: none;
     user-select: none;
     text-transform: uppercase;
+    overflow: hidden;
+    white-space: nowrap;
     margin: 0;
 }
 #subtitle {
