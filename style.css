@@ -83,7 +83,7 @@
 }
 #introMain {
     position: absolute;
-    width: 50%;
+    width: 60%;
     right: 0;
     top: 55%;
     transform: translateY(-55%);
@@ -91,7 +91,7 @@
 }
 #profilePic {
     position: absolute;
-    width: 50%;
+    width: 40%;
     height: 100%;
     background: url(images/vector.png);
     background-size: cover;
