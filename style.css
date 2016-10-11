@@ -45,14 +45,14 @@
     margin-left: 3%;
 }
 #abhayName {
-    width: 60%;
+    width: auto;
     position: relative;
     top: 15px;
     text-align: left;
     background: rgba(0, 0, 0, 0.8);
-    font-family: 'Roboto', sans-serif;
-    font-weight: 900;
-    padding-left: 1%;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 700;
+    padding: 1%;
     color: white;
     -webkit-user-select: none;
     -moz-user-select: none;
