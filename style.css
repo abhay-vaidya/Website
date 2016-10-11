@@ -44,21 +44,24 @@
     top: 36%;
     margin-left: 3%;
 }
-#abhayName {
-    width: auto;
+.headingName {
     position: relative;
     top: 15px;
     text-align: left;
+    background: rgba(0, 0, 0, 0.0);
+    font-family: 'Roboto', sans-serif;
+    margin: 0;
+}
+.headingName span {
+    font-family: 'Roboto', sans-serif;
+    font-weight: 900;
+    padding: 0 3% 0.25% 1%;
     background: rgba(0, 0, 0, 0.8);
-    font-family: 'Montserrat', sans-serif;
-    font-weight: 700;
-    padding: 1%;
     color: white;
     -webkit-user-select: none;
     -moz-user-select: none;
     -ms-user-select: none;
     user-select: none;
-    text-transform: uppercase;
     overflow: hidden;
     white-space: nowrap;
     margin: 0;
@@ -211,7 +214,7 @@
     color: #FBC02D;
 }
 @media all and (min-width: 1200px) {
-    #abhayName {
+    .headingName {
         font-size: 8vw;
     }
     #subtitleT {
@@ -240,7 +243,7 @@
     }
 }
 @media (max-width: 1199px) and (min-width: 0px) {
-    #abhayName {
+    .headingName {
         font-size: 9.65rem;
     }
     #subtitleT {
