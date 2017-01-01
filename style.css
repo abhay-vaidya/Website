@@ -259,6 +259,12 @@ html * {
     list-style-type: circle;
 }
 
+#nestedList {
+    text-align: left;
+    list-style-type: disc;
+    font-size: 80%;
+}
+
 #expButtons {
     position: relative;
     width: 50%;
