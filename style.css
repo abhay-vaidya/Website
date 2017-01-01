@@ -1,3 +1,27 @@
+html * {
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+
+#navBar {
+    position: fixed;
+    top: 2%;
+    right: 3%;
+    margin-left: 3%;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+
+#bottomLinks {
+    position: fixed;
+    bottom: 3%;
+    left: 3%;
+}
+
 .navElement,
 .navElement:link,
 .navElement:visited,
@@ -14,6 +38,28 @@
 
 .navElement:hover {
     color: #FBC02D;
+}
+
+.topButton,
+.topButton:link,
+.topButton:visited,
+.topButton:focus,
+.topButton:active {
+    font-family: 'Karla';
+    sans-serif;
+    color: rgba(255, 255, 255, 0.5);
+    margin-right: 20px;
+    text-decoration: none;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    font-size: 1.7rem;
+    transition: all 0.1s ease-in-out;
+}
+
+.topButton:hover{
+   color: white; 
 }
 
 .textButton,
@@ -50,6 +96,29 @@
     margin-left: 3%;
 }
 
+#myLogo {
+    width: 12%;
+    position: relative;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+
+#uoftLogo {
+    width: 2%;
+    display: inline;
+    vertical-align: middle;
+}
+
+.subtitleText {
+    font-family: 'Roboto Mono', monospace;
+    font-weight: 300;
+    color: white;
+    display: inline;
+    vertical-align: middle;
+}
+
 .headingName {
     position: relative;
     top: 15px;
@@ -78,6 +147,39 @@
     -moz-user-select: none;
     -ms-user-select: none;
     user-select: none;
+}
+
+#bigDescriptionT {
+    font-family: 'Roboto', sans-serif;
+    background: rgba(0, 0, 0, 0.5);
+    padding: 30px;
+    font-weight: 300;
+    padding-left: 10%;
+    padding-right: 10%;
+    color: white;
+    right: 0px;
+    width: 100%;
+    line-height: normal;
+    text-align: center;
+}
+
+#smallDescriptionT {
+    font-family: 'Roboto Mono', sans-serif;
+    color: white;
+    line-height: normal;
+    text-align: center;
+    padding-left: 10%;
+    padding-right: 10%;
+}
+
+#sectionT {
+    font-family: 'Roboto', sans-serif;
+    font-weight: 900;
+    color: white;
+    left: 50%;
+    text-align: center;
+    text-transform: uppercase;
+    margin: 0;
 }
 
 #intro {
@@ -151,6 +253,26 @@
     user-select: none;
 }
 
+.expCategory {
+    font-family: 'Roboto Mono', monospace;
+    font-weight: 600;
+    padding-left: 15%;
+    padding-right: 15%;
+    color: #FBC02D;
+    line-height: 125%;
+    text-align: center;
+    font-size: 200%;
+}
+
+.expDescription {
+    font-family: 'Roboto';
+    color: grey;
+    font-weight: 400;
+    margin: 5%;
+    text-align: center;
+    font-size: 125%;
+}
+
 #experienceColumns {
     position: relative;
     top: 10%;
@@ -159,7 +281,13 @@
     height: 75vh;
 }
 
-.classWithPad {
+.expList {
+    font-family: 'Roboto';
+    color: white;
+    list-style-type: circle;
+}
+
+.expBox {
     padding: 10px;
     height: 61%;
     border-radius: 8px;
@@ -167,9 +295,18 @@
     transition: all 0.2s ease-in-out;
 }
 
-.classWithPad:hover {
+.expBox:hover {
     background: rgba(0, 0, 0, 0.5);
     border: 2px solid #FBC02D;
+}
+
+#expButtons {
+    position: relative;
+    width: 50%;
+    white-space: nowrap;
+    overflow: hidden;
+    text-align: center;
+    margin: 30px auto 0 auto;
 }
 
 #projects {
@@ -221,6 +358,14 @@
     font-size: 5rem;
 }
 
+.projectItem {
+    padding: 10px;
+    height: 61%;
+    border-radius: 8px;
+    border: 2px solid white;
+    transition: all 0.2s ease-in-out;
+}
+
 #linkedin {
     transition: all 0.15s ease-in-out;
     color: white;
@@ -255,17 +400,17 @@
     #smallDescriptionT {
         font-size: 1.2vw;
     }
-    #expListT {
+    #softwareDev {
         font-size: 2vw;
     }
-    #expListT2 {
+    #graphicDesign {
         font-size: 1.6vw;
     }
-    #expListT3 {
-        font-size: 1vw;
+    #androidDev {
+        font-size: 1.6vw;
     }
-    #expListT4 {
-        font-size: 1.4vw;
+    #otherExp {
+        font-size: 1vw;
     }
 }
 
@@ -285,16 +430,16 @@
     #smallDescriptionT {
         font-size: 1.45rem;
     }
-    #expListT {
+    #softwareDev {
         font-size: 2.4rem;
     }
-    #expListT2 {
+    #graphicDesign {
         font-size: 1.9rem;
     }
-    #expListT3 {
-        font-size: 1.2rem;
+    #androidDev {
+        font-size: 1.9rem;
     }
-    #expListT4 {
-        font-size: 1.6rem;
+    #otherExp {
+        font-size: 1.2rem;
     }
 }
