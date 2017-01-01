@@ -10,16 +10,6 @@ html * {
     top: 2%;
     right: 3%;
     margin-left: 3%;
-    -webkit-user-select: none;
-    -moz-user-select: none;
-    -ms-user-select: none;
-    user-select: none;
-}
-
-#bottomLinks {
-    position: fixed;
-    bottom: 3%;
-    left: 3%;
 }
 
 .navElement,
@@ -40,6 +30,21 @@ html * {
     color: #FBC02D;
 }
 
+#bottomLinks {
+    position: fixed;
+    bottom: 3%;
+    left: 3%;
+}
+
+#linkElement {
+    color: white;
+    transition: all 0.1s ease-in-out;
+}
+
+#linkElement:hover {
+    color: #FBC02D;
+}
+
 .topButton,
 .topButton:link,
 .topButton:visited,
@@ -50,16 +55,12 @@ html * {
     color: rgba(255, 255, 255, 0.5);
     margin-right: 20px;
     text-decoration: none;
-    -webkit-user-select: none;
-    -moz-user-select: none;
-    -ms-user-select: none;
-    user-select: none;
     font-size: 1.7rem;
     transition: all 0.1s ease-in-out;
 }
 
-.topButton:hover{
-   color: white; 
+.topButton:hover {
+    color: white;
 }
 
 .textButton,
@@ -78,6 +79,16 @@ html * {
 
 .textButton:hover {
     color: white;
+}
+
+#sectionT {
+    font-family: 'Roboto', sans-serif;
+    font-weight: 900;
+    color: white;
+    left: 50%;
+    text-align: center;
+    text-transform: uppercase;
+    margin: 0;
 }
 
 #splash {
@@ -99,10 +110,23 @@ html * {
 #myLogo {
     width: 12%;
     position: relative;
-    -webkit-user-select: none;
-    -moz-user-select: none;
-    -ms-user-select: none;
-    user-select: none;
+}
+
+.headingName {
+    position: relative;
+    top: 15px;
+    margin: 0;
+}
+
+.headingName span {
+    font-family: 'Roboto', sans-serif;
+    font-weight: 900;
+    padding: 0 3% 0.25% 1%;
+    background: rgba(0, 0, 0, 0.8);
+    color: white;
+    overflow: hidden;
+    white-space: nowrap;
+    margin: 0;
 }
 
 #uoftLogo {
@@ -119,34 +143,39 @@ html * {
     vertical-align: middle;
 }
 
-.headingName {
-    position: relative;
-    top: 15px;
-    margin: 0;
-}
-
-.headingName span {
-    font-family: 'Roboto', sans-serif;
-    font-weight: 900;
-    padding: 0 3% 0.25% 1%;
-    background: rgba(0, 0, 0, 0.8);
-    color: white;
-    -webkit-user-select: none;
-    -moz-user-select: none;
-    -ms-user-select: none;
-    user-select: none;
-    overflow: hidden;
-    white-space: nowrap;
-    margin: 0;
-}
-
 #subtitle {
     position: relative;
     top: 25px;
-    -webkit-user-select: none;
-    -moz-user-select: none;
-    -ms-user-select: none;
-    user-select: none;
+}
+
+#intro {
+    background: linear-gradient( rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.25)), url(http://i.imgur.com/WxbsBhB.jpg);
+    background-size: cover;
+    width: 100%;
+    min-width: 1200px;
+    min-height: 900px;
+    height: 100vh;
+    position: relative;
+    float: left;
+}
+
+#profilePic {
+    position: absolute;
+    width: 40%;
+    height: 100%;
+    background: url(images/vector.png);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+#introMain {
+    position: absolute;
+    width: 60%;
+    right: 0;
+    top: 55%;
+    transform: translateY(-55%);
+    align-content: center;
 }
 
 #bigDescriptionT {
@@ -172,66 +201,6 @@ html * {
     padding-right: 10%;
 }
 
-#sectionT {
-    font-family: 'Roboto', sans-serif;
-    font-weight: 900;
-    color: white;
-    left: 50%;
-    text-align: center;
-    text-transform: uppercase;
-    margin: 0;
-}
-
-#intro {
-    background: linear-gradient( rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.25)), url(http://i.imgur.com/WxbsBhB.jpg);
-    background-size: cover;
-    width: 100%;
-    min-width: 1200px;
-    min-height: 900px;
-    height: 100vh;
-    position: relative;
-    float: left;
-}
-
-#introMain {
-    position: absolute;
-    width: 60%;
-    right: 0;
-    top: 55%;
-    transform: translateY(-55%);
-    align-content: center;
-}
-
-#profilePic {
-    position: absolute;
-    width: 40%;
-    height: 100%;
-    background: url(images/vector.png);
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
-}
-
-#bigDescription {
-    position: relative;
-    transition: all 0.5s ease-in-out;
-}
-
-#smallDescription {
-    position: relative;
-}
-
-#img-circle {
-    border-radius: 50%;
-    border: 10px solid rgba(0, 0, 0, 0.1);
-    box-sizing: border-box;
-    transition: all 0.2s ease-in-out;
-}
-
-#img-circle:hover {
-    border: 14px solid rgba(0, 0, 0, 0.2);
-}
-
 #experience {
     background: linear-gradient( rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.9)), url(images/photoshop.jpg);
     background-size: cover;
@@ -243,14 +212,25 @@ html * {
     float: left;
 }
 
-#expTitle {
+#experienceColumns {
     position: relative;
-    top: 5%;
-    left: 0;
-    -webkit-user-select: none;
-    -moz-user-select: none;
-    -ms-user-select: none;
-    user-select: none;
+    top: 10%;
+    width: 98%;
+    left: 1%;
+    height: 75vh;
+}
+
+.expBox {
+    padding: 10px;
+    height: 61%;
+    border-radius: 8px;
+    border: 2px solid white;
+    transition: all 0.2s ease-in-out;
+}
+
+.expBox:hover {
+    background: rgba(0, 0, 0, 0.5);
+    border: 2px solid #FBC02D;
 }
 
 .expCategory {
@@ -273,31 +253,10 @@ html * {
     font-size: 125%;
 }
 
-#experienceColumns {
-    position: relative;
-    top: 10%;
-    width: 98%;
-    left: 1%;
-    height: 75vh;
-}
-
 .expList {
     font-family: 'Roboto';
     color: white;
     list-style-type: circle;
-}
-
-.expBox {
-    padding: 10px;
-    height: 61%;
-    border-radius: 8px;
-    border: 2px solid white;
-    transition: all 0.2s ease-in-out;
-}
-
-.expBox:hover {
-    background: rgba(0, 0, 0, 0.5);
-    border: 2px solid #FBC02D;
 }
 
 #expButtons {
@@ -320,75 +279,11 @@ html * {
     position: relative;
 }
 
-#projectsTitle {
-    position: relative;
-    top: 5%;
-    left: 0;
-    -webkit-user-select: none;
-    -moz-user-select: none;
-    -ms-user-select: none;
-    user-select: none;
-}
-
-.projBody {
-    font-family: 'Roboto', sans-serif;
-    color: white;
-    text-align: center;
-    font-weight: 300;
-    font-size: 5rem;
-    width: 70%;
-    position: relative;
-    -webkit-user-select: none;
-    -moz-user-select: none;
-    -ms-user-select: none;
-    user-select: none;
-    top: 25%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-}
-
-.projLinks {
-    position: relative;
-    top: 20%;
-    text-align: center;
-    -webkit-user-select: none;
-    -moz-user-select: none;
-    -ms-user-select: none;
-    user-select: none;
-    font-size: 5rem;
-}
-
-.projectItem {
-    padding: 10px;
-    height: 61%;
-    border-radius: 8px;
-    border: 2px solid white;
-    transition: all 0.2s ease-in-out;
-}
-
-#linkedin {
-    transition: all 0.15s ease-in-out;
-    color: white;
-}
-
-#linkedin:hover {
-    color: #FBC02D;
-}
-
-#github {
-    transition: all 0.15s ease-in-out;
-    color: white;
-}
-
-#github:hover {
-    color: #FBC02D;
-}
-
 @media all and (min-width: 1200px) {
     .headingName {
         font-size: 8vw;
     }
-    #subtitleT {
+    .subtitleText {
         font-size: 1.5vw;
     }
     #sectionT {
@@ -418,7 +313,7 @@ html * {
     .headingName {
         font-size: 9.65rem;
     }
-    #subtitleT {
+    .subtitleText {
         font-size: 1.8rem;
     }
     #sectionT {
