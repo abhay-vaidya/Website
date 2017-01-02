@@ -285,6 +285,61 @@ html * {
     position: relative;
 }
 
+.projBody {
+    font-family: 'Roboto', sans-serif;
+    color: white;
+    text-align: center;
+    font-weight: 300;
+    font-size: 5rem;
+    width: 70%;
+    position: relative;
+    top: 25%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.projLinks {
+    position: relative;
+    top: 20%;
+    text-align: center;
+    font-size: 5rem;
+}
+
+#comingSoon {
+    font-family: 'Roboto', sans-serif;
+    color: white;
+    font-weight: 300;
+    width: 30%;
+    background: rgba(0, 0, 0, 0.8);
+    white-space: nowrap;
+    font-size: 5rem;
+    padding: 10px;
+    text-transform: uppercase;
+    position: relative;
+    text-align: center;
+    min-width: 400px;
+    left: 50%;
+    transform: translate(-50%, 40px);
+}
+
+#linkedin {
+    transition: all 0.15s ease-in-out;
+    color: white;
+}
+
+#linkedin:hover {
+    color: #FBC02D;
+}
+
+#github {
+    transition: all 0.15s ease-in-out;
+    color: white;
+}
+
+#github:hover {
+    color: #FBC02D;
+}
+
 @media all and (min-width: 1200px) {
     .headingName {
         font-size: 8vw;
