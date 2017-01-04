@@ -293,9 +293,30 @@ html * {
     font-size: 5rem;
     width: 70%;
     position: relative;
-    top: 25%;
+    top: 10%;
     left: 50%;
     transform: translate(-50%, -50%);
+}
+
+.projLogo {
+    margin: 10% 0 0 0;
+    max-height: 75px;
+}
+
+.projName {
+    font-family: 'Roboto', sans-serif;
+    font-weight: 600;
+}
+
+.projDescription {
+    font-family: 'Roboto', sans-serif;
+    font-size: 1.5rem;
+}
+
+.projButton {
+    margin-top: 8%;
+    text-align: center;
+    font-family: 'Roboto', sans-serif;
 }
 
 .projLinks {
@@ -303,23 +324,6 @@ html * {
     top: 20%;
     text-align: center;
     font-size: 5rem;
-}
-
-#comingSoon {
-    font-family: 'Roboto', sans-serif;
-    color: white;
-    font-weight: 300;
-    width: 30%;
-    background: rgba(0, 0, 0, 0.8);
-    white-space: nowrap;
-    font-size: 5rem;
-    padding: 10px;
-    text-transform: uppercase;
-    position: relative;
-    text-align: center;
-    min-width: 400px;
-    left: 50%;
-    transform: translate(-50%, 40px);
 }
 
 #linkedin {
