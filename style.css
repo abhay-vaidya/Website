@@ -1,8 +1,13 @@
-html * {
-    -webkit-user-select: none;
-    -moz-user-select: none;
-    -ms-user-select: none;
-    user-select: none;
+html * {}
+
+::selection {
+    background: #FBC02D;
+    /* WebKit/Blink Browsers */
+}
+
+::-moz-selection {
+    background: #FBC02D;
+    /* Gecko Browsers */
 }
 
 #navBar {
@@ -10,6 +15,10 @@ html * {
     top: 2%;
     right: 3%;
     margin-left: 3%;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
 }
 
 .navElement,
@@ -34,6 +43,10 @@ html * {
     position: fixed;
     bottom: 3%;
     left: 3%;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
 }
 
 #linkElement {
@@ -50,13 +63,16 @@ html * {
 .topButton:visited,
 .topButton:focus,
 .topButton:active {
-    font-family: 'Karla';
-    sans-serif;
+    font-family: 'Karla', sans-serif;
     color: rgba(255, 255, 255, 0.5);
     margin-right: 20px;
     text-decoration: none;
     font-size: 1.7rem;
     transition: all 0.1s ease-in-out;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
 }
 
 .topButton:hover {
@@ -89,6 +105,10 @@ html * {
     text-align: center;
     text-transform: uppercase;
     margin: 0;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
 }
 
 #splash {
@@ -246,7 +266,7 @@ html * {
 
 .expDescription {
     font-family: 'Roboto';
-    color: grey;
+    color: rgba(255, 255, 255, 0.5);
     font-weight: 400;
     margin: 5%;
     text-align: center;
