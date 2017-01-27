@@ -114,6 +114,7 @@ html * {}
 #splash {
     background: linear-gradient( rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.6)), url(http://thevarsity.ca/wp-content/uploads/2013/08/student-centre-1.jpg);
     background-size: cover;
+    background-attachment: fixed;
     min-width: 1200px;
     min-height: 900px;
     width: 100%;
@@ -171,6 +172,7 @@ html * {}
 #intro {
     background: linear-gradient( rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.25)), url(http://i.imgur.com/WxbsBhB.jpg);
     background-size: cover;
+    background-attachment: fixed;
     width: 100%;
     min-width: 1200px;
     min-height: 900px;
@@ -224,6 +226,7 @@ html * {}
 #experience {
     background: linear-gradient( rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.9)), url(images/photoshop.jpg);
     background-size: cover;
+    background-attachment: fixed;
     min-width: 1200px;
     min-height: 900px;
     width: 100%;
@@ -302,6 +305,7 @@ html * {}
 #projects {
     background: linear-gradient( rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.8)), url(images/picasso.png);
     background-size: cover;
+    background-attachment: fixed;
     width: 100%;
     min-width: 1200px;
     min-height: 900px;
