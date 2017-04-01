@@ -27,7 +27,6 @@ html * {}
 .navElement,
 .navElement:link,
 .navElement:visited,
-.navElement:hover,
 .navElement:focus,
 .navElement:active {
     font-family: 'Roboto Mono', monospace;
@@ -35,7 +34,12 @@ html * {}
     margin-right: 20px;
     font-size: 1.4rem;
     text-align-last: none;
+    text-decoration: none;
     transition: all 0.1s ease-in-out;
+}
+
+.navElement:hover {
+    text-decoration: underline;
 }
 
 #bottomLinks {
@@ -239,7 +243,7 @@ html * {}
 }
 
 .expDescription {
-    font-family: 'Arial';
+    font-family: 'Roboto', sans-serif;
     color: #214aff;
     font-weight: 400;
     margin: 5%;
