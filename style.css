@@ -133,6 +133,13 @@ html * {}
     overflow: hidden;
 }
 
+#logo {
+    position: absolute;
+    width: 10%;
+    top: 5%;
+    left: 5%;
+}
+
 .heroImage {
     background: url(images/purple.png);
     background-size: cover;
@@ -144,7 +151,7 @@ html * {}
 }
 
 #nameGroup {
-    top: 55%;
+    top: 50%;
     margin: 0 0 0 5%;
     position: relative;
 }
@@ -233,28 +240,36 @@ html * {}
 
 .expDescription {
     font-family: 'Arial';
-    color: hsl(0, 0%, 75%);
+    color: #214aff;
     font-weight: 400;
     margin: 5%;
     text-align: center;
     font-size: 125%;
 }
 
-.expList {
-    font-family: 'Arial';
+ul.expList li {
+    font-family: "Roboto", sans-serif;
     color: #454545;
     list-style-type: circle;
+    margin-left: 8%;
 }
 
 #softwareDev {
     font-family: 'Roboto Mono', monospace;
-    margin: 5%
+    margin: 10% 0 5% 8%;
 }
 
-#nestedList {
-    text-align: left;
+#nestedList li {
+    font-family: "Roboto", sans-serif;
     list-style-type: disc;
     font-size: 80%;
+    margin-left: 20%;
+}
+
+#nestedListhack li {
+    font-family: "Roboto", sans-serif;
+    list-style-type: disc;
+    margin-left: 20%;
 }
 
 #expButtons {
@@ -275,6 +290,9 @@ html * {}
     height: 100vh;
     float: left;
     position: relative;
+    overflow: hidden;
+    display: block;
+    float: none;
 }
 
 .projBody {
@@ -282,17 +300,20 @@ html * {}
     color: black;
     text-align: center;
     font-weight: 300;
-    font-size: 3.5rem;
     width: 70%;
+    margin: 10% 0 2% 0;
+    transform: translateX(20%);
+}
+
+.projectCards {
     position: absolute;
-    top: 25%;
-    left: 50%;
-    transform: translate(-50%, -50%);
+    transform: translateX(8%);
+    clear: left;
 }
 
 .projLogo {
-    margin: 10% 0 0 0;
-    max-height: 75px;
+    margin: 0% 0 0 0;
+    padding: 20px 0 20px 0;
 }
 
 .projName {
@@ -308,13 +329,13 @@ html * {}
 }
 
 .projButton {
-    margin-top: 8%;
-    text-align: center;
-    font-family: 'Roboto', sans-serif;
+    font-family: 'Roboto Mono', sans-serif;
 }
 
 .projLinks {
-    position: relative;
+    bottom: 100px;
+    transform: translateX(45vw);
+    position: absolute;
     text-align: center;
     font-size: 5rem;
 }
@@ -340,6 +361,9 @@ html * {}
 @media all and (min-width: 1200px) {
     #myName {
         font-size: 5vw;
+    }
+    .projBody {
+        font-size: 2vw;
     }
     #sectionT {
         font-size: 3vw;
@@ -373,6 +397,9 @@ html * {}
     }
     #sectionT {
         font-size: 3.6rem;
+    }
+    .projBody {
+        font-size: 2.4rem;
     }
     .subtitleText {
         font-size: 1.8rem;
