@@ -1,20 +1,23 @@
 html * {}
 
 ::selection {
-    background: #FBC02D;
+    background: #859bff;
     /* WebKit/Blink Browsers */
 }
 
 ::-moz-selection {
-    background: #FBC02D;
+    background: #859bff;
     /* Gecko Browsers */
 }
 
 #navBar {
     position: fixed;
-    top: 2%;
-    right: 3%;
+    padding: 12px 0px 10px 15px;
+    top: 5%;
+    right: 5%;
+    box-shadow: 0px 5px 30px rgba(0, 28, 155, 0.31);
     margin-left: 3%;
+    background: #214aff;
     -webkit-user-select: none;
     -moz-user-select: none;
     -ms-user-select: none;
@@ -24,38 +27,48 @@ html * {}
 .navElement,
 .navElement:link,
 .navElement:visited,
-.navElement:hover,
 .navElement:focus,
 .navElement:active {
-    font-family: 'Karla', sans-serif;
+    font-family: 'Roboto Mono', monospace;
     color: white;
-    text-decoration: none;
     margin-right: 20px;
     font-size: 1.4rem;
+    text-align-last: none;
+    text-decoration: none;
     transition: all 0.1s ease-in-out;
 }
 
 .navElement:hover {
-    color: #FBC02D;
+    text-decoration: underline;
 }
 
 #bottomLinks {
     position: fixed;
-    bottom: 3%;
+    bottom: 4%;
+    background: white;
     left: 3%;
+    border: solid 3px #214aff;
+    padding: 5px 15px 10px 15px;
     -webkit-user-select: none;
     -moz-user-select: none;
     -ms-user-select: none;
     user-select: none;
 }
 
+#reachMe {
+    font-family: 'Roboto Mono', monospace;
+    color: #214aff;
+    margin-bottom: 5px;
+    font-size: 1.4rem;
+}
+
 #linkElement {
-    color: white;
+    color: #214aff;
     transition: all 0.1s ease-in-out;
 }
 
 #linkElement:hover {
-    color: #FBC02D;
+    color: black;
 }
 
 .topButton,
@@ -85,26 +98,27 @@ html * {}
 .textButton:hover,
 .textButton:focus,
 .textButton:active {
-    font-family: 'Karla', sans-serif;
-    color: #FBC02D;
+    font-family: 'Roboto Mono', sans-serif;
+    color: #214aff;
+    padding: 10px;
+    border: solid 5px #214aff;
     font-size: 2.8rem;
-    text-decoration: none;
     position: relative;
     transition: all 0.25s ease-in-out;
 }
 
 .textButton:hover {
+    background: #214aff;
     color: white;
 }
 
 #sectionT {
-    font-family: 'Roboto', sans-serif;
-    font-weight: 900;
-    color: white;
-    left: 50%;
-    text-align: center;
-    text-transform: uppercase;
-    margin: 0;
+    font-family: 'Roboto Mono', monospace;
+    font-weight: 600;
+    color: #214aff;
+    white-space: nowrap;
+    margin-left: 5%;
+    margin-top: -0.5%;
     -webkit-user-select: none;
     -moz-user-select: none;
     -ms-user-select: none;
@@ -112,92 +126,53 @@ html * {}
 }
 
 #splash {
-    background: linear-gradient( rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.6)), url(http://thevarsity.ca/wp-content/uploads/2013/08/student-centre-1.jpg);
+    background: #ececec;
     background-size: cover;
     background-attachment: fixed;
     min-width: 1200px;
     min-height: 900px;
-    width: 100%;
+    width: 100;
     height: 100vh;
     position: relative;
+    overflow: hidden;
 }
 
-#main {
+#logo {
+    position: absolute;
+    width: 10%;
+    top: 6%;
+    left: 5%;
+}
+
+.heroImage {
+    background: url(images/purple.png);
+    background-size: cover;
+    height: 100%;
+    width: 58%;
+    float: right;
+    -webkit-clip-path: polygon(40% 0, 100% 0, 100% 100%, 70% 100%);
+    clip-path: polygon(0% 0, 100% 0, 100% 100%, 40% 100%);
+}
+
+#nameGroup {
+    top: 50%;
+    margin: 0 0 0 5%;
     position: relative;
-    top: 36%;
-    margin-left: 3%;
 }
 
-#myLogo {
-    width: 12%;
-    position: relative;
-}
-
-.headingName {
-    position: relative;
-    top: 15px;
-    margin: 0;
-}
-
-.headingName span {
-    font-family: 'Roboto', sans-serif;
-    font-weight: 900;
-    padding: 0 3% 0.25% 1%;
-    background: rgba(0, 0, 0, 0.8);
-    color: white;
+#myName span {
+    font-weight: 600;
+    color: #214aff;
     overflow: hidden;
     white-space: nowrap;
     margin: 0;
 }
 
-#uoftLogo {
-    width: 2%;
-    display: inline;
-    vertical-align: middle;
-}
-
 .subtitleText {
     font-family: 'Roboto Mono', monospace;
-    font-weight: 300;
-    color: white;
+    color: #214aff;
     display: inline;
-    vertical-align: middle;
-}
-
-#subtitle {
-    position: relative;
-    top: 25px;
-}
-
-#intro {
-    background: linear-gradient( rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.25)), url(http://i.imgur.com/WxbsBhB.jpg);
-    background-size: cover;
-    background-attachment: fixed;
-    width: 100%;
-    min-width: 1200px;
-    min-height: 900px;
-    height: 100vh;
-    position: relative;
-    float: left;
-}
-
-#profilePic {
-    position: absolute;
-    width: 40%;
-    height: 100%;
-    background: url(images/vector.png);
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
-}
-
-#introMain {
-    position: absolute;
-    width: 60%;
-    right: 0;
-    top: 55%;
-    transform: translateY(-55%);
-    align-content: center;
+    margin: 0;
 }
 
 #bigDescriptionT {
@@ -224,7 +199,7 @@ html * {}
 }
 
 #experience {
-    background: linear-gradient( rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.9)), url(images/photoshop.jpg);
+    background: #ececec;
     background-size: cover;
     background-attachment: fixed;
     min-width: 1200px;
@@ -237,73 +212,80 @@ html * {}
 
 #experienceColumns {
     position: relative;
-    top: 10%;
-    width: 98%;
-    left: 1%;
+    top: 12%;
+    width: 96%;
+    left: 2%;
     height: 75vh;
 }
 
 .expBox {
     padding: 10px;
     height: 61%;
-    border-radius: 8px;
-    border: 2px solid white;
-    transition: all 0.2s ease-in-out;
+    border: solid 3px black;
+    background: white;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
+    transition: all 0.3s cubic-bezier(.25, .8, .25, 1);
 }
 
 .expBox:hover {
-    background: rgba(0, 0, 0, 0.5);
-    border: 2px solid #FBC02D;
+    box-shadow: 0 14px 28px rgba(0, 0, 0, 0.25), 0 10px 10px rgba(0, 0, 0, 0.22);
 }
 
 .expCategory {
     font-family: 'Roboto Mono', monospace;
-    font-weight: 600;
+    font-weight: 900;
     padding-left: 15%;
     padding-right: 15%;
-    color: #FBC02D;
+    color: #000000;
     line-height: 125%;
     text-align: center;
     font-size: 200%;
 }
 
 .expDescription {
-    font-family: 'Roboto';
-    color: rgba(255, 255, 255, 0.5);
+    font-family: 'Roboto', sans-serif;
+    color: #214aff;
     font-weight: 400;
     margin: 5%;
     text-align: center;
     font-size: 125%;
 }
 
-.expList {
-    font-family: 'Roboto';
-    color: white;
+ul.expList li {
+    font-family: "Roboto", sans-serif;
+    color: #454545;
     list-style-type: circle;
+    margin-left: 8%;
 }
 
 #softwareDev {
     font-family: 'Roboto Mono', monospace;
-    margin: 5%
+    margin: 10% 0 5% 8%;
 }
 
-#nestedList {
-    text-align: left;
+#nestedList li {
+    font-family: "Roboto", sans-serif;
     list-style-type: disc;
     font-size: 80%;
+    margin-left: 20%;
+}
+
+#nestedListhack li {
+    font-family: "Roboto", sans-serif;
+    list-style-type: disc;
+    margin-left: 20%;
 }
 
 #expButtons {
     position: relative;
     width: 50%;
     white-space: nowrap;
-    overflow: hidden;
     text-align: center;
     margin: 30px auto 0 auto;
 }
 
 #projects {
-    background: linear-gradient( rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.8)), url(images/picasso.png);
+    background: #ececec;
     background-size: cover;
     background-attachment: fixed;
     width: 100%;
@@ -312,24 +294,30 @@ html * {}
     height: 100vh;
     float: left;
     position: relative;
+    overflow: hidden;
+    display: block;
+    float: none;
 }
 
 .projBody {
-    font-family: 'Roboto', sans-serif;
-    color: white;
+    font-family: 'Roboto Mono', monospace;
+    color: black;
     text-align: center;
     font-weight: 300;
-    font-size: 5rem;
     width: 70%;
-    position: relative;
-    top: 10%;
-    left: 50%;
-    transform: translate(-50%, -50%);
+    margin: 10% 0 2% 0;
+    transform: translateX(20%);
+}
+
+.projectCards {
+    position: absolute;
+    transform: translateX(8%);
+    clear: left;
 }
 
 .projLogo {
-    margin: 10% 0 0 0;
-    max-height: 75px;
+    margin: 0% 0 0 0;
+    padding: 20px 0 20px 0;
 }
 
 .projName {
@@ -345,44 +333,47 @@ html * {}
 }
 
 .projButton {
-    margin-top: 8%;
-    text-align: center;
-    font-family: 'Roboto', sans-serif;
+    font-family: 'Roboto Mono', sans-serif;
 }
 
 .projLinks {
-    position: relative;
+    bottom: 100px;
+    transform: translateX(45vw);
+    position: absolute;
     text-align: center;
     font-size: 5rem;
 }
 
 #linkedin {
     transition: all 0.15s ease-in-out;
-    color: white;
+    color: #214aff;
 }
 
 #linkedin:hover {
-    color: #FBC02D;
+    color: black;
 }
 
 #github {
     transition: all 0.15s ease-in-out;
-    color: white;
+    color: #214aff;
 }
 
 #github:hover {
-    color: #FBC02D;
+    color: black;
 }
 
 @media all and (min-width: 1200px) {
-    .headingName {
-        font-size: 8vw;
+    #myName {
+        font-size: 5vw;
+    }
+    .projBody {
+        font-size: 2vw;
+    }
+    #sectionT {
+        font-size: 3vw;
     }
     .subtitleText {
         font-size: 1.5vw;
-    }
-    #sectionT {
-        font-size: 6vw;
     }
     #bigDescriptionT {
         font-size: 2vw;
@@ -405,14 +396,17 @@ html * {}
 }
 
 @media (max-width: 1199px) and (min-width: 0px) {
-    .headingName {
-        font-size: 9.65rem;
+    #myName {
+        font-size: 5.95rem;
+    }
+    #sectionT {
+        font-size: 3.6rem;
+    }
+    .projBody {
+        font-size: 2.4rem;
     }
     .subtitleText {
         font-size: 1.8rem;
-    }
-    #sectionT {
-        font-size: 7.1rem;
     }
     #bigDescriptionT {
         font-size: 2.4rem;
