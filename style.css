@@ -408,7 +408,7 @@ ul.courseList li {
 
 .projLinks {
     bottom: 100px;
-    transform: translateX(45vw);
+    width: 100%;
     position: absolute;
     text-align: center;
     font-size: 5rem;
