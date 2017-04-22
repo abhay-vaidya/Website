@@ -24,6 +24,37 @@ html * {}
     user-select: none;
 }
 
+.btnText {
+    font-family: 'Roboto Mono', monospace;
+    font-size: 2rem;
+}
+
+.button,
+.button:link,
+.button:visited,
+.button:focus,
+.button:active {
+    font-family: 'Montserrat', sans-serif;
+    border: solid;
+    border-color: #214aff;
+    color: #214aff;
+    padding: 0px 25px 7px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    text-decoration: none;
+    transition: all 0.15s ease-in-out;
+}
+
+.button:hover {
+    background: #214aff;
+    color: white;
+}
+
 .navElement,
 .navElement:link,
 .navElement:visited,
@@ -116,6 +147,19 @@ html * {}
     font-family: 'Roboto Mono', monospace;
     font-weight: 600;
     color: #214aff;
+    white-space: nowrap;
+    margin-left: 5%;
+    margin-top: -0.5%;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+
+#sectionTdark {
+    color: #ececec;
+    font-family: 'Roboto Mono', monospace;
+    font-weight: 600;
     white-space: nowrap;
     margin-left: 5%;
     margin-top: -0.5%;
@@ -282,6 +326,32 @@ ul.expList li {
     white-space: nowrap;
     text-align: center;
     margin: 30px auto 0 auto;
+}
+
+#courses {
+    background: linear-gradient(rgba(33, 74, 255, 0.9), rgba(33, 74, 255, 0.9)), url(images/books.jpg);
+    background-size: cover;
+    background-attachment: fixed;
+    min-width: 1200px;
+    min-height: 325px;
+    width: 100%;
+    height: 38vh;
+    position: relative;
+    float: left;
+}
+
+#coursesBox {
+    width: 80%;
+    height: 50%;
+    margin-left: 8%;
+    margin-top: 6%;
+}
+
+ul.courseList li {
+    color: white;
+    font-family: "Roboto", sans-serif;
+    list-style-type: disc;
+    font-size: 2rem;
 }
 
 #projects {
