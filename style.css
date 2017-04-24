@@ -1,12 +1,14 @@
 html * {}
 
 ::selection {
-    background: #859bff;
+    background: #214aff;
+    color: white;
     /* WebKit/Blink Browsers */
 }
 
 ::-moz-selection {
-    background: #859bff;
+    background: #214aff;
+    color: white;
     /* Gecko Browsers */
 }
 
@@ -364,7 +366,7 @@ ul.courseList li {
     font-size: 2rem;
 }
 
-ul.courseList::selection {
+ul.courseList ::selection {
     background: black;
 }
 
