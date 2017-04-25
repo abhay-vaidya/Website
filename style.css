@@ -190,7 +190,7 @@ html * {}
     left: 5%;
 }
 
-.heroImage {
+.sideImage {
     background: url(images/purple.png);
     background-size: cover;
     height: 100%;
