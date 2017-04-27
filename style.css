@@ -1,5 +1,3 @@
-html * {}
-
 ::selection {
     background: #214aff;
     color: white;
@@ -10,6 +8,24 @@ html * {}
     background: #214aff;
     color: white;
     /* Gecko Browsers */
+}
+
+.navElement,
+.navElement:link,
+.navElement:visited,
+.navElement:focus,
+.navElement:active {
+    font-family: 'Roboto Mono', monospace;
+    color: white;
+    margin-right: 20px;
+    font-size: 1.4rem;
+    text-align-last: none;
+    text-decoration: none;
+    transition: all 0.1s ease-in-out;
+}
+
+.navElement:hover {
+    text-decoration: underline;
 }
 
 #navBar {
@@ -36,7 +52,6 @@ html * {}
 .button:visited,
 .button:focus,
 .button:active {
-    font-family: 'Montserrat', sans-serif;
     border: solid;
     border-color: #214aff;
     color: #214aff;
@@ -57,37 +72,6 @@ html * {}
     color: white;
 }
 
-.navElement,
-.navElement:link,
-.navElement:visited,
-.navElement:focus,
-.navElement:active {
-    font-family: 'Roboto Mono', monospace;
-    color: white;
-    margin-right: 20px;
-    font-size: 1.4rem;
-    text-align-last: none;
-    text-decoration: none;
-    transition: all 0.1s ease-in-out;
-}
-
-.navElement:hover {
-    text-decoration: underline;
-}
-
-#bottomLinks {
-    position: fixed;
-    bottom: 4%;
-    background: white;
-    left: 3%;
-    border: solid 3px #214aff;
-    padding: 5px 15px 10px 15px;
-    -webkit-user-select: none;
-    -moz-user-select: none;
-    -ms-user-select: none;
-    user-select: none;
-}
-
 #reachMe {
     font-family: 'Roboto Mono', monospace;
     color: #214aff;
@@ -104,45 +88,17 @@ html * {}
     color: black;
 }
 
-.topButton,
-.topButton:link,
-.topButton:visited,
-.topButton:focus,
-.topButton:active {
-    font-family: 'Karla', sans-serif;
-    color: rgba(255, 255, 255, 0.5);
-    margin-right: 20px;
-    text-decoration: none;
-    font-size: 1.7rem;
-    transition: all 0.1s ease-in-out;
+#bottomLinks {
+    position: fixed;
+    bottom: 4%;
+    background: white;
+    left: 3%;
+    border: solid 3px #214aff;
+    padding: 5px 15px 10px 15px;
     -webkit-user-select: none;
     -moz-user-select: none;
     -ms-user-select: none;
     user-select: none;
-}
-
-.topButton:hover {
-    color: white;
-}
-
-.textButton,
-.textButton:link,
-.textButton:visited,
-.textButton:hover,
-.textButton:focus,
-.textButton:active {
-    font-family: 'Roboto Mono', sans-serif;
-    color: #214aff;
-    padding: 10px;
-    border: solid 5px #214aff;
-    font-size: 2.8rem;
-    position: relative;
-    transition: all 0.25s ease-in-out;
-}
-
-.textButton:hover {
-    background: #214aff;
-    color: white;
 }
 
 #sectionT {
@@ -190,7 +146,7 @@ html * {}
     left: 5%;
 }
 
-.sideImage {
+#sideImage {
     background: url(images/purple.png);
     background-size: cover;
     height: 100%;
@@ -219,29 +175,6 @@ html * {}
     color: #214aff;
     display: inline;
     margin: 0;
-}
-
-#bigDescriptionT {
-    font-family: 'Roboto', sans-serif;
-    background: rgba(0, 0, 0, 0.5);
-    padding: 30px;
-    font-weight: 300;
-    padding-left: 10%;
-    padding-right: 10%;
-    color: white;
-    right: 0px;
-    width: 100%;
-    line-height: normal;
-    text-align: center;
-}
-
-#smallDescriptionT {
-    font-family: 'Roboto Mono', sans-serif;
-    color: white;
-    line-height: normal;
-    text-align: center;
-    padding-left: 10%;
-    padding-right: 10%;
 }
 
 #experience {
@@ -322,14 +255,6 @@ ul.expList li {
     margin-left: 20%;
 }
 
-#expButtons {
-    position: relative;
-    width: 50%;
-    white-space: nowrap;
-    text-align: center;
-    margin: 30px auto 0 auto;
-}
-
 #courses {
     background: linear-gradient(rgba(33, 74, 255, 0.9), rgba(33, 74, 255, 0.9)), url(images/books.jpg);
     background-size: cover;
@@ -406,18 +331,6 @@ ul.courseList ::selection {
     padding: 20px 0 20px 0;
 }
 
-.projName {
-    font-family: 'Roboto', sans-serif;
-    font-weight: 600;
-    text-align: center;
-}
-
-.projDescription {
-    font-family: 'Roboto', sans-serif;
-    font-size: 1.5rem;
-    text-align: center;
-}
-
 .projButton {
     font-family: 'Roboto Mono', sans-serif;
 }
@@ -461,12 +374,6 @@ ul.courseList ::selection {
     .subtitleText {
         font-size: 1.5vw;
     }
-    #bigDescriptionT {
-        font-size: 2vw;
-    }
-    #smallDescriptionT {
-        font-size: 1.2vw;
-    }
     #softwareDev {
         font-size: 2vw;
     }
@@ -493,12 +400,6 @@ ul.courseList ::selection {
     }
     .subtitleText {
         font-size: 1.8rem;
-    }
-    #bigDescriptionT {
-        font-size: 2.4rem;
-    }
-    #smallDescriptionT {
-        font-size: 1.45rem;
     }
     #softwareDev {
         font-size: 2.4rem;
