@@ -1,11 +1,11 @@
 ::selection {
-    background: #214aff;
+    background: #FF9800;
     color: white;
     /* WebKit/Blink Browsers */
 }
 
 ::-moz-selection {
-    background: #214aff;
+    background: #FF9800;
     color: white;
     /* Gecko Browsers */
 }
@@ -33,9 +33,9 @@
     padding: 12px 0px 10px 15px;
     top: 5%;
     right: 5%;
-    box-shadow: 0px 5px 30px rgba(0, 28, 155, 0.31);
+    box-shadow: 0px 5px 30px rgba(155, 101, 0, 0.31);
     margin-left: 3%;
-    background: #214aff;
+    background: #FF9800;
     -webkit-user-select: none;
     -moz-user-select: none;
     -ms-user-select: none;
@@ -53,8 +53,8 @@
 .button:focus,
 .button:active {
     border: solid;
-    border-color: #214aff;
-    color: #214aff;
+    border-color: #FF9800;
+    color: #FF9800;
     padding: 0px 25px 7px;
     text-align: center;
     text-decoration: none;
@@ -68,19 +68,19 @@
 }
 
 .button:hover {
-    background: #214aff;
+    background: #FF9800;
     color: white;
 }
 
 #reachMe {
     font-family: 'Roboto Mono', monospace;
-    color: #214aff;
+    color: #FF9800;
     margin-bottom: 5px;
     font-size: 1.4rem;
 }
 
 #linkElement {
-    color: #214aff;
+    color: #FF9800;
     transition: all 0.1s ease-in-out;
 }
 
@@ -93,7 +93,7 @@
     bottom: 4%;
     background: white;
     left: 3%;
-    border: solid 3px #214aff;
+    border: solid 3px #FF9800;
     padding: 5px 15px 10px 15px;
     -webkit-user-select: none;
     -moz-user-select: none;
@@ -104,7 +104,7 @@
 #sectionT {
     font-family: 'Roboto Mono', monospace;
     font-weight: 600;
-    color: #214aff;
+    color: #FF9800;
     white-space: nowrap;
     margin-left: 5%;
     margin-top: -0.5%;
@@ -142,18 +142,23 @@
 #logo {
     position: absolute;
     width: 10%;
-    top: 6%;
+    top: 5%;
     left: 5%;
 }
 
 #sideImage {
-    background: url(images/purple.png);
+    background: url(images/orange.png);
     background-size: cover;
     height: 100%;
     width: 58%;
     float: right;
     -webkit-clip-path: polygon(40% 0, 100% 0, 100% 100%, 70% 100%);
     clip-path: polygon(0% 0, 100% 0, 100% 100%, 40% 100%);
+}
+
+.card .card-action {
+    border-top: 1px solid #d1d1d1;
+    padding: 16px 24px 10px 24px;
 }
 
 #nameGroup {
@@ -164,7 +169,7 @@
 
 #myName span {
     font-weight: 600;
-    color: #214aff;
+    color: #FF9800;
     overflow: hidden;
     white-space: nowrap;
     margin: 0;
@@ -172,7 +177,7 @@
 
 .subtitleText {
     font-family: 'Roboto Mono', monospace;
-    color: #214aff;
+    color: #FF9800;
     display: inline;
     margin: 0;
 }
@@ -223,7 +228,7 @@
 
 .expDescription {
     font-family: 'Roboto', sans-serif;
-    color: #214aff;
+    color: #FF9800;
     font-weight: 400;
     margin: 5%;
     text-align: center;
@@ -256,7 +261,7 @@ ul.expList li {
 }
 
 #courses {
-    background: linear-gradient(rgba(33, 74, 255, 0.9), rgba(33, 74, 255, 0.9)), url(images/books.jpg);
+    background: linear-gradient(rgba(255, 178, 33, 0.9), rgba(255, 101, 33, 0.9)), url(images/books.jpg);
     background-size: cover;
     background-attachment: fixed;
     min-width: 1200px;
@@ -345,7 +350,7 @@ ul.courseList ::selection {
 
 #linkedin {
     transition: all 0.15s ease-in-out;
-    color: #214aff;
+    color: #FF9800;
 }
 
 #linkedin:hover {
@@ -354,7 +359,7 @@ ul.courseList ::selection {
 
 #github {
     transition: all 0.15s ease-in-out;
-    color: #214aff;
+    color: #FF9800;
 }
 
 #github:hover {
