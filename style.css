@@ -142,18 +142,23 @@
 #logo {
     position: absolute;
     width: 10%;
-    top: 6%;
+    top: 5%;
     left: 5%;
 }
 
 #sideImage {
-    background: url(images/purple.png);
+    background: url(images/orange.png);
     background-size: cover;
     height: 100%;
     width: 58%;
     float: right;
     -webkit-clip-path: polygon(40% 0, 100% 0, 100% 100%, 70% 100%);
     clip-path: polygon(0% 0, 100% 0, 100% 100%, 40% 100%);
+}
+
+.card .card-action {
+    border-top: 1px solid #d1d1d1;
+    padding: 16px 24px 10px 24px;
 }
 
 #nameGroup {
