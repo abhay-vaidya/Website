@@ -273,8 +273,9 @@ ul.expList li {
 }
 
 #coursesBox {
-    width: 50%;
     height: 60%;
+    white-space: nowrap;
+    float: left;
     margin-left: 8%;
     margin-top: 5%;
 }
@@ -296,7 +297,7 @@ ul.courseList li {
     font-size: 2rem;
 }
 
-ul.courseList ::selection {
+ul.courseList::selection {
     background: black;
 }
 
