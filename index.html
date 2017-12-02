@@ -24,7 +24,7 @@
                     target = target.length ? target : $('[name=' + this.hash.slice(1) + ']');
                     if (target.length) {
                         $('html,body').animate({
-                            scrollTop: target.offset().top
+                            scrollTop: target.offset().top - 50
                         }, 750);
                         return false;
                     }
@@ -42,81 +42,81 @@
             <h3 class="subtitleText">Computer Science, <a href="https://utoronto.ca" target="_blank" style="color: black">University of Toronto</a></h3> </div>
     </div>
     <div id="experience" name="experience">
-        <h2 id="sectionT" style="position: relative; left: 0; top: 5%">Experience</h2>
-        <div id="experienceColumns">
-            <div class="container-fixed">
-                <div class="row">
-                    <div class="col-xs-3">
-                        <div class="expBox">
-                            <h1 class="expCategory">Software Development</h1>
-                            <h3 class="expDescription">I am experienced in working with various languages and software tools, including:</h3>
-                            <ul class="expList" id="softwareDev">
-                                <li>Java</li>
-                                <li>C</li>
-                                <li>Python</li>
-                                <li>C++</li>
-                                <li>SVN & Git</li>
-                                <li>HTML + CSS</li>
-                                <li>LaTeX</li>
-                            </ul>
-                        </div>
+        <h2 class="sectionT">Experience</h2>
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-xs-12 col-sm-6 col-md-3 col-lg-3">
+                    <div class="card expBox">
+                        <h1 class="expCategory">Software Development</h1>
+                        <h3 class="expDescription">I am experienced in working with various languages and software tools, including:</h3>
+                        <ul class="expList" style="margin: 7%">
+                            <li>Java</li>
+                            <li>C</li>
+                            <li>Python</li>
+                            <li>C++</li>
+                            <li>Git & SVN</li>
+                            <li>HTML + CSS</li>
+                            <li>LaTeX</li>
+                            <li>JUnit, unittest</li>
+                        </ul>
                     </div>
-                    <div class="col-xs-3">
-                        <div class="expBox">
-                            <h1 class="expCategory">Graphic + Motion Design</h1>
-                            <h3 class="expDescription">I have a great deal of experience in a variety of 2D and 3D graphics applications that often go hand-in-hand with software development to design mockups. My experience extends through:</h3>
-                            <ul class="expList" id="graphicDesign" style="margin: 7%">
-                                <li>Adobe Creative Suite</li>
-                                <ul class="expList" id="nestedList">
-                                    <li>Photoshop</li>
-                                    <li>Illustrator</li>
-                                    <li>Premiere Pro</li>
-                                    <li>After Effects</li>
-                                    <li>InDesign</li>
-                                    <li>Audition</li>
-                                </ul>
-                                <li>Maxon Cinema 4D and V-Ray</li>
+                </div>
+                <div class="col-xs-12 col-sm-6 col-md-3 col-lg-3">
+                    <div class="card expBox">
+                        <h1 class="expCategory">Graphic + Motion Design</h1>
+                        <h3 class="expDescription">I have a great deal of experience in a variety of 2D and 3D graphics applications that often go hand-in-hand with software development to design mockups. My experience extends through:</h3>
+                        <ul class="expList" style="margin: 7%">
+                            <li>Adobe Creative Suite</li>
+                            <ul class="expList" id="nestedList">
+                                <li>Photoshop</li>
+                                <li>Illustrator</li>
+                                <li>Experience Design</li>
+                                <li>Premiere Pro</li>
+                                <li>After Effects</li>
+                                <li>InDesign</li>
                             </ul>
-                        </div>
+                            <li>Maxon Cinema 4D and V-Ray</li>
+                        </ul>
                     </div>
-                    <div class="col-xs-3">
-                        <div class="expBox">
-                            <h1 class="expCategory">Android Development</h1>
-                            <h3 class="expDescription">I have designed and developed several Android apps and am familiar with:</h3>
-                            <ul class="expList" id="androidDev" style="margin: 7%">
-                                <li>Android Studio</li>
-                                <li>Android SDKs and APIs</li>
-                                <li>Layout design in XML</li>
-                                <li>Built-in + External libraries</li>
-                            </ul>
-                        </div>
+                </div>
+                <div class="col-xs-12 col-sm-6 col-md-3 col-lg-3">
+                    <div class="card expBox">
+                        <h1 class="expCategory">Android Development</h1>
+                        <h3 class="expDescription">I have designed and developed several Android apps and am familiar with:</h3>
+                        <ul class="expList" style="margin: 7%">
+                            <li>Android Studio</li>
+                            <li>Android SDKs and APIs</li>
+                            <li>Layout design in XML</li>
+                            <li>Built-in + External libraries</li>
+                        </ul>
                     </div>
-                    <div class="col-xs-3">
-                        <div class="expBox">
-                            <h1 class="expCategory">Other Experience</h1>
-                            <h3 class="expDescription">I have participated in various extracurricular activities to sharpen both my technical and transferable skills. Here are some of my recent activies:</h3>
-                            <ul class="expList" id="otherExp" style="margin: 7%;">
-                                <li style="margin-bottom: 2%;"><b>Hackathons</b></li>
-                                <ul class="expList" id="nestedListhack">
-                                    <li style="margin-bottom: 2%;">Scotiabank HackIt</li>
-                                    <li style="margin-bottom: 2%;">Bully &lt;/stop&gt; (1st place)</li>
-                                    <li style="margin-bottom: 2%;">MHacks 8</li>
-                                    <li style="margin-bottom: 2%;">Hack the Valley (Best Designed Hack)</li>
-                                    <li style="margin-bottom: 2%;">UofT Hacks IV</li>
-                                </ul>
-                                <li style="margin-bottom: 2%;"><b>Head of Media & Web (Team Zephyros)</b>, F1 in Schools Challenge</li>
-                                <li style="margin-bottom: 2%;"><b>Sessional Lecturer + Designer</b>, Computer Science Enrichment Club</li>
+                </div>
+                <div class="col-xs-12 col-sm-6 col-md-3 col-lg-3">
+                    <div class="card expBox">
+                        <h1 class="expCategory">Other Experience</h1>
+                        <h3 class="expDescription">I have participated in various extracurricular activities to sharpen both my technical and transferable skills. Here are some of my recent activies:</h3>
+                        <ul class="expList" style="margin: 7%;">
+                            <li style="margin-bottom: 2%;"><b>Lecturer & Designer</b>, Computer Science Enrichment Club</li>
+                            <li style="margin-bottom: 2%;"><b>Hackathons</b></li>
+                            <ul class="expList" id="nestedList">
+                                <li style="margin-bottom: 2%;">Scotiabank HackIt</li>
+                                <li style="margin-bottom: 2%;">Bully &lt;/stop&gt; (1st place)</li>
+                                <li style="margin-bottom: 2%;">MHacks 8</li>
+                                <li style="margin-bottom: 2%;">Hack the Valley (Best Designed Hack)</li>
+                                <li style="margin-bottom: 2%;">UofT Hacks IV</li>
                             </ul>
-                        </div>
+                            <li style="margin-bottom: 2%;"><b>Head of Media & Web (Team Zephyros)</b>, F1 in Schools Challenge</li>
+                        </ul>
                     </div>
                 </div>
             </div>
-            <div style="width: 100%;"><a href="#courses" style="margin: 1% 0 0 42%;" class="button"><h2 class="btnText">COURSES TAKEN</h2></a></div>
         </div>
     </div>
     <div id="courses">
-        <h2 id="sectionTdark" style="position: relative; top: 15%; left: 0">Relevant Coursework:</h2>
-        <div id="coursesBox">
+        <h2 class="sectionT dark">Relevant Coursework:</h2>
+        <div class="container">
+            <div class="row">
+            <div class="col-xs-12 col-md-6 col-lg-6">
             <h2 class="coursePeriod">Computer Science</h2>
             <ul class="courseList">
                 <li><b>CSCA08:</b> Introduction to Computer Science I</li>
@@ -125,68 +125,82 @@
                 <li><b>CSCB36:</b> Introduction to the Theory of Computation</li>
                 <li><b>CSCB07:</b> Software Design</li>
                 <li><b>CSCB09:</b> Software Tools and Systems Programming</li>
+                <li><b>CSCC01:</b> Introduction to Software Engineering</li>
+                <li><b>CSCD27:</b> Computer and Network Security</li>
             </ul>
         </div>
-        <div id="coursesBox">
+        <div class="col-xs-12 col-md-6 col-lg-6">
             <h2 class="coursePeriod">Mathematics</h2>
             <ul class="courseList">
                 <li><b>MATA31:</b> Calculus I for Mathematical Sciences</li>
                 <li><b>MATA37:</b> Calculus II for Mathematical Sciences</li>
                 <li><b>MATA23:</b> Linear Algebra I</li>
+                <li><b>MATB24:</b> Linear Algebra II</li>
             </ul>
         </div>
+        </div>
+        </div>
+        
+        
     </div>
     <div id="projects" name="projects">
-        <h2 id="sectionT" style="position: relative; top: 5%; left: 0">Projects</h2>
-        <h2 class=projBody>Here are some of my highlighted projects...</h2>
-        <div class="row projectCards">
-            <div class="col-xs-2">
-                <div class="card expBox">
-                    <div class="card-image"> <img class="projLogo" src="images/buddi.png"></div>
-                    <div class="card-content"> <span class="card-title">Buddi</span>
-                        <p>Tasked with helping make Toronto Animal Services more accessible to the public, we created Buddi: a pet and owner matchmaking app designed to make the adoption process easier and help potential pet owners find their perfect pals.</p>
+        <h2 class="sectionT">Projects</h2>
+        <div class="container-fluid">
+            <div class="rowcard-deck">
+                <div class="col-xs-12 col-sm-4 col-md-4 col-lg-2">
+                    <div class="card expBox">
+                        <div class="card-image"> <img class="projLogo" src="images/buddi.png"></div>
+                        <div class="card-content"> <span class="card-title">Buddi</span>
+                            <p>Tasked with helping make Toronto Animal Services more accessible to the public, we created Buddi: a pet and owner matchmaking app designed to make the adoption process easier and help potential pet owners find their perfect pals.</p>
+                        </div>
+                        <div class="card-action"> <a class="orange-text text-lighten-1 projButton" href="https://github.com/abhay-vaidya/Buddi" target="_blank">Learn More</a> </div>
                     </div>
-                    <div class="card-action"> <a class="orange-text text-lighten-1 projButton" href="https://github.com/abhay-vaidya/Buddi" target="_blank">Learn More</a> </div>
                 </div>
-            </div>
-            <div class="col-xs-2">
-                <div class="card expBox">
-                    <div class="card-image"> <img class="projLogo" src="images/connect4.png"></div>
-                    <div class="card-content"> <span class="card-title">ConnectFour</span>
-                        <p>ConnectFour is a Java based Swing and AWT game that recreates the thrill and excitement of the classic game of Connect Four.</p>
+                <div class="col-xs-12 col-sm-4 col-md-4 col-lg-2">
+                    <div class="card expBox">
+                        <div class="card-image"> <img class="projLogo" src="images/connect4.png"></div>
+                        <div class="card-content"> <span class="card-title">ConnectFour</span>
+                            <p>ConnectFour is a Java based Swing and AWT game that recreates the thrill and excitement of the classic game of Connect Four.</p>
+                        </div>
+                        <div class="card-action"> <a class="orange-text text-lighten-1 projButton" href="https://github.com/abhay-vaidya/ConnectFour" target="_blank">Learn More</a> </div>
                     </div>
-                    <div class="card-action"> <a class="orange-text text-lighten-1 projButton" href="https://github.com/abhay-vaidya/ConnectFour" target="_blank">Learn More</a> </div>
                 </div>
-            </div>
-            <div class="col-xs-2">
-                <div class="card expBox">
-                    <div class="card-image"> <img class="projLogo" src="images/spp.png"></div>
-                    <div class="card-content"> <span class="card-title">Student Picker</span>
-                        <p>Student Presentation Picker is a Java application for teachers and instructors alike to easily conduct student presentations and record individual grades.</p>
+                <div class="col-xs-12 col-sm-4 col-md-4 col-lg-2">
+                    <div class="card expBox">
+                        <div class="card-image"> <img class="projLogo" src="images/spp.png"></div>
+                        <div class="card-content"> <span class="card-title">Student Picker</span>
+                            <p>Student Presentation Picker is a Java application for teachers and instructors alike to easily conduct student presentations and record individual grades.</p>
+                        </div>
+                        <div class="card-action"> <a class="orange-text text-lighten-1 projButton" href="https://github.com/abhay-vaidya/StudentPresentationPicker" target="_blank">Learn More</a> </div>
                     </div>
-                    <div class="card-action"> <a class="orange-text text-lighten-1 projButton" href="https://github.com/abhay-vaidya/StudentPresentationPicker" target="_blank">Learn More</a> </div>
                 </div>
-            </div>
-            <div class="col-xs-2">
-                <div class="card expBox">
-                    <div class="card-image"> <img class="projLogo" src="images/doggo.png"></div>
-                    <div class="card-content"> <span class="card-title">DogGo</span>
-                        <p>We created a chatbot that takes orders from the customer and gives them an interactive and intuitive experience akin to buying from another human. The business also gets a web app to easily handle these orders. DogGo won "Best Designed Hack" at Hack the Valley 2017.</p>
+                <div class="col-xs-12 col-sm-4 col-md-4 col-lg-2">
+                    <div class="card expBox">
+                        <div class="card-image"> <img class="projLogo" src="images/doggo.png"></div>
+                        <div class="card-content"> <span class="card-title">DogGo</span>
+                            <p>We created a chatbot that takes orders from the customer and gives them an interactive and intuitive experience akin to buying from another human. The business also gets a web app to easily handle these orders. DogGo won "Best Designed Hack" at Hack the Valley 2017.</p>
+                        </div>
+                        <div class="card-action"> <a class="orange-text text-lighten-1 projButton" href="https://github.com/abhay-vaidya/DogGo" target="_blank">Learn More</a> </div>
                     </div>
-                    <div class="card-action"> <a class="orange-text text-lighten-1 projButton" href="https://github.com/abhay-vaidya/DogGo" target="_blank">Learn More</a> </div>
                 </div>
-            </div>
-            <div class="col-xs-2">
-                <div class="card expBox">
-                    <div class="card-image"> <img class="projLogo" src="images/supply.png"></div>
-                    <div class="card-content"> <span class="card-title">SupplyMe</span>
-                        <p>An interactive platform for students to lend and borrow school supplies. Web app built using Flask + Python for back-end and HTML + CSS + Jinja2 for front-end.</p>
+                <div class="col-xs-12 col-sm-4 col-md-4 col-lg-2">
+                    <div class="card expBox">
+                        <div class="card-image"> <img class="projLogo" src="images/supply.png"></div>
+                        <div class="card-content"> <span class="card-title">SupplyMe</span>
+                            <p>An interactive platform for students to lend and borrow school supplies. Web app built using Flask + Python for back-end and HTML + CSS + Jinja2 for front-end.</p>
+                        </div>
+                        <div class="card-action"> <a class="orange-text text-lighten-1 projButton" href="https://github.com/abhay-vaidya/SupplyMe" target="_blank">Learn More</a> </div>
                     </div>
-                    <div class="card-action"> <a class="orange-text text-lighten-1 projButton" href="https://github.com/abhay-vaidya/SupplyMe" target="_blank">Learn More</a> </div>
+                </div>
+                <div class="col-xs-12 col-sm-12 col-md-12 col-lg-2">
+                    <div class="card expBox">
+                        <div class="card-content"> <span class="card-title text-center">For more, please check out my GitHub and LinkedIn!</span>
+                            <div class="projLinks"> <a href="https://www.github.com/abhay-vaidya" target="_blank"><i id="github" class="fa fa-github" style="margin-right: 20px"></i></a> <a href="https://www.linkedin.com/in/abhay-vaidya" target="_blank"><i id="linkedin" class="fa fa-linkedin"></i></a></div>
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
-        <div class="projLinks"> <a href="https://www.linkedin.com/in/abhay-vaidya" target="_blank" style="margin-right: 20px"><i id="linkedin" class="fa fa-linkedin"></i></a> <a href="https://www.github.com/abhay-vaidya" target="_blank"><i id="github" class="fa fa-github"></i></a> </div>
     </div>
     <div id="navBar"> <a class="navElement" href="#splash">HOME</a><a class="navElement" href="#experience">EXPERIENCE</a> <a class="navElement" href="#projects">PROJECTS</a> <a class="navElement" href="Abhay-Vaidya-Resume.pdf" target="_blank">
             MY RESUME<i class="fa fa-external-link" style="         
@@ -194,10 +208,8 @@
                 font-size: 1.2rem;"></i></a> </div>
     <div id="bottomLinks">
         <h6 id="reachMe">REACH ME</h6>
-        <div> <a href="mailto:abhay.vaidya@mail.utoronto.ca" target="_blank" style="margin-right: 9px"><i id="linkElement" class="fa fa-envelope"></i></a> <a href="https://www.linkedin.com/in/abhay-vaidya" target="_blank" style="margin-right: 9px"><i id="linkElement" class="fa fa-linkedin"></i></a>
-            <a href="https://www.github.com/abhay-vaidya" target="_blank" style="margin-right: 9px"> <i id="linkElement" class="fa fa-github"></i> </a>
-            <a href="https://pgp.mit.edu/pks/lookup?op=get&search=0x747D55AEE631FC1C" target="_blank"><i id="linkElement" class="fa fa-key"></i></a>
-        </div>
+        <div> <a href="mailto:abhay.vaidya@mail.utoronto.ca" target="_blank" style="margin-right: 9px"><i class="fa fa-envelope linkElement"></i></a> <a href="https://www.linkedin.com/in/abhay-vaidya" target="_blank" style="margin-right: 9px"><i class="fa fa-linkedin linkElement"></i></a>
+            <a href="https://www.github.com/abhay-vaidya" target="_blank" style="margin-right: 9px"> <i class="fa fa-github linkElement"></i> </a> <a href="https://pgp.mit.edu/pks/lookup?op=get&search=0x747D55AEE631FC1C" target="_blank"><i class="fa fa-key linkElement"></i></a> </div>
     </div>
 </body>
 

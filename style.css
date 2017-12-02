@@ -86,12 +86,12 @@
     font-size: 1.4rem;
 }
 
-#linkElement {
+.linkElement {
     color: #FF9800;
     transition: all 0.1s ease-in-out;
 }
 
-#linkElement:hover {
+.linkElement:hover {
     color: black;
 }
 
@@ -114,38 +114,25 @@
     transition-delay: 0s !important;
 }
 
-#sectionT {
+.sectionT {
     font-family: 'Roboto Mono', monospace;
     font-weight: 600;
     color: #FF9800;
-    white-space: nowrap;
-    margin-left: 5%;
-    margin-top: -0.5%;
+    margin: 50px;
     -webkit-user-select: none;
     -moz-user-select: none;
     -ms-user-select: none;
     user-select: none;
 }
 
-#sectionTdark {
+.dark {
     color: #ececec;
-    font-family: 'Roboto Mono', monospace;
-    font-weight: 600;
-    white-space: nowrap;
-    margin-left: 5%;
-    margin-top: -0.5%;
-    -webkit-user-select: none;
-    -moz-user-select: none;
-    -ms-user-select: none;
-    user-select: none;
 }
 
 #splash {
     background: #ececec;
     background-size: cover;
     background-attachment: fixed;
-    min-width: 1200px;
-    min-height: 900px;
     width: 100;
     height: 100vh;
     position: relative;
@@ -183,8 +170,6 @@
 #myName span {
     font-weight: 600;
     color: #FF9800;
-    overflow: hidden;
-    white-space: nowrap;
     margin: 0;
 }
 
@@ -199,23 +184,12 @@
     background: #ececec;
     background-size: cover;
     background-attachment: fixed;
-    min-width: 1200px;
-    min-height: 900px;
     width: 100%;
-    height: 100vh;
-    position: relative;
-    float: left;
-}
-
-#experienceColumns {
-    position: relative;
-    top: 12%;
-    width: 96%;
-    left: 2%;
-    height: 75vh;
+    padding: 50px;
 }
 
 .expBox {
+    font-family: 'Roboto', sans-serif;
     padding: 10px;
     height: 61%;
     border-radius: 4px;
@@ -253,25 +227,15 @@
 ul.expList li {
     font-family: "Roboto", sans-serif;
     color: #454545;
+    font-size: 1.5em;
     list-style-type: circle;
     margin-left: 8%;
-}
-
-#softwareDev {
-    font-family: 'Roboto Mono', monospace;
-    margin: 10% 0 5% 8%;
 }
 
 #nestedList li {
     font-family: "Roboto", sans-serif;
     list-style-type: disc;
-    font-size: 80%;
-    margin-left: 20%;
-}
-
-#nestedListhack li {
-    font-family: "Roboto", sans-serif;
-    list-style-type: disc;
+    font-size: 1.2em;
     margin-left: 20%;
 }
 
@@ -279,20 +243,15 @@ ul.expList li {
     background: linear-gradient(rgba(255, 178, 33, 0.9), rgba(255, 101, 33, 0.9)), url(images/books.jpg);
     background-size: cover;
     background-attachment: fixed;
-    min-width: 1200px;
-    min-height: 325px;
     width: 100%;
-    height: 40vh;
-    position: relative;
-    float: left;
+    padding: 40px;
 }
 
-#coursesBox {
+.coursesBox {
     height: 60%;
     white-space: nowrap;
-    float: left;
     margin-left: 8%;
-    margin-top: 5%;
+    margin-top: 30px;
 }
 
 .coursePeriod {
@@ -318,17 +277,8 @@ ul.courseList::selection {
 
 #projects {
     background: #ececec;
-    background-size: cover;
     background-attachment: fixed;
-    width: 100%;
-    min-width: 1200px;
-    min-height: 900px;
-    height: 100vh;
-    float: left;
-    position: relative;
-    overflow: hidden;
-    display: block;
-    float: none;
+    padding: 40px 40px 120px 40px;
 }
 
 .projBody {
@@ -337,14 +287,6 @@ ul.courseList::selection {
     text-align: center;
     font-weight: 300;
     width: 70%;
-    margin: 10% 0 2% 0;
-    transform: translateX(20%);
-}
-
-.projectCards {
-    position: absolute;
-    transform: translateX(8%);
-    clear: left;
 }
 
 .projLogo {
@@ -357,9 +299,7 @@ ul.courseList::selection {
 }
 
 .projLinks {
-    bottom: 100px;
     width: 100%;
-    position: absolute;
     text-align: center;
     font-size: 5rem;
 }
@@ -389,49 +329,56 @@ ul.courseList::selection {
     .projBody {
         font-size: 2vw;
     }
-    #sectionT {
+    .sectionT {
         font-size: 3vw;
     }
     .subtitleText {
         font-size: 1.5vw;
-    }
-    #softwareDev {
-        font-size: 2vw;
-    }
-    #graphicDesign {
-        font-size: 1.6vw;
-    }
-    #androidDev {
-        font-size: 1.6vw;
-    }
-    #otherExp {
-        font-size: 1vw;
-    }
+    }    
 }
 
 @media (max-width: 1199px) and (min-width: 0px) {
-    #myName {
-        font-size: 5.95rem;
+    .expBox:hover {
+        box-shadow: 0 20px 20px rgba(0, 0, 0, .08);
+        transform: none;
+        transition-delay: none;
     }
-    #sectionT {
+    #myName {
+        font-size: 4.95rem;
+    }
+    .sectionT {
         font-size: 3.6rem;
+        margin-left: 20px;
     }
     .projBody {
         font-size: 2.4rem;
     }
     .subtitleText {
-        font-size: 1.8rem;
+        font-size: 1.4rem;
     }
-    #softwareDev {
-        font-size: 2.4rem;
+    #sideImage, #logo {
+        display: none;
     }
-    #graphicDesign {
-        font-size: 1.9rem;
+    #projects, #experience {
+        padding: 10px;
     }
-    #androidDev {
-        font-size: 1.9rem;
+    #bottomLinks {
+        display: none;
     }
-    #otherExp {
-        font-size: 1.2rem;
+    .navElement,
+    .navElement:link,
+    .navElement:visited,
+    .navElement:focus,
+    .navElement:active {
+        font-size: 1.1rem;
+    }
+    ul.courseList li {
+        font-size: 1.6rem;
+    }
+    ul.expList li {
+        font-size: 1.6rem;
+    }
+    #nestedList li {
+        font-size: 1em;
     }
 }
