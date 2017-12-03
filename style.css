@@ -373,7 +373,7 @@ ul.courseList::selection {
     .navElement:visited,
     .navElement:focus,
     .navElement:active {
-        font-size: 1.1rem;
+        font-size: 1.2rem;
     }
     ul.courseList li {
         font-size: 1.6rem;
