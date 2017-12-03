@@ -24,7 +24,7 @@
                     target = target.length ? target : $('[name=' + this.hash.slice(1) + ']');
                     if (target.length) {
                         $('html,body').animate({
-                            scrollTop: target.offset().top - 50
+                            scrollTop: target.offset().top - 80
                         }, 750);
                         return false;
                     }
@@ -87,14 +87,14 @@
                             <li>Android Studio</li>
                             <li>Android SDKs and APIs</li>
                             <li>Layout design in XML</li>
-                            <li>Built-in + External libraries</li>
+                            <li>Integrating external libraries</li>
                         </ul>
                     </div>
                 </div>
                 <div class="col-xs-12 col-sm-6 col-md-3 col-lg-3">
                     <div class="card expBox">
                         <h1 class="expCategory">Other Experience</h1>
-                        <h3 class="expDescription">I have participated in various extracurricular activities to sharpen both my technical and transferable skills. Here are some of my recent activies:</h3>
+                        <h3 class="expDescription">I have participated in various extracurricular activities to sharpen both my technical and interpersonal skills. Here are some of my recent activies:</h3>
                         <ul class="expList" style="margin: 7%;">
                             <li style="margin-bottom: 2%;"><b>Lecturer & Designer</b>, Computer Science Enrichment Club</li>
                             <li style="margin-bottom: 2%;"><b>Hackathons</b></li>
@@ -112,36 +112,34 @@
             </div>
         </div>
     </div>
-    <div id="courses">
+    <div id="courses" name="courses">
         <h2 class="sectionT dark">Relevant Coursework:</h2>
         <div class="container">
             <div class="row">
-            <div class="col-xs-12 col-md-6 col-lg-6">
-            <h2 class="coursePeriod">Computer Science</h2>
-            <ul class="courseList">
-                <li><b>CSCA08:</b> Introduction to Computer Science I</li>
-                <li><b>CSCA48:</b> Introduction to Computer Science II</li>
-                <li><b>CSCA67:</b> Discrete Mathematics</li>
-                <li><b>CSCB36:</b> Introduction to the Theory of Computation</li>
-                <li><b>CSCB07:</b> Software Design</li>
-                <li><b>CSCB09:</b> Software Tools and Systems Programming</li>
-                <li><b>CSCC01:</b> Introduction to Software Engineering</li>
-                <li><b>CSCD27:</b> Computer and Network Security</li>
-            </ul>
+                <div class="col-xs-12 col-sm-6 col-md-6 col-lg-6">
+                    <h2 class="coursePeriod">Computer Science</h2>
+                    <ul class="courseList">
+                        <li><b>CSCA08:</b> Introduction to Computer Science I</li>
+                        <li><b>CSCA48:</b> Introduction to Computer Science II</li>
+                        <li><b>CSCA67:</b> Discrete Mathematics</li>
+                        <li><b>CSCB36:</b> Introduction to the Theory of Computation</li>
+                        <li><b>CSCB07:</b> Software Design</li>
+                        <li><b>CSCB09:</b> Software Tools and Systems Programming</li>
+                        <li><b>CSCC01:</b> Introduction to Software Engineering</li>
+                        <li><b>CSCD27:</b> Computer and Network Security</li>
+                    </ul>
+                </div>
+                <div class="col-xs-12 col-sm-6 col-md-6 col-lg-6">
+                    <h2 class="coursePeriod">Mathematics</h2>
+                    <ul class="courseList">
+                        <li><b>MATA31:</b> Calculus I for Mathematical Sciences</li>
+                        <li><b>MATA37:</b> Calculus II for Mathematical Sciences</li>
+                        <li><b>MATA23:</b> Linear Algebra I</li>
+                        <li><b>MATB24:</b> Linear Algebra II</li>
+                    </ul>
+                </div>
+            </div>
         </div>
-        <div class="col-xs-12 col-md-6 col-lg-6">
-            <h2 class="coursePeriod">Mathematics</h2>
-            <ul class="courseList">
-                <li><b>MATA31:</b> Calculus I for Mathematical Sciences</li>
-                <li><b>MATA37:</b> Calculus II for Mathematical Sciences</li>
-                <li><b>MATA23:</b> Linear Algebra I</li>
-                <li><b>MATB24:</b> Linear Algebra II</li>
-            </ul>
-        </div>
-        </div>
-        </div>
-        
-        
     </div>
     <div id="projects" name="projects">
         <h2 class="sectionT">Projects</h2>
@@ -202,14 +200,11 @@
             </div>
         </div>
     </div>
-    <div id="navBar"> <a class="navElement" href="#splash">HOME</a><a class="navElement" href="#experience">EXPERIENCE</a> <a class="navElement" href="#projects">PROJECTS</a> <a class="navElement" href="Abhay-Vaidya-Resume.pdf" target="_blank">
-            MY RESUME<i class="fa fa-external-link" style="         
-                margin-left: 6px;
-                font-size: 1.2rem;"></i></a> </div>
+    <div id="navBar"> <a class="navElement" href="#splash">HOME</a><a class="navElement" href="#experience">EXPERIENCE</a><a class="navElement" href="#courses">COURSES</a><a class="navElement" href="#projects">PROJECTS</a><a class="navElement" href="Abhay-Vaidya-Resume.pdf" target="_blank">MY RESUME<i class="fa fa-external-link" style="margin-left: 6px; font-size: 1.2rem;"></i></a></div>
     <div id="bottomLinks">
         <h6 id="reachMe">REACH ME</h6>
         <div> <a href="mailto:abhay.vaidya@mail.utoronto.ca" target="_blank" style="margin-right: 9px"><i class="fa fa-envelope linkElement"></i></a> <a href="https://www.linkedin.com/in/abhay-vaidya" target="_blank" style="margin-right: 9px"><i class="fa fa-linkedin linkElement"></i></a>
-            <a href="https://www.github.com/abhay-vaidya" target="_blank" style="margin-right: 9px"> <i class="fa fa-github linkElement"></i> </a> <a href="https://pgp.mit.edu/pks/lookup?op=get&search=0x747D55AEE631FC1C" target="_blank"><i class="fa fa-key linkElement"></i></a> </div>
+            <a href="https://www.github.com/abhay-vaidya" target="_blank" style="margin-right: 9px"> <i class="fa fa-github linkElement"></i></a><a href="https://pgp.mit.edu/pks/lookup?op=get&search=0x747D55AEE631FC1C" target="_blank"><i class="fa fa-key linkElement"></i></a> </div>
     </div>
 </body>
 

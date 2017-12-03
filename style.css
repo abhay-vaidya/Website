@@ -322,6 +322,7 @@ ul.courseList::selection {
     color: black;
 }
 
+/* Large devices */
 @media all and (min-width: 1200px) {
     #myName {
         font-size: 5vw;
@@ -333,9 +334,10 @@ ul.courseList::selection {
         font-size: 3vw;
     }
     .subtitleText {
-        font-size: 1.5vw;
+        font-size: 1.4vw;
     }    
 }
+
 
 @media (max-width: 1199px) and (min-width: 0px) {
     .expBox:hover {
@@ -349,18 +351,19 @@ ul.courseList::selection {
     .sectionT {
         font-size: 3.6rem;
         margin-left: 20px;
+        margin-bottom: 20px;
     }
     .projBody {
         font-size: 2.4rem;
     }
     .subtitleText {
-        font-size: 1.4rem;
+        font-size: 1.2rem;
     }
     #sideImage, #logo {
         display: none;
     }
-    #projects, #experience {
-        padding: 10px;
+    #projects, #experience, #courses {
+        padding: 20px;
     }
     #bottomLinks {
         display: none;
