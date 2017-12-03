@@ -322,7 +322,9 @@ ul.courseList::selection {
     color: black;
 }
 
+
 /* Large devices */
+
 @media all and (min-width: 1200px) {
     #myName {
         font-size: 5vw;
@@ -335,9 +337,8 @@ ul.courseList::selection {
     }
     .subtitleText {
         font-size: 1.4vw;
-    }    
+    }
 }
-
 
 @media (max-width: 1199px) and (min-width: 0px) {
     .expBox:hover {
@@ -359,10 +360,13 @@ ul.courseList::selection {
     .subtitleText {
         font-size: 1.2rem;
     }
-    #sideImage, #logo {
+    #sideImage,
+    #logo {
         display: none;
     }
-    #projects, #experience, #courses {
+    #projects,
+    #experience,
+    #courses {
         padding: 20px;
     }
     #bottomLinks {
