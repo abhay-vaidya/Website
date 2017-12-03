@@ -48,36 +48,6 @@
     transition-delay: 0s !important;
 }
 
-.btnText {
-    font-family: 'Roboto Mono', monospace;
-    font-size: 2rem;
-}
-
-.button,
-.button:link,
-.button:visited,
-.button:focus,
-.button:active {
-    border: solid;
-    border-color: #FF9800;
-    color: #FF9800;
-    padding: 0px 25px 7px;
-    text-align: center;
-    text-decoration: none;
-    display: inline-block;
-    -webkit-user-select: none;
-    -moz-user-select: none;
-    -ms-user-select: none;
-    user-select: none;
-    text-decoration: none;
-    transition: all 0.15s ease-in-out;
-}
-
-.button:hover {
-    background: #FF9800;
-    color: white;
-}
-
 #reachMe {
     font-family: 'Roboto Mono', monospace;
     color: #FF9800;
@@ -247,13 +217,6 @@ ul.expList li {
     padding: 40px;
 }
 
-.coursesBox {
-    height: 60%;
-    white-space: nowrap;
-    margin-left: 8%;
-    margin-top: 30px;
-}
-
 .coursePeriod {
     font-family: 'Roboto Mono', monospace;
     color: white;
@@ -279,14 +242,6 @@ ul.courseList::selection {
     background: #ececec;
     background-attachment: fixed;
     padding: 40px 40px 120px 40px;
-}
-
-.projBody {
-    font-family: 'Roboto Mono', monospace;
-    color: black;
-    text-align: center;
-    font-weight: 300;
-    width: 70%;
 }
 
 .projLogo {
@@ -329,9 +284,6 @@ ul.courseList::selection {
     #myName {
         font-size: 5vw;
     }
-    .projBody {
-        font-size: 2vw;
-    }
     .sectionT {
         font-size: 3vw;
     }
@@ -353,9 +305,6 @@ ul.courseList::selection {
         font-size: 3.6rem;
         margin-left: 20px;
         margin-bottom: 20px;
-    }
-    .projBody {
-        font-size: 2.4rem;
     }
     .subtitleText {
         font-size: 1.2rem;
