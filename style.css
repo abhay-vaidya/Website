@@ -22,6 +22,7 @@
     text-align-last: none;
     text-decoration: none;
     transition: all 0.1s ease-in-out;
+    white-space: nowrap;
 }
 
 .navElement:hover {
@@ -30,12 +31,13 @@
 
 #navBar {
     position: fixed;
-    padding: 12px 0px 10px 15px;
+    padding: 13px 18px 12px 18px;
     top: 5%;
     right: 5%;
+    text-align: center;
     box-shadow: 0px 10px 30px rgba(155, 101, 0, 0.31);
     transition: all 0.3s cubic-bezier(.25, .8, .25, 1);
-    margin-left: 3%;
+    margin-left: 5%;
     background: #FF9800;
     -webkit-user-select: none;
     -moz-user-select: none;
@@ -100,7 +102,7 @@
 }
 
 #splash {
-    background: #ececec;
+    background: #e6e6e6;
     background-size: cover;
     background-attachment: fixed;
     width: 100;
