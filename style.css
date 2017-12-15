@@ -119,7 +119,7 @@
 }
 
 #sideImage {
-    background: url(images/orange.png);
+    background: url(images/orange.webp);
     background-size: cover;
     height: 100%;
     width: 58%;
@@ -212,7 +212,7 @@ ul.expList li {
 }
 
 #courses {
-    background: linear-gradient(rgba(255, 178, 33, 0.9), rgba(255, 101, 33, 0.9)), url(images/books.jpg);
+    background: linear-gradient(rgba(255, 178, 33, 0.9), rgba(255, 101, 33, 0.9)), url(images/books.webp);
     background-size: cover;
     background-attachment: fixed;
     width: 100%;
