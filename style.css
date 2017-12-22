@@ -153,7 +153,6 @@
     font-family: 'Roboto Mono', monospace;
     color: #ECECEC;
     margin: 10px 20px;
-
 }
 
 #experience {
@@ -283,12 +282,8 @@ ul.courseList::selection {
     color: black;
 }
 
-
-@media (max-width: 1199px) and (min-width: 0px) {
-    
-}
-
 /*Large Devices*/
+
 @media all and (min-width: 1399px) {
     #myName {
         font-size: 5vw;
@@ -301,7 +296,9 @@ ul.courseList::selection {
     }
 }
 
+
 /*Medium sized devices*/
+
 @media (max-width: 1399px) and (min-width: 1180px) {
     #myName {
         font-size: 6rem;
@@ -314,7 +311,9 @@ ul.courseList::selection {
     }
 }
 
+
 /*Tablets*/
+
 @media (max-width: 1180px) and (min-width: 767px) {
     #myName {
         font-size: 10rem;
@@ -339,9 +338,11 @@ ul.courseList::selection {
     }
 }
 
+
 /*Phones*/
+
 @media (max-width: 767px) and (min-width: 0px) {
-.expBox:hover {
+    .expBox:hover {
         box-shadow: 0 20px 20px rgba(0, 0, 0, .08);
         transform: none;
         transition-delay: none;
@@ -357,7 +358,6 @@ ul.courseList::selection {
     .subtitleText {
         font-size: 1.18rem;
     }
-    
     ul.courseList li {
         font-size: 1.6rem;
     }
