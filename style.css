@@ -98,12 +98,13 @@
 }
 
 .dark {
-    color: #ececec;
+    color: #ECECEC;
 }
 
 #splash {
     background-image: url("/images/pattern.png");
     background-repeat: repeat;
+    background-attachment: fixed;
     width: 100;
     height: 100vh;
     position: relative;
@@ -128,7 +129,7 @@
 }
 
 .card .card-action {
-    border-top: 1px solid #d1d1d1;
+    border-top: 1px solid #D1D1D1;
     padding: 16px 24px 10px 24px;
 }
 
@@ -139,20 +140,24 @@
 }
 
 #myName span {
+    font-family: 'Chivo', sans-serif;
     font-weight: 600;
-    color: #ececec;
+    color: #FF9800;
+    padding: 5px 20px;
+    background: #ECECEC;
+    box-shadow: 0 20px 20px rgba(0, 0, 0, .08);
     margin: 0;
 }
 
 .subtitleText {
     font-family: 'Roboto Mono', monospace;
-    color: #ececec;
-    display: inline;
-    margin: 0;
+    color: #ECECEC;
+    margin: 10px 20px;
+
 }
 
 #experience {
-    background: #ececec;
+    background: #ECECEC;
     background-size: cover;
     background-attachment: fixed;
     width: 100%;
@@ -180,7 +185,7 @@
     font-weight: 900;
     padding-left: 15%;
     padding-right: 15%;
-    color: #000000;
+    color: black;
     line-height: 125%;
     text-align: center;
     font-size: 200%;
@@ -240,14 +245,14 @@ ul.courseList::selection {
 }
 
 #projects {
-    background: #ececec;
+    background: #ECECEC;
     background-attachment: fixed;
     padding: 40px 40px 120px 40px;
 }
 
 .projLogo {
-    margin: 0% 0 0 0;
-    padding: 20px 0 20px 0;
+    margin: 0;
+    padding: 20px 0;
 }
 
 .projButton {
@@ -279,9 +284,12 @@ ul.courseList::selection {
 }
 
 
-/* Large devices */
+@media (max-width: 1199px) and (min-width: 0px) {
+    
+}
 
-@media all and (min-width: 1200px) {
+/*Large Devices*/
+@media all and (min-width: 1399px) {
     #myName {
         font-size: 5vw;
     }
@@ -293,22 +301,29 @@ ul.courseList::selection {
     }
 }
 
-@media (max-width: 1199px) and (min-width: 0px) {
-    .expBox:hover {
-        box-shadow: 0 20px 20px rgba(0, 0, 0, .08);
-        transform: none;
-        transition-delay: none;
-    }
+/*Medium sized devices*/
+@media (max-width: 1399px) and (min-width: 1180px) {
     #myName {
-        font-size: 4.95rem;
+        font-size: 6rem;
     }
     .sectionT {
-        font-size: 3.6rem;
-        margin-left: 20px;
-        margin-bottom: 20px;
+        font-size: 5rem;
     }
     .subtitleText {
-        font-size: 1.2rem;
+        font-size: 1.65rem;
+    }
+}
+
+/*Tablets*/
+@media (max-width: 1180px) and (min-width: 767px) {
+    #myName {
+        font-size: 10rem;
+    }
+    .sectionT {
+        font-size: 5rem;
+    }
+    .subtitleText {
+        font-size: 2.75rem;
     }
     #sideImage,
     #logo {
@@ -322,13 +337,27 @@ ul.courseList::selection {
     #bottomLinks {
         display: none;
     }
-    .navElement,
-    .navElement:link,
-    .navElement:visited,
-    .navElement:focus,
-    .navElement:active {
-        font-size: 1.2rem;
+}
+
+/*Phones*/
+@media (max-width: 767px) and (min-width: 0px) {
+.expBox:hover {
+        box-shadow: 0 20px 20px rgba(0, 0, 0, .08);
+        transform: none;
+        transition-delay: none;
     }
+    #myName {
+        font-size: 4.3rem;
+    }
+    .sectionT {
+        font-size: 3.6rem;
+        margin-left: 20px;
+        margin-bottom: 20px;
+    }
+    .subtitleText {
+        font-size: 1.18rem;
+    }
+    
     ul.courseList li {
         font-size: 1.6rem;
     }
@@ -337,5 +366,17 @@ ul.courseList::selection {
     }
     #nestedList li {
         font-size: 1em;
+    }
+    #sideImage,
+    #logo {
+        display: none;
+    }
+    #projects,
+    #experience,
+    #courses {
+        padding: 20px;
+    }
+    #bottomLinks {
+        display: none;
     }
 }
