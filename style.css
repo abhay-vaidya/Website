@@ -196,13 +196,13 @@
     font-weight: 400;
     margin: 5%;
     text-align: center;
-    font-size: 125%;
+    font-size: 1.8rem;
 }
 
 ul.expList li {
     font-family: "Roboto", sans-serif;
     color: #454545;
-    font-size: 1.5em;
+    font-size: 2rem;
     list-style-type: circle;
     margin-left: 8%;
 }
@@ -210,7 +210,7 @@ ul.expList li {
 #nestedList li {
     font-family: "Roboto", sans-serif;
     list-style-type: disc;
-    font-size: 1.2em;
+    font-size: 1.8rem;
     margin-left: 20%;
 }
 
@@ -364,8 +364,9 @@ ul.courseList::selection {
     ul.expList li {
         font-size: 1.6rem;
     }
+    .expDescription,
     #nestedList li {
-        font-size: 1em;
+        font-size: 1.4rem;
     }
     #sideImage,
     #logo {
