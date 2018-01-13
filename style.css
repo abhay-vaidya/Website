@@ -254,6 +254,10 @@ ul.courseList::selection {
     padding: 20px 0;
 }
 
+.square {
+  padding: 20px 90px;
+}
+
 .projButton {
     font-family: 'Roboto Mono', sans-serif;
 }
