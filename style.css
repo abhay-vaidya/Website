@@ -1,13 +1,17 @@
 ::selection {
-    background: #FF9800;
-    color: white;
-    /* WebKit/Blink Browsers */
+  background: #FF9800;
+  color: white;
+  /* WebKit/Blink Browsers */
 }
 
 ::-moz-selection {
-    background: #FF9800;
-    color: white;
-    /* Gecko Browsers */
+  background: #FF9800;
+  color: white;
+  /* Gecko Browsers */
+}
+
+body {
+  font-size: 14pt;
 }
 
 .navElement,
@@ -15,372 +19,395 @@
 .navElement:visited,
 .navElement:focus,
 .navElement:active {
-    font-family: 'Roboto Mono', monospace;
-    color: white;
-    margin-right: 20px;
-    font-size: 1.4rem;
-    text-align-last: none;
-    text-decoration: none;
-    transition: all 0.1s ease-in-out;
-    white-space: nowrap;
+  font-family: 'Roboto Mono', monospace;
+  font-size: 10pt;
+  color: white;
+  margin-right: 20px;
+  text-align-last: none;
+  text-decoration: none;
+  transition: all 0.1s ease-in-out;
+  white-space: nowrap;
 }
 
 .navElement:hover {
-    text-decoration: underline;
+  text-decoration: underline;
 }
 
 #navBar {
-    position: fixed;
-    padding: 13px 18px 12px 18px;
-    top: 5%;
-    right: 3%;
-    text-align: center;
-    box-shadow: 0px 10px 30px rgba(155, 101, 0, 0.31);
-    transition: all 0.3s cubic-bezier(.25, .8, .25, 1);
-    margin-left: 5%;
-    background: #FF9800;
-    -webkit-user-select: none;
-    -moz-user-select: none;
-    -ms-user-select: none;
-    user-select: none;
+  position: fixed;
+  padding: 8px 18px 12px 18px;
+  top: 5%;
+  right: 3%;
+  text-align: center;
+  box-shadow: 0px 10px 30px rgba(155, 101, 0, 0.31);
+  transition: all 0.3s cubic-bezier(.25, .8, .25, 1);
+  margin-left: 5%;
+  background: #FF9800;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
 }
 
 #navBar:hover {
-    box-shadow: 0 20px 40px rgba(155, 101, 0, 0.31);
-    transition-delay: 0s !important;
+  box-shadow: 0 20px 40px rgba(155, 101, 0, 0.31);
+  transition-delay: 0s !important;
 }
 
 #reachMe {
-    font-family: 'Roboto Mono', monospace;
-    color: #FF9800;
-    text-align: center;
-    margin-bottom: 5px;
-    font-size: 1.4rem;
+  font-family: 'Roboto Mono', monospace;
+  color: #FF9800;
+  text-align: center;
+  margin: 10px 0 0 0;
 }
 
 .linkElement {
-    color: #FF9800;
-    transition: all 0.1s ease-in-out;
+  font-size: 11pt !important;
+  color: #FF9800;
+  transition: all 0.1s ease-in-out;
 }
 
 .linkElement:hover {
-    color: black;
+  color: black;
 }
 
 #bottomLinks {
-    position: fixed;
-    bottom: 4%;
-    background: white;
-    left: 3%;
-    border: solid 3px #FF9800;
-    padding: 5px 15px 10px 15px;
-    transition: all 0.3s cubic-bezier(.25, .8, .25, 1);
-    -webkit-user-select: none;
-    -moz-user-select: none;
-    -ms-user-select: none;
-    user-select: none;
+  position: fixed;
+  bottom: 4%;
+  background: white;
+  left: 3%;
+  border: solid 3px #FF9800;
+  padding: 5px 15px 10px 15px;
+  transition: all 0.3s cubic-bezier(.25, .8, .25, 1);
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
 }
 
 #bottomLinks:hover {
-    box-shadow: 0 20px 40px rgba(155, 101, 0, 0.31);
-    transition-delay: 0s !important;
+  box-shadow: 0 20px 40px rgba(155, 101, 0, 0.31);
+  transition-delay: 0s !important;
 }
 
 .sectionT {
-    font-family: 'Roboto Mono', monospace;
-    font-weight: 600;
-    color: #FF9800;
-    margin: 0 50px 50px 50px;
-    -webkit-user-select: none;
-    -moz-user-select: none;
-    -ms-user-select: none;
-    user-select: none;
+  font-family: 'Roboto Mono', monospace;
+  font-weight: 600;
+  color: #FF9800;
+  margin: 0 50px 50px 50px;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
 }
 
 .dark {
-    color: #ECECEC;
+  color: #ECECEC;
 }
 
 #splash {
-    background-image: url("/images/pattern.png");
-    background-repeat: repeat;
-    background-attachment: fixed;
-    width: 100;
-    height: 100vh;
-    position: relative;
-    overflow: hidden;
+  background-image: url(images/pattern.png);
+  background-repeat: repeat;
+  background-attachment: fixed;
+  width: 100;
+  height: 100vh;
+  position: relative;
+  overflow: hidden;
 }
 
 #logo {
-    position: absolute;
-    width: 10%;
-    top: 5%;
-    left: 3%;
+  position: absolute;
+  width: 10%;
+  top: 5%;
+  left: 3%;
 }
 
 #sideImage {
-    background: url(images/orange.png);
-    background-size: cover;
-    height: 100%;
-    width: 58%;
-    float: right;
-    -webkit-clip-path: polygon(40% 0, 100% 0, 100% 100%, 70% 100%);
-    clip-path: polygon(0% 0, 100% 0, 100% 100%, 40% 100%);
+  background: url(images/profile.jpg);
+  background-size: cover;
+  height: 100%;
+  width: 58%;
+  float: right;
+  -webkit-clip-path: polygon(40% 0, 100% 0, 100% 100%, 70% 100%);
+  clip-path: polygon(0% 0, 100% 0, 100% 100%, 40% 100%);
 }
 
 .card .card-action {
-    border-top: 1px solid #D1D1D1;
-    padding: 16px 24px 10px 24px;
+  border-top: 1px solid #D1D1D1;
+  padding: 16px 24px 10px 24px;
 }
 
 #nameGroup {
-    top: 50%;
-    margin: 0 0 0 6%;
-    position: relative;
+  top: 50%;
+  margin: 0 0 0 6%;
+  position: relative;
 }
 
 #myName span {
-    font-family: 'Chivo', sans-serif;
-    font-weight: 600;
-    color: #FF9800;
-    padding: 5px 20px;
-    background: #ECECEC;
-    box-shadow: 0 20px 20px rgba(0, 0, 0, .08);
-    margin: 0;
+  font-family: 'Chivo', sans-serif;
+  font-weight: 600;
+  color: #FF9800;
+  padding: 5px 20px;
+  background: #ECECEC;
+  box-shadow: 0 20px 20px rgba(0, 0, 0, .08);
+  margin: 0;
 }
 
 .subtitleText {
-    font-family: 'Roboto Mono', monospace;
-    color: #ECECEC;
-    margin: 10px 20px;
+  font-family: 'Roboto Mono', monospace;
+  color: #ECECEC;
+  margin: 10px 20px;
 }
 
-#experience {
-    background: #ECECEC;
-    background-size: cover;
-    background-attachment: fixed;
-    width: 100%;
-    padding: 50px;
+#skills {
+  background: #ECECEC;
+  background-size: cover;
+  background-attachment: fixed;
+  width: 100%;
+  padding: 50px;
 }
 
-.expBox {
-    font-family: 'Roboto', sans-serif;
-    padding: 10px;
-    border-radius: 4px;
-    background: white;
-    box-shadow: 0 20px 20px rgba(0, 0, 0, .08);
-    transition: all 0.3s cubic-bezier(.25, .8, .25, 1);
+.skillBox {
+  font-family: 'Roboto', sans-serif;
+  border-radius: 4px;
+  border: none;
+  background: white;
+  box-shadow: 0 20px 20px rgba(0, 0, 0, .08);
+  transition: all 0.3s cubic-bezier(.25, .8, .25, 1);
 }
 
-.expBox:hover {
-    box-shadow: 0 40px 40px rgba(0, 0, 0, .16);
-    transform: translate(0, -16px);
-    transition-delay: 0s !important;
+.skillBox:hover {
+  box-shadow: 0 8px 12px rgba(0, 0, 0, .12);
+  transform: translate(0, 6px);
+  transition-delay: 0s !important;
 }
 
-.expCategory {
-    font-family: 'Roboto Mono', monospace;
-    font-weight: 900;
-    padding-left: 15%;
-    padding-right: 15%;
-    color: black;
-    line-height: 125%;
-    text-align: center;
-    font-size: 200%;
+.skillCategory {
+  font-family: 'Roboto Mono', monospace;
+  font-size: 20pt !important;
+  font-weight: 900;
+  color: black;
+  line-height: 125%;
+  text-align: center;
+  font-size: 200%;
 }
 
-.expDescription {
-    font-family: 'Roboto', sans-serif;
-    color: #FF9800;
-    font-weight: 400;
-    margin: 5%;
-    text-align: center;
-    font-size: 1.8rem;
+.skillDescription {
+  font-family: 'Roboto', sans-serif;
+  font-size: 14pt !important;
+  color: #FF9800;
+  font-weight: 400;
+  margin: 15px 0;
+  text-align: center;
 }
 
-ul.expList li {
-    font-family: "Roboto", sans-serif;
-    color: #454545;
-    font-size: 2rem;
-    list-style-type: circle;
-    margin-left: 8%;
+ul.skillList li {
+  font-family: "Roboto", sans-serif;
+  color: #454545;
+  list-style-type: circle;
 }
 
 #nestedList li {
-    font-family: "Roboto", sans-serif;
-    list-style-type: disc;
-    font-size: 1.8rem;
-    margin-left: 20%;
+  font-family: "Roboto", sans-serif;
+  list-style-type: disc;
+}
+
+#experience {
+  background: #ECECEC;
+  background-size: cover;
+  background-attachment: fixed;
+  width: 100%;
+  padding: 50px;
+}
+
+#experience h4 {
+  font-family: 'Roboto Mono', monospace;
+}
+
+.expImage {
+  margin: auto 0;
+}
+
+.expBox {
+  font-family: 'Roboto', sans-serif;
+  border-radius: 4px;
+  border: solid 1px #dedede;
+  background: white;
+  margin-bottom: 30px;
 }
 
 #courses {
-    background: linear-gradient(rgba(255, 178, 33, 0.9), rgba(255, 101, 33, 0.9)), url(images/books.jpg);
-    background-size: cover;
-    background-attachment: fixed;
-    width: 100%;
-    padding: 40px;
+  background: linear-gradient(rgba(255, 178, 33, 0.9), rgba(255, 101, 33, 0.9)), url(images/books.jpg);
+  background-size: cover;
+  background-attachment: fixed;
+  width: 100%;
+  padding: 40px;
 }
 
 .coursePeriod {
-    font-family: 'Roboto Mono', monospace;
-    color: white;
-    background: black;
-    padding: 5px;
-    display: inline-block;
-    font-size: 1.5rem;
-    margin: 0 0 10px -20px;
+  font-family: 'Roboto Mono', monospace;
+  color: white;
+  background: black;
+  padding: 5px;
+  display: inline-block;
+  margin-left: 20px;
 }
 
 ul.courseList li {
-    color: white;
-    font-family: "Roboto", sans-serif;
-    list-style-type: disc;
-    font-size: 2rem;
+  color: white;
+  font-family: "Roboto", sans-serif;
+  list-style-type: disc;
 }
 
 ul.courseList::selection {
-    background: black;
+  background: black;
 }
 
 #projects {
-    background: #ECECEC;
-    background-attachment: fixed;
-    padding: 40px 40px 120px 40px;
+  background: #ECECEC;
+  background-attachment: fixed;
+  padding: 40px 40px 120px 40px;
+}
+
+#projects .card-title {
+  font-size: 18pt;
+  font-weight: 300;
+}
+
+#projects .card-text {
+  font-size: 12pt;
 }
 
 .projLogo {
-    margin: 0;
-    padding: 20px 0;
+  padding: 30px 0;
 }
 
 .square {
-  padding: 20px 38%;
+  margin: 0 auto;
 }
 
 .projButton {
-    font-family: 'Roboto Mono', sans-serif;
+  padding: 20px !important;
+  border-radius: 0 0 4px 4px;
+  border: none;
+  font-family: 'Roboto Mono', sans-serif;
 }
 
 .projLinks {
-    width: 100%;
-    text-align: center;
-    font-size: 5rem;
+  width: 100%;
+  text-align: center;
+  font-size: 36pt;
 }
 
 #linkedin {
-    transition: all 0.15s ease-in-out;
-    color: #FF9800;
+  transition: all 0.15s ease-in-out;
+  color: #FF9800;
 }
 
 #linkedin:hover {
-    color: black;
+  color: black;
 }
 
 #github {
-    transition: all 0.15s ease-in-out;
-    color: #FF9800;
+  transition: all 0.15s ease-in-out;
+  color: #FF9800;
 }
 
 #github:hover {
-    color: black;
+  color: black;
 }
+
 
 /*Large Devices*/
 
 @media all and (min-width: 1399px) {
-    #myName {
-        font-size: 5vw;
-    }
-    .sectionT {
-        font-size: 3vw;
-    }
-    .subtitleText {
-        font-size: 1.38vw;
-    }
+  #myName {
+    font-size: 5vw;
+  }
+  .sectionT {
+    font-size: 3vw;
+  }
+  .subtitleText {
+    font-size: 1.38vw;
+  }
 }
 
 
 /*Medium sized devices*/
 
 @media (max-width: 1399px) and (min-width: 1180px) {
-    #myName {
-        font-size: 6rem;
-    }
-    .sectionT {
-        font-size: 5rem;
-    }
-    .subtitleText {
-        font-size: 1.65rem;
-    }
+  #myName {
+    font-size: 42pt;
+  }
 }
 
 
 /*Tablets*/
 
 @media (max-width: 1180px) and (min-width: 767px) {
-    #myName {
-        font-size: 10rem;
-    }
-    .sectionT {
-        font-size: 5rem;
-    }
-    .subtitleText {
-        font-size: 2.75rem;
-    }
-    #sideImage,
-    #logo {
-        display: none;
-    }
-    #projects,
-    #experience,
-    #courses {
-        padding: 20px;
-    }
-    #bottomLinks {
-        display: none;
-    }
+  #myName {
+    font-size: 42pt;
+  }
+  .skillBox,
+  .expBox {
+    margin-bottom: 15px;
+  }
+  #sideImage,
+  #logo {
+    display: none;
+  }
+  #bottomLinks {
+    display: none;
+  }
+  #experience h6 {
+    text-align: left;
+  }
+  .expImage {
+    margin: 0 0 20px 0;
+  }
 }
 
 
 /*Phones*/
 
 @media (max-width: 767px) and (min-width: 0px) {
-    .expBox:hover {
-        box-shadow: 0 20px 20px rgba(0, 0, 0, .08);
-        transform: none;
-        transition-delay: none;
-    }
-    #myName {
-        font-size: 4.3rem;
-    }
-    .sectionT {
-        font-size: 3.6rem;
-        margin-left: 20px;
-        margin-bottom: 20px;
-    }
-    .subtitleText {
-        font-size: 1.18rem;
-    }
-    ul.courseList li {
-        font-size: 1.6rem;
-    }
-    ul.expList li {
-        font-size: 1.6rem;
-    }
-    .expDescription,
-    #nestedList li {
-        font-size: 1.4rem;
-    }
-    #sideImage,
-    #logo {
-        display: none;
-    }
-    #projects,
-    #experience,
-    #courses {
-        padding: 20px;
-    }
-    #bottomLinks {
-        display: none;
-    }
+  .skillBox:hover {
+    box-shadow: 0 20px 20px rgba(0, 0, 0, .08);
+    transform: none;
+    transition-delay: none;
+  }
+  #myName {
+    font-size: 32pt;
+  }
+  .sectionT {
+    margin-left: 20px;
+    margin-bottom: 20px;
+  }
+  .subtitleText {
+    font-size: 14pt;
+    margin: 20px 20px 0 0;
+  }
+  .skillBox,
+  .expBox {
+    margin-bottom: 15px;
+  }
+  .expImage {
+    margin: 0 0 20px 0;
+  }
+  #experience h6 {
+    text-align: left;
+  }
+  #sideImage,
+  #logo {
+    display: none;
+  }
+  #projects,
+  #skills,
+  #experience,
+  #courses {
+    padding: 20px;
+  }
+  #bottomLinks {
+    display: none;
+  }
 }
