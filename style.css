@@ -224,16 +224,16 @@ ul.skillList li {
   font-family: 'Roboto Mono', monospace;
 }
 
-.expImage {
-  margin: auto 0;
-}
-
 .expBox {
   font-family: 'Roboto', sans-serif;
   border-radius: 4px;
   border: solid 1px #dedede;
   background: white;
   margin-bottom: 30px;
+}
+
+.expBody {
+  font-size: 12pt;
 }
 
 #courses {
