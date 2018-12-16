@@ -12,6 +12,8 @@
 
 body {
   font-size: 14pt;
+  background: #ECECEC;
+  font-family: 'Roboto', sans-serif;
 }
 
 .navElement,
@@ -22,7 +24,6 @@ body {
   font-family: 'Roboto Mono', monospace;
   font-size: 10pt;
   color: white;
-  margin-right: 20px;
   text-align-last: none;
   text-decoration: none;
   transition: all 0.1s ease-in-out;
@@ -34,31 +35,17 @@ body {
 }
 
 #navBar {
-  position: fixed;
-  padding: 8px 18px 12px 18px;
-  top: 5%;
-  right: 3%;
+  width: 400px;
+  padding: 12px 24px;
   text-align: center;
-  box-shadow: 0px 10px 30px rgba(155, 101, 0, 0.31);
-  transition: all 0.3s cubic-bezier(.25, .8, .25, 1);
-  margin-left: 5%;
-  background: #FF9800;
+  box-shadow: 0px 10px 30px rgba(0, 0, 0, 0.08);
+  background: black;
+  display: flex;
+  justify-content: space-between;
   -webkit-user-select: none;
   -moz-user-select: none;
   -ms-user-select: none;
   user-select: none;
-}
-
-#navBar:hover {
-  box-shadow: 0 20px 40px rgba(155, 101, 0, 0.31);
-  transition-delay: 0s !important;
-}
-
-#reachMe {
-  font-family: 'Roboto Mono', monospace;
-  color: #FF9800;
-  text-align: center;
-  margin: 10px 0 0 0;
 }
 
 .linkElement {
@@ -71,23 +58,27 @@ body {
   color: black;
 }
 
-#bottomLinks {
-  position: fixed;
-  bottom: 4%;
+#socialLinks {
+  box-shadow: 0px 10px 30px rgba(0, 0, 0, 0.08);
+  align-self: flex-end;
+  display: flex;
+  justify-content: space-between;
+  padding: 2px 20px 5px 20px;
+  width: 40%;
+  position: relative;
   background: white;
-  left: 3%;
-  border: solid 3px #FF9800;
-  padding: 5px 15px 10px 15px;
-  transition: all 0.3s cubic-bezier(.25, .8, .25, 1);
   -webkit-user-select: none;
   -moz-user-select: none;
   -ms-user-select: none;
   user-select: none;
 }
 
-#bottomLinks:hover {
-  box-shadow: 0 20px 40px rgba(155, 101, 0, 0.31);
-  transition-delay: 0s !important;
+#floatTop {
+  display: flex;
+  flex-direction: column;
+  top: 5%;
+  right: 5%;
+  position: fixed;
 }
 
 .sectionT {
@@ -109,10 +100,7 @@ body {
   background-image: url(images/pattern.png);
   background-repeat: repeat;
   background-attachment: fixed;
-  width: 100;
   height: 100vh;
-  position: relative;
-  overflow: hidden;
 }
 
 #logo {
@@ -143,24 +131,20 @@ body {
   position: relative;
 }
 
-#myName span {
+#myName {
   font-family: 'Chivo', sans-serif;
   font-weight: 600;
-  color: #FF9800;
-  padding: 5px 20px;
-  background: #ECECEC;
-  box-shadow: 0 20px 20px rgba(0, 0, 0, .08);
-  margin: 0;
+  color: white;
+  margin-bottom: 20px;
 }
 
 .subtitleText {
   font-family: 'Roboto Mono', monospace;
-  color: #ECECEC;
-  margin: 10px 20px;
+  color: white;
 }
 
 #skills {
-  background: #ECECEC;
+
   background-size: cover;
   background-attachment: fixed;
   width: 100%;
@@ -169,11 +153,11 @@ body {
 
 .skillBox {
   font-family: 'Roboto', sans-serif;
-  border-radius: 4px;
   border: none;
+  border-radius: 6px;
   background: white;
   box-shadow: 0 20px 20px rgba(0, 0, 0, .08);
-  transition: all 0.3s cubic-bezier(.25, .8, .25, 1);
+  transition: all 0.6s cubic-bezier(.25, .8, .25, 1);
 }
 
 .skillBox:hover {
@@ -193,7 +177,6 @@ body {
 }
 
 .skillDescription {
-  font-family: 'Roboto', sans-serif;
   font-size: 14pt !important;
   color: #FF9800;
   font-weight: 400;
@@ -202,18 +185,15 @@ body {
 }
 
 ul.skillList li {
-  font-family: "Roboto", sans-serif;
   color: #454545;
   list-style-type: circle;
 }
 
 #nestedList li {
-  font-family: "Roboto", sans-serif;
   list-style-type: disc;
 }
 
 #experience {
-  background: #ECECEC;
   background-size: cover;
   background-attachment: fixed;
   width: 100%;
@@ -225,9 +205,7 @@ ul.skillList li {
 }
 
 .expBox {
-  font-family: 'Roboto', sans-serif;
-  border-radius: 4px;
-  border: solid 1px #dedede;
+  border-radius: 0;
   background: white;
   margin-bottom: 30px;
 }
@@ -244,18 +222,17 @@ ul.skillList li {
   padding: 40px;
 }
 
-.coursePeriod {
+.subject {
   font-family: 'Roboto Mono', monospace;
   color: white;
   background: black;
-  padding: 5px;
+  padding: 5px 10px;
   display: inline-block;
   margin-left: 20px;
 }
 
 ul.courseList li {
   color: white;
-  font-family: "Roboto", sans-serif;
   list-style-type: disc;
 }
 
@@ -264,7 +241,6 @@ ul.courseList::selection {
 }
 
 #projects {
-  background: #ECECEC;
   background-attachment: fixed;
   padding: 40px 40px 120px 40px;
 }
@@ -291,6 +267,17 @@ ul.courseList::selection {
   border-radius: 0 0 4px 4px;
   border: none;
   font-family: 'Roboto Mono', sans-serif;
+  background: rgba(0, 0, 0, .025);
+}
+
+.projButton:hover,
+.projButton:active {
+  background-color: black !important;
+  border-color: black !important;
+}
+
+.projButton:focus {
+  box-shadow: 0 0 0 0.2rem rgba(0,0,0,.5);
 }
 
 .projLinks {
@@ -348,16 +335,12 @@ ul.courseList::selection {
   #myName {
     font-size: 42pt;
   }
+  #sideImage {
+    display: none;
+  }
   .skillBox,
   .expBox {
     margin-bottom: 15px;
-  }
-  #sideImage,
-  #logo {
-    display: none;
-  }
-  #bottomLinks {
-    display: none;
   }
   #experience h6 {
     text-align: left;
@@ -375,6 +358,11 @@ ul.courseList::selection {
     box-shadow: 0 20px 20px rgba(0, 0, 0, .08);
     transform: none;
     transition-delay: none;
+  }
+  #sideImage,
+  #logo,
+  #bottomLinks {
+    display: none;
   }
   #myName {
     font-size: 32pt;
@@ -407,7 +395,11 @@ ul.courseList::selection {
   #courses {
     padding: 20px;
   }
-  #bottomLinks {
-    display: none;
+  #navBar {
+    width: 300px;
+    padding: 12px 20px;
+  }
+  #socialLinks {
+    padding: 2px 15px 5px 15px;
   }
 }

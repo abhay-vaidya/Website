@@ -47,24 +47,18 @@
             // Figure out element to scroll to
             var target = $(this.hash);
             target = target.length ? target : $('[name=' + this.hash.slice(1) + ']');
+            var w = window.innerWidth
+              || document.documentElement.clientWidth
+              || document.body.clientWidth;
+            var scrollOffset = w < 767 ? 83 : 0;
             // Does a scroll target exist?
             if (target.length) {
               // Only prevent default if animation is actually gonna happen
               event.preventDefault();
+              var scrollPos = target.offset().top - scrollOffset;
               $('html, body').animate({
-                scrollTop: target.offset().top
-              }, 750, function() {
-                // Callback after animation
-                // Must change focus!
-                var $target = $(target);
-                $target.focus();
-                if ($target.is(":focus")) { // Checking if the target was focused
-                  return false;
-                } else {
-                  $target.attr('tabindex','-1'); // Adding tabindex for elements not focusable
-                  $target.focus(); // Set focus again
-                };
-              });
+                scrollTop: scrollPos
+              }, 750);
             }
           }
         });
@@ -77,7 +71,7 @@
   <section id="splash" name="splash"> <img id="logo" src="images/logo.png">
     <div id="sideImage"></div>
     <div id="nameGroup">
-      <div id="myName"><span>Abhay Vaidya</span></div>
+      <h1 id="myName">Abhay Vaidya</h1>
       <h3 class="subtitleText">Computer Science, <a href="https://utoronto.ca" target="_blank" style="color: black">University of Toronto</a></h3> </div>
   </section>
   <!--SKILLS-->
@@ -100,10 +94,9 @@
               </ul>
               <li>Android Development</li>
               <li>C</li>
-              <li>C++</li>
               <li>HTML + CSS/Sass</li>
               <li>Git & SVN</li>
-              <li>JUnit, unittest</li>
+              <li>JUnit, unittest, Jest + Enzyme</li>
               <li>LaTeX</li>
             </ul>
           </div>
@@ -155,25 +148,25 @@
         <div class="col-md-7 col-xs-12">
           <div class="expBody">
             <h4 class="mb-4 font-weight-bold">Software Developer Intern</h4>
-            <h5 class="text-secondary">LoyaltyOne - AIR MILES Reward Program</h5>
+            <h5 class="text-secondary">LoyaltyOne - AIR MILES<sup>®</sup> Reward Program</h5>
             <h6 class="font-weight-light">Toronto, ON</h6>
             <br />
             <ul>
-              <li>Helped architect and develop new merchandising website visible to over 10 million AIR MILES members</li>
+              <li>Helped architect and develop new e-commerce merchandising platform visible to over 10 million AIR MILES members (Node.js, React + Redux, Express, TypeScript, Next.js)</li>
               <ul>
+                <li>Engineered crucial flows, such as checkout, while adhering to strict business and UX requirements</li>
                 <li>Developed reusable React component library to standardize all AIR MILES web applications</li>
-                <li>Used Node.js, Express, TypeScript, and Next.js for statically-typed back-end-for-front-end and Redux for application state management</li>
-                <li>Unit-tested components with Jest and Enzyme to ensure proper functionality and rendering of components</li>
+                <li>Unit tested components with Jest and Enzyme to ensure proper functionality and rendering of components</li>
               </ul>
               <li>Designed automated changelog process using Node.js, shell scripting, and Jenkins with git and Jira integration to improve accountability and establish an audit trail</li>
-              <li>Set up continuous integration and release jobs on Jenkins to solidify agile and automated development processes</li>
-              <li>Investigated and implemented mock SOAP and REST services for dependency-free API testing</li>
+              <li>Set up continuous integration (CI) and deployment (CD) jobs on Jenkins to solidify agile and automated development processes</li>
+              <li>Investigated and implemented mock REsT and legacy SOAP services for dependency-free API testing</li>
               <li>Presented tech seminar about improving internal API documentation practices with Postman</li>
             </ul>
           </div>
         </div>
         <div class="col-md-3 col-xs-12 my-2 text-right">
-          <h6 class="font-weight-normal text-secondary">May 2018 - Present</h6>
+          <h6 class="font-weight-normal text-secondary">May 2018 - Dec. 2018 • 8 mos</h6>
         </div>
       </div>
       <div class="row p-4 p-md-5 expBox">
@@ -191,7 +184,7 @@
           </div>
         </div>
         <div class="col-md-3 col-xs-12 my-2 text-right">
-          <h6 class="font-weight-normal text-secondary">Nov 2017 - Apr 2018 • 6 mos</h6>
+          <h6 class="font-weight-normal text-secondary">Nov. 2017 - Apr. 2018 • 6 mos</h6>
         </div>
       </div>
     </div>
@@ -202,7 +195,7 @@
     <div class="container">
       <div class="row">
         <div class="col-xs-12 col-sm-6 col-md-6 col-lg-6">
-          <h6 class="coursePeriod">Computer Science</h6>
+          <h6 class="subject">Computer Science</h6>
           <ul class="courseList">
             <li><b>CSCA08:</b> Introduction to Computer Science I</li>
             <li><b>CSCA48:</b> Introduction to Computer Science II</li>
@@ -218,7 +211,7 @@
           </ul>
         </div>
         <div class="col-xs-12 col-sm-6 col-md-6 col-lg-6">
-          <h6 class="coursePeriod">Mathematics</h6>
+          <h6 class="subject">Mathematics</h6>
           <ul class="courseList">
             <li><b>MATA31:</b> Calculus I for Mathematical Sciences</li>
             <li><b>MATA37:</b> Calculus II for Mathematical Sciences</li>
@@ -241,37 +234,37 @@
               <h5 class="card-title">Buddi</h5>
               <p  class="card-text">A pet and owner matchmaking app designed to make the adoption process easier and help potential pet owners find their perfect pals.</p>
             </div>
-            <a class="btn text-uppercase btn-outline-warning projButton" href="https://github.com/abhay-vaidya/Buddi" target="_blank">Learn More</a>
+            <a class="btn text-uppercase btn-outline-dark projButton" href="https://github.com/abhay-vaidya/Buddi" target="_blank">Learn More</a>
           </div>
         </div>
         <div class="col-xs-12 col-sm-4 col-md-4 col-lg-4 col-xl-2">
           <div class="card skillBox">
             <img class="card-img-top w-25 square text-center projLogo" src="images/webwork.png">
             <div class="card-body">
-              <h5 class="card-title">WeBWorK</h5>
+              <h5 class="card-title">WeBWorK Alternative</h5>
               <p  class="card-text">A proof-of-concept Java desktop application for academic courses that incorporate multiple-choice quizzes and assignments.</p>
             </div>
-            <a class="btn text-uppercase btn-outline-warning projButton" href="https://github.com/abhay-vaidya/WeBWorK" target="_blank">Learn More</a>
+            <a class="btn text-uppercase btn-outline-dark projButton" href="https://github.com/abhay-vaidya/WeBWorK" target="_blank">Learn More</a>
           </div>
         </div>
           <div class="col-xs-12 col-sm-4 col-md-4 col-lg-4 col-xl-2">
           <div class="card skillBox">
             <img class="card-img-top projLogo" src="images/spp.png">
             <div class="card-body">
-              <h5 class="card-title">Student Picker</h5>
+              <h5 class="card-title">Student Presentation Picker</h5>
               <p  class="card-text">A Java application for teachers and instructors alike to easily conduct student presentations and record individual grades.</p>
             </div>
-            <a class="btn text-uppercase btn-outline-warning projButton" href="https://github.com/abhay-vaidya/StudentPresentationPicker" target="_blank">Learn More</a>
+            <a class="btn text-uppercase btn-outline-dark projButton" href="https://github.com/abhay-vaidya/StudentPresentationPicker" target="_blank">Learn More</a>
           </div>
         </div>
         <div class="col-xs-12 col-sm-4 col-md-4 col-lg-4 col-xl-2">
           <div class="card skillBox">
-            <img class="card-img-top projLogo" src="images/doggo.png">
+            <img class="card-img-top projLogo" src="images/turfwars.png">
             <div class="card-body">
-              <h5 class="card-title">DogGo</h5>
-              <p  class="card-text">A chatbot that takes orders from the customer and gives them an interactive and intuitive experience akin to buying from another human. The business also gets a web app to easily handle these orders. DogGo won "Best Designed Hack" at Hack the Valley 2017.</p>
+              <h5 class="card-title">TurfWars</h5>
+              <p  class="card-text">Verilog version of Ninendo's hit Splatoon game for the Altera DE2 board with VGA and keyboard support.</p>
             </div>
-            <a class="btn text-uppercase btn-outline-warning projButton" href="https://github.com/abhay-vaidya/DogGo" target="_blank">Learn More</a>
+            <a class="btn text-uppercase btn-outline-dark projButton" href="https://github.com/abhay-vaidya/TurfWars" target="_blank">Learn More</a>
           </div>
         </div>
         <div class="col-xs-12 col-sm-4 col-md-4 col-lg-4 col-xl-2">
@@ -281,7 +274,7 @@
               <h5 class="card-title">DogGo</h5>
               <p  class="card-text">An interactive platform for students to lend and borrow school supplies. Web app built using Flask + Python for back-end and HTML + CSS + Jinja2 for front-end.</p>
             </div>
-            <a class="btn text-uppercase btn-outline-warning projButton" href="https://github.com/abhay-vaidya/SupplyMe" target="_blank">Learn More</a>
+            <a class="btn text-uppercase btn-outline-dark projButton" href="https://github.com/abhay-vaidya/SupplyMe" target="_blank">Learn More</a>
           </div>
         </div>
         <div class="col-xs-12 col-sm-4 col-md-4 col-lg-4 col-xl-2">
@@ -295,20 +288,18 @@
         </div>
       </div>
   </section>
-  <!--NAVBAR-->
-  <div id="navBar">
-    <a class="navElement" href="#splash">HOME</a>
-    <a class="navElement" href="#skills">SKILLS</a>
-    <a class="navElement" href="#experience">EXPERIENCE</a>
-    <a class="navElement" href="#projects">PROJECTS</a>
-  </div>
-  <!--FLOATING SOCIAL LINKS-->
-  <div id="bottomLinks">
-    <h6 id="reachMe">REACH ME</h6>
-    <div>
-      <a href="mailto:abhay.vaidya@mail.utoronto.ca" target="_blank" style="margin-right: 9px"><i class="fa fa-envelope linkElement"></i></a>
-      <a href="https://www.linkedin.com/in/abhay-vaidya" target="_blank" style="margin-right: 9px"><i class="fa fa-linkedin linkElement"></i></a>
-      <a href="https://www.github.com/abhay-vaidya" target="_blank" style="margin-right: 9px"> <i class="fa fa-github linkElement"></i></a>
+  <div id="floatTop">
+    <!--NAVBAR-->
+    <nav id="navBar">
+      <a class="navElement" href="#splash">HOME</a>
+      <a class="navElement" href="#skills">SKILLS</a>
+      <a class="navElement" href="#experience">EXPERIENCE</a>
+      <a class="navElement" href="#projects">PROJECTS</a>
+    </nav>
+    <div id="socialLinks">
+      <a href="mailto:abhay.vaidya@mail.utoronto.ca" target="_blank"><i class="fa fa-envelope linkElement"></i></a>
+      <a href="https://www.linkedin.com/in/abhay-vaidya" target="_blank"><i class="fa fa-linkedin linkElement"></i></a>
+      <a href="https://www.github.com/abhay-vaidya" target="_blank"> <i class="fa fa-github linkElement"></i></a>
       <a href="https://pgp.mit.edu/pks/lookup?op=get&search=0x747D55AEE631FC1C" target="_blank"><i class="fa fa-key linkElement"></i></a>
     </div>
   </div>
