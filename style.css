@@ -1,19 +1,20 @@
 ::selection {
-  background: #FF9800;
+  background: #FA950E;
   color: white;
   /* WebKit/Blink Browsers */
 }
 
 ::-moz-selection {
-  background: #FF9800;
+  background: #FA950E;
   color: white;
   /* Gecko Browsers */
 }
 
 body {
+  color: black;
   font-size: 14pt;
   background: #ECECEC;
-  font-family: 'Roboto', sans-serif;
+  font-family: 'Chivo', sans-serif;
 }
 
 .navElement,
@@ -38,7 +39,7 @@ body {
   width: 400px;
   padding: 12px 24px;
   text-align: center;
-  box-shadow: 0px 10px 30px rgba(0, 0, 0, 0.08);
+  box-shadow: 0 13px 30px -5px rgba(105, 105, 105, 0.25), 0 8px 16px -8px rgba(0,0,0,.3), 0 -6px 16px -6px rgba(0,0,0,.015);
   background: black;
   display: flex;
   justify-content: space-between;
@@ -50,7 +51,7 @@ body {
 
 .linkElement {
   font-size: 11pt !important;
-  color: #FF9800;
+  color: #FA950E;
   transition: all 0.1s ease-in-out;
 }
 
@@ -59,7 +60,7 @@ body {
 }
 
 #socialLinks {
-  box-shadow: 0px 10px 30px rgba(0, 0, 0, 0.08);
+  box-shadow: 0 13px 30px -5px rgba(105, 105, 105, 0.25), 0 8px 16px -8px rgba(0,0,0,.1), 0 -6px 16px -6px rgba(0,0,0,.015);
   align-self: flex-end;
   display: flex;
   justify-content: space-between;
@@ -84,8 +85,8 @@ body {
 .sectionT {
   font-family: 'Roboto Mono', monospace;
   font-weight: 600;
-  color: #FF9800;
-  margin: 0 50px 50px 50px;
+  color: #FA950E;
+  margin-bottom: 50px;
   -webkit-user-select: none;
   -moz-user-select: none;
   -ms-user-select: none;
@@ -144,7 +145,6 @@ body {
 }
 
 #skills {
-
   background-size: cover;
   background-attachment: fixed;
   width: 100%;
@@ -152,45 +152,42 @@ body {
 }
 
 .skillBox {
-  font-family: 'Roboto', sans-serif;
+  border-radius: 0;
   border: none;
-  border-radius: 6px;
-  background: white;
-  box-shadow: 0 20px 20px rgba(0, 0, 0, .08);
+  box-shadow: 0 13px 27px -5px rgba(100, 100, 100, 0.25), 0 8px 16px -8px rgba(0,0,0,.1), 0 -6px 16px -6px rgba(0,0,0,.015);
   transition: all 0.6s cubic-bezier(.25, .8, .25, 1);
 }
 
 .skillBox:hover {
-  box-shadow: 0 8px 12px rgba(0, 0, 0, .12);
-  transform: translate(0, 6px);
+  box-shadow: 0 30px 60px -12px rgba(96, 96, 96, 0.25), 0 18px 36px -18px rgba(0,0,0,.1), 0 -12px 36px -8px rgba(0,0,0,.015);
+  transform: translate(0, -6px);
   transition-delay: 0s !important;
 }
 
 .skillCategory {
+  background: black;
+  color: white;
+  box-shadow: 0 13px 30px -5px rgba(105, 105, 105, 0.47), 0 8px 16px -8px rgba(0,0,0,.3), 0 -6px 16px -6px rgba(0,0,0,.025);
+  padding: 10px;
   font-family: 'Roboto Mono', monospace;
-  font-size: 20pt !important;
-  font-weight: 900;
-  color: black;
-  line-height: 125%;
+  font-size: 20pt;
+  font-weight: 700;
   text-align: center;
-  font-size: 200%;
+  transition: all 0.6s cubic-bezier(.25, .8, .25, 1);
 }
 
-.skillDescription {
-  font-size: 14pt !important;
-  color: #FF9800;
-  font-weight: 400;
-  margin: 15px 0;
-  text-align: center;
+ul.skillList {
+  margin: 0;
 }
 
 ul.skillList li {
-  color: #454545;
   list-style-type: circle;
+  font-weight: 700;
 }
 
 #nestedList li {
   list-style-type: disc;
+  font-weight: normal;
 }
 
 #experience {
@@ -207,7 +204,15 @@ ul.skillList li {
 .expBox {
   border-radius: 0;
   background: white;
+  box-shadow: 0 13px 27px -5px rgba(100, 100, 100, 0.25), 0 8px 16px -8px rgba(0,0,0,.1), 0 -6px 16px -6px rgba(0,0,0,.015);
+  transition: all 0.6s cubic-bezier(.25, .8, .25, 1);
   margin-bottom: 30px;
+}
+
+.expBox:hover {
+  box-shadow: 0 30px 60px -12px rgba(96, 96, 96, 0.25), 0 18px 36px -18px rgba(0,0,0,.1), 0 -12px 36px -8px rgba(0,0,0,.015);
+  transform: translate(0, -6px);
+  transition-delay: 0s !important;
 }
 
 .expBody {
@@ -215,8 +220,8 @@ ul.skillList li {
 }
 
 #courses {
-  background: linear-gradient(rgba(255, 178, 33, 0.9), rgba(255, 101, 33, 0.9)), url(images/books.jpg);
-  background-size: cover;
+  background-image: url(images/pattern.png);
+  background-repeat: repeat;
   background-attachment: fixed;
   width: 100%;
   padding: 40px;
@@ -228,7 +233,8 @@ ul.skillList li {
   background: black;
   padding: 5px 10px;
   display: inline-block;
-  margin-left: 20px;
+  margin: 0 0 20px 20px;
+  box-shadow: 0 13px 30px -5px rgba(101, 68, 28, 0.47), 0 8px 16px -8px rgba(0,0,0,.3), 0 -6px 16px -6px rgba(0,0,0,.025);
 }
 
 ul.courseList li {
@@ -246,8 +252,8 @@ ul.courseList::selection {
 }
 
 #projects .card-title {
-  font-size: 18pt;
-  font-weight: 300;
+  font-family: 'Roboto Mono', monospace;
+  font-weight: 900;
 }
 
 #projects .card-text {
@@ -264,7 +270,7 @@ ul.courseList::selection {
 
 .projButton {
   padding: 20px !important;
-  border-radius: 0 0 4px 4px;
+  border-radius: 0;
   border: none;
   font-family: 'Roboto Mono', sans-serif;
   background: rgba(0, 0, 0, .025);
@@ -288,7 +294,7 @@ ul.courseList::selection {
 
 #linkedin {
   transition: all 0.15s ease-in-out;
-  color: #FF9800;
+  color: #FA950E;
 }
 
 #linkedin:hover {
@@ -297,7 +303,7 @@ ul.courseList::selection {
 
 #github {
   transition: all 0.15s ease-in-out;
-  color: #FF9800;
+  color: #FA950E;
 }
 
 #github:hover {
@@ -340,7 +346,7 @@ ul.courseList::selection {
   }
   .skillBox,
   .expBox {
-    margin-bottom: 15px;
+    margin: 0 0 15px 0;
   }
   #experience h6 {
     text-align: left;
@@ -377,7 +383,7 @@ ul.courseList::selection {
   }
   .skillBox,
   .expBox {
-    margin-bottom: 15px;
+    margin: 0 0 15px 0;
   }
   .expImage {
     margin: 0 0 20px 0;
